@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "Node16",
+    "moduleResolution": "Node16",
+    "lib": ["ES2022"],
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "outDir": "dist",
+    "rootDir": ".",
+    "types": ["node"]
+  },
+  "include": [
+    "src/**/*.ts",
+    "tests/**/*.ts",
+    "features/**/*.ts",
+    "step-definitions/**/*.ts",
+    "pages/**/*.ts",
+    "hooks/**/*.ts",
+    "configs/**/*.ts",
+    "factfind/src/**/*.ts"
+  ],
+  "exclude": ["node_modules", "dist", "reports", "stubs", "tests/e2e", "features-gen"]
+}

@@ -1,0 +1,745 @@
+{
+  "complaintRef": "NC10010449",
+  "generatedAt": "2026-08-27T05:08:17.606Z",
+  "counterApiVersion": "v3",
+  "derived": {
+    "accountNumberFull": 77110364287668,
+    "ocisPartyId": "46142591",
+    "partyIdFromAccountDetails": "46142591",
+    "primaryPartyId": "46142591",
+    "partyIdUsed": "46142591",
+    "partyIdsFromIca": [
+      "46142591",
+      "1420289780"
+    ],
+    "resolvedPartyIds": [
+      "46142591",
+      "1420289780"
+    ],
+    "customerFlowPartyIds": [
+      "46142591",
+      "1420289780"
+    ],
+    "accountDetailsSkipped": false,
+    "customerHoldingSkipped": false,
+    "customerHoldingsByPartySkipped": false,
+    "contactNotesSkipped": false,
+    "trustedPartiesSkipped": false,
+    "failedCustomerHoldingPartyIds": [],
+    "failedContactNotesPartyIds": [],
+    "failedTrustedPartiesPartyIds": [
+      "46142591",
+      "1420289780"
+    ]
+  },
+  "sources": {
+    "ica": {
+      "success": true,
+      "result": 0,
+      "customers": [
+        {
+          "customerNameTitleID": 2015001,
+          "customerNameTitleDescr": "Ms",
+          "customerFirstName": "Alexandra",
+          "customerLastName": "Taylor",
+          "customerDeceased": "No",
+          "customerAddress1": "63 LAMMERMUIR ROAD",
+          "customerAddress2": "KILMARNOCK",
+          "customerAddress3": null,
+          "customerAddress4": null,
+          "customerAddress5": null,
+          "customerAddress6": null,
+          "customerAddress7": null,
+          "customerAddressPostcode": "KA1 3TX",
+          "customerAddressCountryID": 2004001,
+          "customerAddressCountryDescr": "United Kingdom",
+          "customerPrimaryIndicator": true,
+          "customerMobile": 4407582498292,
+          "customerEmail": "Alexandra.Taylor@testdata.com",
+          "customerCorrespondenceNeedsID": null,
+          "customerCorrespondenceNeedsDescr": null,
+          "customerCESequenceNbr": 1,
+          "customerOCISID": 46142591
+        },
+        {
+          "customerNameTitleID": 2013001,
+          "customerNameTitleDescr": "Mr",
+          "customerFirstName": "Frederick",
+          "customerLastName": "Hussain",
+          "customerDeceased": "No",
+          "customerAddress1": "63 LAMMERMUIR ROAD",
+          "customerAddress2": "KILMARNOCK",
+          "customerAddress3": null,
+          "customerAddress4": null,
+          "customerAddress5": null,
+          "customerAddress6": null,
+          "customerAddress7": null,
+          "customerAddressPostcode": "KA1 3TX",
+          "customerAddressCountryID": 2004001,
+          "customerAddressCountryDescr": "United Kingdom",
+          "customerPrimaryIndicator": false,
+          "customerMobile": 4407020769045,
+          "customerEmail": "Frederick.Hussain@testdata.com",
+          "customerCorrespondenceNeedsID": null,
+          "customerCorrespondenceNeedsDescr": null,
+          "customerCESequenceNbr": 2,
+          "customerOCISID": 1420289780
+        }
+      ],
+      "header": {
+        "caseReference": "NC10010449",
+        "caseStatusID": 2213001,
+        "caseStatusDescr": "Open > Case Logged",
+        "caseDateInBank": "16/03/2026",
+        "caseWorkstreamID": 18457200,
+        "caseWorkstreamDescr": "PCA F&D",
+        "caseHotTopicID": null,
+        "caseHotTopicDescr": null,
+        "caseComplexityID": 18798100,
+        "caseComplexityDescr": "Merlin Complex",
+        "caseOwnerWorkgroupID": 4634001,
+        "caseOwnerUserID": 1,
+        "caseOwnerWorkgroup": "Customer Contact Complaints > CC Complaints - Unallocated",
+        "caseOwnerUsername": "Unallocated",
+        "caseBrandID": 2543001,
+        "caseBrandDescr": "Lloyds Bank plc",
+        "caseContactMethodID": 4514001,
+        "caseContactMethodDescr": "Letter",
+        "caseContactedByID": 6482001,
+        "caseContactedByDescr": "Personal customer",
+        "caseExecutiveNameID": null,
+        "caseExecutiveNameDescr": null,
+        "casePSD2OverrideID": 4194001,
+        "casePSD2OverrideDescr": "Debit/cash cards",
+        "casePSNIVulnerability": 0,
+        "casePSNIVulnerabilityDescr": null,
+        "numberOfParts": 1
+      },
+      "history": null,
+      "items": [
+        {
+          "partSequenceNumber": 1,
+          "partStatusID": 4600001,
+          "partStatusDescr": "Open",
+          "partReasonAddedID": 4626001,
+          "partReasonAdded": "Initial",
+          "ocisProductTypeDescr": "Cheque",
+          "productGroupID": 7577001,
+          "productGroupDescr": "Current Accounts > Personal Banking",
+          "accountNumber": 7668,
+          "accountNumberFull": 77110364287668,
+          "partOutcome": "No decision yet",
+          "custAgreeToCloseID": null,
+          "custAgreeToCloseDescr": null,
+          "complaintCategoryID": 6680001,
+          "complaintCategoryDescr": "FRAUD & DISPUTES > Reporting suspected fraud",
+          "complaintCategoryUnhappyWithID": 8538001,
+          "complaintCategoryUnhappyWithDescr": "Process - not completed correctly",
+          "complaintCategoryWhereOccurredID": 8923001,
+          "complaintCategoryWhereOccurredDescr": "On the phone to us",
+          "partVerbatim": "\"cust has had a payment to wix taken out 18/12 £604.80\ncust did not want this payment leaving\ncust had a fraud block on the 14/12 - we had blocked the payment - cancelled her card - secured the acc\n\ncust has now called to stated that we have not followed her instructions of not allowing the payment to through\nthe payment has gone through which was originally stopped on the 14/12\ncust has been misinformed - no payments to be leaving to that merch\non the call cust asked if there was anything else she needed to do - we advised nothing further\nhad we told cust that she needed to follow this up with wix - she would have - no mention of cpa\nthe bank has given out her new card details to wix\nbank did not ask for cust approval like it did on the 14/12\nbank has breached on multiple accounts\ncust is very unhappy about all this\nhas been on call for over 2hrs\n\nwants refund for the amount\nwants to know who else is set up for cpa\"",
+          "partAdditSupportID": 2433001,
+          "partAdditSupportDescr": "No",
+          "partAdditSupportConsentID": null,
+          "partAdditSupportConsentDescr": null,
+          "partInvestigationText": "\"looked into the prevs f cases\nlooked to see how the payment was taken\n\n\nCustomer Impact Questions\nQ1 -\nQ2 -\nQ3 -\n\nFinancial Difficulty –\n\nVulnerability –\n\nComplaint Points -\n1.\n\n\n1 CINS STATEMENTS\n\n18/12/2025 DEB Wix.com 1200000000\nCD 4156\n604.80DR 100\n08/01/2026 FPI OCEAN BAY HOLIDAY\nWIX\n01000000000000000N\n604.80 100\"",
+          "partOutcomeDecisionText": "\"apologised and empathsised\nexplained that no cpa were placed - payment had not been taken as cpa\nexplained even if cpa was placed - the payment would still leave the account\ncust mentioned she has spoken to wix - she had made a payment to them back in 2021 for £100 odd - no mention of more payments until now\nexplained we had not given wix the card details but visa\npayment was taken as credential on file\nnothing further could have been done on the call on the 14/12\nexplained how to check cpa\noffered £40 d&i\nunable to raise as fraud as had prevs dealings with merch although nothing solid to decline on\nadvised to raise as dispute - informed cust to get info prepared\ncust not accepting outcome - stated i would need to escalate it\n\ncust wanted to speak to TM -\nTM asvised to escalate it as cannot resolved FPOC\n\ncust would like to be called but can be emailed if needed\""
+        }
+      ],
+      "returnvaluesuccess": "GET performed successfully"
+    },
+    "accountDetails": {
+      "77110364287668": {
+        "statusCode": 200,
+        "details": {
+          "validAccount": true,
+          "accountNumber": "77110364287668",
+          "marketSector": 0,
+          "grossInterestRate": null,
+          "tieredInterestValue": null,
+          "indicators": null,
+          "balance": {
+            "interimBookedBalance": 0,
+            "interimAvailableBalance": 0,
+            "interimAvailableWithCreditBalance": 0,
+            "overdraftAmount": 0,
+            "overdraftCurrencyCode": "GBP",
+            "overdraftType": "Pre-Agreed",
+            "currentBalance": null
+          },
+          "addressNotifications": [],
+          "partyIdentifiers": [
+            {
+              "partyId": 46142591,
+              "cidPrsId": 217653657
+            },
+            {
+              "partyId": 1420289780,
+              "cidPrsId": 15066810
+            }
+          ],
+          "address": [],
+          "mortgageDetails": null,
+          "transactions": null,
+          "termLoanArrangementDetails": null,
+          "termLoanStatementDetails": null
+        },
+        "errors": {
+          "aovError": null,
+          "balanceError": null,
+          "partyIdentityError": null,
+          "productPostalAddressError": null,
+          "accountEnquiryError": [
+            {
+              "reasonCode": 404,
+              "reasonText": "Not Found",
+              "reasonMessage": "Resource(product-holding) Not Found"
+            }
+          ],
+          "transactionDetailsError": [
+            {
+              "reasonCode": 404,
+              "reasonText": "Not Found",
+              "reasonMessage": "Resource(product-holding) Not Found"
+            }
+          ],
+          "accountIndicatorsError": null,
+          "loanArrangementDetailsError": null,
+          "loanStatementDetailsError": null,
+          "estatementError": null
+        }
+      },
+      "77110364291360": {
+        "statusCode": 200,
+        "details": {
+          "validAccount": true,
+          "accountNumber": "7711036429136000000",
+          "marketSector": 0,
+          "grossInterestRate": null,
+          "tieredInterestValue": null,
+          "indicators": null,
+          "balance": {
+            "interimBookedBalance": 0,
+            "interimAvailableBalance": 0,
+            "interimAvailableWithCreditBalance": 0,
+            "overdraftAmount": 0,
+            "overdraftCurrencyCode": "GBP",
+            "overdraftType": "Pre-Agreed",
+            "currentBalance": null
+          },
+          "addressNotifications": [],
+          "partyIdentifiers": [
+            {
+              "partyId": 46142591,
+              "cidPrsId": 217653657
+            }
+          ],
+          "address": [],
+          "mortgageDetails": null,
+          "transactions": null,
+          "termLoanArrangementDetails": null,
+          "termLoanStatementDetails": null
+        },
+        "errors": {
+          "aovError": null,
+          "balanceError": null,
+          "partyIdentityError": null,
+          "productPostalAddressError": null,
+          "accountEnquiryError": [
+            {
+              "reasonCode": 500,
+              "reasonText": "AOV Internal Server Error",
+              "reasonMessage": "400 Bad Request: \"{\"errors\":[{\"code\":\"400\",\"description\":\"Mortgage account number must be 14 digits\"}]}\""
+            }
+          ],
+          "transactionDetailsError": [
+            {
+              "reasonCode": 500,
+              "reasonText": "AOV Internal Server Error",
+              "reasonMessage": "400 Bad Request: \"{\"errors\":[{\"code\":\"400\",\"description\":\"Mortgage account number must be 14 digits\"}]}\""
+            }
+          ],
+          "accountIndicatorsError": null,
+          "loanArrangementDetailsError": null,
+          "loanStatementDetailsError": null,
+          "estatementError": null
+        }
+      },
+      "77110364291768": {
+        "statusCode": 200,
+        "details": {
+          "validAccount": true,
+          "accountNumber": "7711036429176800000",
+          "marketSector": 0,
+          "grossInterestRate": null,
+          "tieredInterestValue": null,
+          "indicators": null,
+          "balance": {
+            "interimBookedBalance": 0,
+            "interimAvailableBalance": 0,
+            "interimAvailableWithCreditBalance": 0,
+            "overdraftAmount": 0,
+            "overdraftCurrencyCode": "GBP",
+            "overdraftType": "Pre-Agreed",
+            "currentBalance": null
+          },
+          "addressNotifications": [],
+          "partyIdentifiers": [
+            {
+              "partyId": 46142591,
+              "cidPrsId": 217653657
+            }
+          ],
+          "address": [],
+          "mortgageDetails": null,
+          "transactions": null,
+          "termLoanArrangementDetails": null,
+          "termLoanStatementDetails": null
+        },
+        "errors": {
+          "aovError": null,
+          "balanceError": null,
+          "partyIdentityError": null,
+          "productPostalAddressError": null,
+          "accountEnquiryError": [
+            {
+              "reasonCode": 500,
+              "reasonText": "AOV Internal Server Error",
+              "reasonMessage": "400 Bad Request: \"{\"errors\":[{\"code\":\"400\",\"description\":\"Mortgage account number must be 14 digits\"}]}\""
+            }
+          ],
+          "transactionDetailsError": [
+            {
+              "reasonCode": 500,
+              "reasonText": "AOV Internal Server Error",
+              "reasonMessage": "400 Bad Request: \"{\"errors\":[{\"code\":\"400\",\"description\":\"Mortgage account number must be 14 digits\"}]}\""
+            }
+          ],
+          "accountIndicatorsError": null,
+          "loanArrangementDetailsError": null,
+          "loanStatementDetailsError": null,
+          "estatementError": null
+        }
+      },
+      "77110364292168": {
+        "statusCode": 200,
+        "details": {
+          "validAccount": true,
+          "accountNumber": "7711036429216800000",
+          "marketSector": 0,
+          "grossInterestRate": null,
+          "tieredInterestValue": null,
+          "indicators": null,
+          "balance": {
+            "interimBookedBalance": 0,
+            "interimAvailableBalance": 0,
+            "interimAvailableWithCreditBalance": 0,
+            "overdraftAmount": 0,
+            "overdraftCurrencyCode": "GBP",
+            "overdraftType": "Pre-Agreed",
+            "currentBalance": null
+          },
+          "addressNotifications": [],
+          "partyIdentifiers": [
+            {
+              "partyId": 1420289780,
+              "cidPrsId": 15066810
+            }
+          ],
+          "address": [],
+          "mortgageDetails": null,
+          "transactions": null,
+          "termLoanArrangementDetails": null,
+          "termLoanStatementDetails": null
+        },
+        "errors": {
+          "aovError": null,
+          "balanceError": null,
+          "partyIdentityError": null,
+          "productPostalAddressError": null,
+          "accountEnquiryError": [
+            {
+              "reasonCode": 500,
+              "reasonText": "AOV Internal Server Error",
+              "reasonMessage": "400 Bad Request: \"{\"errors\":[{\"code\":\"400\",\"description\":\"Mortgage account number must be 14 digits\"}]}\""
+            }
+          ],
+          "transactionDetailsError": [
+            {
+              "reasonCode": 500,
+              "reasonText": "AOV Internal Server Error",
+              "reasonMessage": "400 Bad Request: \"{\"errors\":[{\"code\":\"400\",\"description\":\"Mortgage account number must be 14 digits\"}]}\""
+            }
+          ],
+          "accountIndicatorsError": null,
+          "loanArrangementDetailsError": null,
+          "loanStatementDetailsError": null,
+          "estatementError": null
+        }
+      }
+    },
+    "customerHolding": {
+      "customerHoldingsByParty": {
+        "46142591": {
+          "party": {
+            "partyId": 46142591,
+            "salutation": "Dear Ms Taylor",
+            "title": "Ms",
+            "foreName": "Alexandra",
+            "lastName": "Taylor",
+            "suffixTitle": "",
+            "generationSuffix": "",
+            "gender": "FEMALE",
+            "nationalInsuranceNumber": "",
+            "maritalStatus": "UNKNOWN",
+            "timeWithBankDate": "2025-09-30",
+            "timeWithBank": "0 Years, 10 Months",
+            "age": 61,
+            "dateOfBirth": "1964-12-22",
+            "dateOfDeath": null,
+            "dateOfdeathNotified": null,
+            "partyType": "INDIVIDUAL",
+            "relatedPartyList": null,
+            "address": {
+              "residentialAddressEffectiveDate": null,
+              "addressType": "RESIDENTIAL",
+              "isResidentialPAFAddress": true,
+              "addressLines": [
+                "63 LAMMERMUIR ROAD",
+                "KILMARNOCK"
+              ],
+              "postcode": "KA1 3TX",
+              "residentialCountryCode": "GBR"
+            },
+            "addressNotifications": [],
+            "relationshipNotifications": [],
+            "telephone": null,
+            "telephoneNotifications": null,
+            "partyIndicator": {
+              "supportRequired": false,
+              "supportNeeds": [],
+              "indicators": []
+            },
+            "businessClassifications": null
+          },
+          "product": [
+            {
+              "accountName": "LTPB Current",
+              "accountOpenedDate": "2025-09-30",
+              "accountClosedDate": null,
+              "accountStatus": "OPEN",
+              "accountType": 1,
+              "productType": "CURRENT_ACCOUNT",
+              "productGroupDescription": "Cheque",
+              "productHoldingId": "625142496",
+              "accountNumber": "7711036428766800000",
+              "partyList": [
+                {
+                  "partyId": 46142591,
+                  "isPrimaryRole": true,
+                  "partyResourceType": "IndividualSummary",
+                  "foreNames": [
+                    "Alexandra",
+                    "",
+                    ""
+                  ],
+                  "lastName": "Taylor",
+                  "initials": [
+                    "A"
+                  ],
+                  "partyType": "INDIVIDUAL",
+                  "startDate": "2025-09-30"
+                },
+                {
+                  "partyId": 1420289780,
+                  "isPrimaryRole": true,
+                  "partyResourceType": "IndividualSummary",
+                  "foreNames": [
+                    "Frederick",
+                    "",
+                    ""
+                  ],
+                  "lastName": "Hussain",
+                  "initials": [
+                    "F"
+                  ],
+                  "partyType": "INDIVIDUAL",
+                  "startDate": "2025-09-30"
+                }
+              ],
+              "externalSystemId": 4,
+              "externalProductType": "0326776000",
+              "embeddedInsurance": "UNKNOWN",
+              "accountNickName": "",
+              "productAddressEffectiveDate": null,
+              "sellerLegalEntity": "LTB",
+              "sellerLegalEntityName": "Lloyds Bank plc",
+              "manufacturerLegalEntity": "LTB",
+              "manufacturerLegalEntityName": "Lloyds Bank plc",
+              "isPrimaryRole": true,
+              "productHeldRoleType": "HOLDER_OF_PRODUCT",
+              "externalPartyId": "77110312824600"
+            },
+            {
+              "accountName": "Easy Saver",
+              "accountOpenedDate": "2025-09-30",
+              "accountClosedDate": null,
+              "accountStatus": "OPEN",
+              "accountType": 5,
+              "productType": "DEPOSIT_AND_SAVINGS",
+              "productGroupDescription": "Deposits & Savings",
+              "productHoldingId": "1536686563",
+              "accountNumber": "7711036429136000000",
+              "partyList": [
+                {
+                  "partyId": 46142591,
+                  "isPrimaryRole": true,
+                  "partyResourceType": "IndividualSummary",
+                  "foreNames": [
+                    "Alexandra",
+                    "",
+                    ""
+                  ],
+                  "lastName": "Taylor",
+                  "initials": [
+                    "A"
+                  ],
+                  "partyType": "INDIVIDUAL",
+                  "startDate": "2025-09-30"
+                }
+              ],
+              "externalSystemId": 4,
+              "externalProductType": "0377776000",
+              "embeddedInsurance": "NONE",
+              "accountNickName": "",
+              "productAddressEffectiveDate": null,
+              "sellerLegalEntity": "LTB",
+              "sellerLegalEntityName": "Lloyds Bank plc",
+              "manufacturerLegalEntity": "LTB",
+              "manufacturerLegalEntityName": "Lloyds Bank plc",
+              "isPrimaryRole": true,
+              "productHeldRoleType": "HOLDER_OF_PRODUCT",
+              "externalPartyId": "77110312824600"
+            },
+            {
+              "accountName": "LTPB Current",
+              "accountOpenedDate": "2025-09-30",
+              "accountClosedDate": null,
+              "accountStatus": "OPEN",
+              "accountType": 1,
+              "productType": "CURRENT_ACCOUNT",
+              "productGroupDescription": "Cheque",
+              "productHoldingId": "647473388",
+              "accountNumber": "7711036429176800000",
+              "partyList": [
+                {
+                  "partyId": 46142591,
+                  "isPrimaryRole": true,
+                  "partyResourceType": "IndividualSummary",
+                  "foreNames": [
+                    "Alexandra",
+                    "",
+                    ""
+                  ],
+                  "lastName": "Taylor",
+                  "initials": [
+                    "A"
+                  ],
+                  "partyType": "INDIVIDUAL",
+                  "startDate": "2025-09-30"
+                }
+              ],
+              "externalSystemId": 4,
+              "externalProductType": "0326776000",
+              "embeddedInsurance": "UNKNOWN",
+              "accountNickName": "",
+              "productAddressEffectiveDate": null,
+              "sellerLegalEntity": "LTB",
+              "sellerLegalEntityName": "Lloyds Bank plc",
+              "manufacturerLegalEntity": "LTB",
+              "manufacturerLegalEntityName": "Lloyds Bank plc",
+              "isPrimaryRole": true,
+              "productHeldRoleType": "HOLDER_OF_PRODUCT",
+              "externalPartyId": "77110312824600"
+            }
+          ],
+          "errors": null,
+          "statusCode": 200
+        },
+        "1420289780": {
+          "party": {
+            "partyId": 1420289780,
+            "salutation": "Dear Mr Hussain",
+            "title": "Mr",
+            "foreName": "Frederick",
+            "lastName": "Hussain",
+            "suffixTitle": "",
+            "generationSuffix": "",
+            "gender": "MALE",
+            "nationalInsuranceNumber": "",
+            "maritalStatus": "UNKNOWN",
+            "timeWithBankDate": "2025-09-30",
+            "timeWithBank": "0 Years, 10 Months",
+            "age": 59,
+            "dateOfBirth": "1967-06-01",
+            "dateOfDeath": null,
+            "dateOfdeathNotified": null,
+            "partyType": "INDIVIDUAL",
+            "relatedPartyList": null,
+            "address": {
+              "residentialAddressEffectiveDate": null,
+              "addressType": "RESIDENTIAL",
+              "isResidentialPAFAddress": true,
+              "addressLines": [
+                "63 LAMMERMUIR ROAD",
+                "KILMARNOCK"
+              ],
+              "postcode": "KA1 3TX",
+              "residentialCountryCode": "GBR"
+            },
+            "addressNotifications": [],
+            "relationshipNotifications": [],
+            "telephone": null,
+            "telephoneNotifications": null,
+            "partyIndicator": {
+              "supportRequired": false,
+              "supportNeeds": [],
+              "indicators": []
+            },
+            "businessClassifications": null
+          },
+          "product": [
+            {
+              "accountName": "LTPB Current",
+              "accountOpenedDate": "2025-09-30",
+              "accountClosedDate": null,
+              "accountStatus": "OPEN",
+              "accountType": 1,
+              "productType": "CURRENT_ACCOUNT",
+              "productGroupDescription": "Cheque",
+              "productHoldingId": "625142496",
+              "accountNumber": "7711036428766800000",
+              "partyList": [
+                {
+                  "partyId": 1420289780,
+                  "isPrimaryRole": true,
+                  "partyResourceType": "IndividualSummary",
+                  "foreNames": [
+                    "Frederick",
+                    "",
+                    ""
+                  ],
+                  "lastName": "Hussain",
+                  "initials": [
+                    "F"
+                  ],
+                  "partyType": "INDIVIDUAL",
+                  "startDate": "2025-09-30"
+                },
+                {
+                  "partyId": 46142591,
+                  "isPrimaryRole": true,
+                  "partyResourceType": "IndividualSummary",
+                  "foreNames": [
+                    "Alexandra",
+                    "",
+                    ""
+                  ],
+                  "lastName": "Taylor",
+                  "initials": [
+                    "A"
+                  ],
+                  "partyType": "INDIVIDUAL",
+                  "startDate": "2025-09-30"
+                }
+              ],
+              "externalSystemId": 4,
+              "externalProductType": "0326776000",
+              "embeddedInsurance": "UNKNOWN",
+              "accountNickName": "",
+              "productAddressEffectiveDate": null,
+              "sellerLegalEntity": "LTB",
+              "sellerLegalEntityName": "Lloyds Bank plc",
+              "manufacturerLegalEntity": "LTB",
+              "manufacturerLegalEntityName": "Lloyds Bank plc",
+              "isPrimaryRole": true,
+              "productHeldRoleType": "HOLDER_OF_PRODUCT",
+              "externalPartyId": "77110312824509"
+            },
+            {
+              "accountName": "Monthly Saver",
+              "accountOpenedDate": "2025-09-30",
+              "accountClosedDate": null,
+              "accountStatus": "OPEN",
+              "accountType": 5,
+              "productType": "DEPOSIT_AND_SAVINGS",
+              "productGroupDescription": "Deposits & Savings",
+              "productHoldingId": "2005600961",
+              "accountNumber": "7711036429216800000",
+              "partyList": [
+                {
+                  "partyId": 1420289780,
+                  "isPrimaryRole": true,
+                  "partyResourceType": "IndividualSummary",
+                  "foreNames": [
+                    "Frederick",
+                    "",
+                    ""
+                  ],
+                  "lastName": "Hussain",
+                  "initials": [
+                    "F"
+                  ],
+                  "partyType": "INDIVIDUAL",
+                  "startDate": "2025-09-30"
+                }
+              ],
+              "externalSystemId": 4,
+              "externalProductType": "0373776000",
+              "embeddedInsurance": "NONE",
+              "accountNickName": "",
+              "productAddressEffectiveDate": null,
+              "sellerLegalEntity": "LTB",
+              "sellerLegalEntityName": "Lloyds Bank plc",
+              "manufacturerLegalEntity": "LTB",
+              "manufacturerLegalEntityName": "Lloyds Bank plc",
+              "isPrimaryRole": true,
+              "productHeldRoleType": "HOLDER_OF_PRODUCT",
+              "externalPartyId": "77110312824509"
+            }
+          ],
+          "errors": null,
+          "statusCode": 200
+        }
+      }
+    },
+    "contactNotes": [],
+    "contactNotesByParty": {
+      "46142591": {
+        "notes": [],
+        "error": null
+      },
+      "1420289780": {
+        "notes": [],
+        "error": null
+      }
+    },
+    "trustedParties": [],
+    "trustedPartiesByParty": {
+      "46142591": {
+        "trustedParties": [],
+        "error": {
+          "message": "Trusted Parties API failed with status 404",
+          "timestamp": "2026-08-27T05:08:17.083Z"
+        }
+      },
+      "1420289780": {
+        "trustedParties": [],
+        "error": {
+          "message": "Trusted Parties API failed with status 404",
+          "timestamp": "2026-08-27T05:08:17.004Z"
+        }
+      }
+    }
+  }
+}

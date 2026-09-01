@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Complaints Workflow — stub renderer</title>
+    <style>
+      :root { font-family: Arial, Helvetica, sans-serif; color: #111; }
+      body { margin: 24px; background: #f6f6f6; }
+      h1 { font-size: 22px; margin: 0 0 16px; }
+      .search { display: flex; gap: 8px; align-items: end; margin-bottom: 24px; }
+      label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; color: #444; }
+      input { padding: 8px 10px; min-width: 220px; }
+      button { padding: 8px 14px; cursor: pointer; }
+      .muted { color: #666; font-size: 12px; }
+      #agent { display: none; background: #fff; padding: 16px; border: 1px solid #ddd; }
+      [role="tablist"] { display: flex; gap: 16px; border-bottom: 1px solid #ccc; margin: 12px 0; }
+      [role="tab"] { background: none; border: 0; border-bottom: 2px solid transparent; padding: 8px 4px; font-size: 15px; }
+      [role="tab"][aria-selected="true"] { font-weight: 700; border-bottom-color: #111; }
+      .header-bar { background: #111; color: #fff; padding: 10px 14px; display: flex; justify-content: space-between; align-items: center; }
+      .modes button { background: #111; color: #fff; border: 1px solid #fff; }
+      .modes button[aria-pressed="true"] { background: #fff; color: #111; }
+      .summary { padding: 12px 0; }
+      details { border: 1px solid #ccc; border-radius: 6px; margin: 10px 0; background: #fff; }
+      summary { padding: 12px 14px; font-weight: 600; cursor: pointer; background: #f0f0f0; }
+      .body { padding: 14px; }
+      dl { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 24px; margin: 0; }
+      .wide { grid-column: 1 / -1; }
+      dt { font-size: 12px; color: #666; margin-bottom: 4px; }
+      dd { margin: 0; font-weight: 600; white-space: pre-line; }
+      h3 { font-size: 14px; margin: 12px 0 8px; }
+      .tag { display: inline-block; margin-top: 6px; padding: 2px 8px; background: #eee; border-radius: 12px; font-size: 12px; font-weight: 400; }
+    </style>
+  </head>
+  <body>
+    <h1>Complaints Workflow Agent</h1>
+    <p class="muted">
+      Local stub. Query <code>?drop=1420289780</code> hides Frederick Hussain to simulate a render drop.
+      On a work machine set <code>UI_MODE=live</code> and <code>LIVE_URL</code>.
+    </p>
+    <form class="search" id="search-form">
+      <label>
+        Complaint reference
+        <input name="complaint" type="text" value="NC10010449" autocomplete="off" />
+      </label>
+      <button type="button" id="clear">Clear</button>
+      <button type="submit">Search</button>
+    </form>
+
+    <section id="agent" aria-label="Agent Response">
+      <h2>Agent Response</h2>
+      <p class="muted" id="session">Session ID: stub-local-session</p>
+      <div role="tablist" aria-label="Customers" id="tabs"></div>
+      <div class="header-bar">
+        <span>Complaint reference <strong id="ref-label">NC10010449</strong></span>
+        <div class="modes">
+          <button type="button" aria-pressed="true">Fact Finder</button>
+          <button type="button" aria-pressed="false">Analysis</button>
+        </div>
+      </div>
+      <div id="panel"></div>
+    </section>
+
+    <script>
+      const ALL = [
+        {
+          partyId: "46142591",
+          name: "Ms Alexandra Taylor",
+          dateOfBirth: "22/12/1964",
+          age: "61",
+          maritalStatus: "UNKNOWN",
+          address: "63 LAMMERMUIR ROAD,\nKILMARNOCK,\nKA1 3TX",
+          addressTag: "No recent change of address",
+          timeWithBank: "10 months",
+          contactNotes: "No contact notes recorded.",
+          supportNeeds: "No support needs recorded.",
+          relatedParties: "No related parties recorded.",
+          accounts: {
+            related: [
+              {
+                label: "LTPB Current 77110364287668",
+                accountStatus: "OPEN",
+                accountOpened: "30/09/2025",
+                role: "HOLDER_OF_PRODUCT",
+                indicators: "None",
+                currentBalance: "£0.00",
+                pending: "£0.00",
+                overdraft: "£0.00",
+                finalAvailable: "£0.00",
+                parties: "2",
+                partyIds: ["46142591", "1420289780"],
+              },
+            ],
+            unrelated: [
+              {
+                label: "Easy Saver 77110364291360",
+                accountStatus: "OPEN",
+                accountOpened: "30/09/2025",
+                role: "HOLDER_OF_PRODUCT",
+                indicators: "None",
+                currentBalance: "£0.00",
+                pending: "£0.00",
+                overdraft: "",
+                finalAvailable: "",
+                parties: "1",
+                partyIds: ["46142591"],
+              },
+              {
+                label: "LTPB Current 77110364291768",
+                accountStatus: "OPEN",
+                accountOpened: "30/09/2025",
+                role: "HOLDER_OF_PRODUCT",
+                indicators: "None",
+                currentBalance: "£0.00",
+                pending: "£0.00",
+                overdraft: "£0.00",
+                finalAvailable: "£0.00",
+                parties: "1",
+                partyIds: ["46142591"],
+              },
+            ],
+          },
+        },
+        {
+          partyId: "1420289780",
+          name: "Mr Frederick Hussain",
+          dateOfBirth: "01/06/1967",
+          age: "59",
+          maritalStatus: "UNKNOWN",
+          address: "63 LAMMERMUIR ROAD,\nKILMARNOCK,\nKA1 3TX",
+          addressTag: "No recent change of address",
+          timeWithBank: "10 months",
+          contactNotes: "No contact notes for this customer.",
+          supportNeeds: "No support needs recorded.",
+          relatedParties: "No related parties recorded.",
+          accounts: {
+            related: [
+              {
+                label: "LTPB Current 77110364287668",
+                accountStatus: "OPEN",
+                accountOpened: "30/09/2025",
+                role: "HOLDER_OF_PRODUCT",
+                indicators: "None",
+                currentBalance: "£0.00",
+                pending: "£0.00",
+                overdraft: "£0.00",
+                finalAvailable: "£0.00",
+                parties: "2",
+                partyIds: ["46142591", "1420289780"],
+              },
+            ],
+            unrelated: [
+              {
+                label: "Monthly Saver 77110364292168",
+                accountStatus: "OPEN",
+                accountOpened: "30/09/2025",
+                role: "HOLDER_OF_PRODUCT",
+                indicators: "None",
+                currentBalance: "£0.00",
+                pending: "£0.00",
+                overdraft: "",
+                finalAvailable: "",
+                parties: "1",
+                partyIds: ["1420289780"],
+              },
+            ],
+          },
+        },
+      ];
+
+      const params = new URLSearchParams(location.search);
+      const drop = params.get("drop");
+      let customers = ALL.filter((c) => c.partyId !== drop);
+
+      const tabs = document.getElementById("tabs");
+      const panel = document.getElementById("panel");
+      const agent = document.getElementById("agent");
+
+      function field(label, value, extra, key) {
+        const id = (key || "field") + "-" + label.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+        return (
+          "<div>" +
+          "<dt id=\"" + id + "-label\">" + label + "</dt>" +
+          "<dd aria-labelledby=\"" + id + "-label\">" + value + (extra || "") + "</dd>" +
+          "</div>"
+        );
+      }
+
+      function accountBlock(acct) {
+        const key = acct.label.replace(/\s+/g, "-").toLowerCase();
+        const partyFields = acct.partyIds
+          .map((id, i) => field("Party id " + (i + 1), id, "", key))
+          .join("");
+        return (
+          "<details open>" +
+          "<summary>" + acct.label + "</summary>" +
+          "<div class=\"body\"><dl>" +
+          field("Account status", acct.accountStatus, "", key) +
+          field("Account opened", acct.accountOpened, "", key) +
+          field("Customer role on the product", acct.role, "", key) +
+          field("Product indicators", acct.indicators || "None", "", key) +
+          field("Current balance", acct.currentBalance, "", key) +
+          field("Balance after pending transactions", acct.pending, "", key) +
+          field("Overdraft amount", acct.overdraft, "", key) +
+          field("Final available balance", acct.finalAvailable, "", key) +
+          field("Parties on the account", acct.parties, "", key) +
+          partyFields +
+          "</dl></div></details>"
+        );
+      }
+
+      function render(c) {
+        const related = c.accounts.related.map(accountBlock).join("");
+        const unrelated = c.accounts.unrelated.map(accountBlock).join("");
+        panel.innerHTML =
+          "<div role=\"tabpanel\"><article class=\"csl-griditem\" aria-label=\"" + c.name + "\">" +
+          "<div class=\"summary\">" +
+          "<h3>Complaint summary</h3>" +
+          "<p>1. What is the customer unhappy about?</p>" +
+          "<p>- £604.80 payment to Wix taken on 18/12 despite a fraud block on 14/12.</p>" +
+          "</div>" +
+          "<details open><summary>Personal details</summary><div class=\"body\"><dl>" +
+          field("Name", c.name) +
+          field("Date of birth", c.dateOfBirth) +
+          field("Age", c.age) +
+          field("Marital status", c.maritalStatus) +
+          "<div class=\"wide\">" +
+          field("Residential address", c.address) +
+          "<p class=\"tag\">" + c.addressTag + "</p>" +
+          "</div>" +
+          field("Party id", c.partyId) +
+          field("Time with bank", c.timeWithBank) +
+          "</dl></div></details>" +
+          "<details open><summary>Accounts and products (" +
+          (c.accounts.related.length + c.accounts.unrelated.length) +
+          ")</summary><div class=\"body\">" +
+          "<h3>Related to complaint</h3>" + related +
+          "<h3>Unrelated to the complaint</h3>" + unrelated +
+          "</div></details>" +
+          "<details open><summary>Contact notes</summary><div class=\"body\"><p>" + c.contactNotes + "</p></div></details>" +
+          "<details open><summary>Support needs</summary><div class=\"body\"><p>" + c.supportNeeds + "</p></div></details>" +
+          "<details open><summary>Related parties</summary><div class=\"body\"><p>" + c.relatedParties + "</p></div></details>" +
+          "</article></div>";
+      }
+
+      function selectTab(c, btn) {
+        [...tabs.querySelectorAll("[role=tab]")].forEach((el) => el.setAttribute("aria-selected", "false"));
+        btn.setAttribute("aria-selected", "true");
+        render(c);
+      }
+
+      function showResults(ref) {
+        document.getElementById("ref-label").textContent = ref;
+        tabs.innerHTML = "";
+        customers.forEach((c, i) => {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.setAttribute("role", "tab");
+          btn.textContent = c.name;
+          btn.setAttribute("aria-selected", i === 0 ? "true" : "false");
+          btn.addEventListener("click", () => selectTab(c, btn));
+          tabs.appendChild(btn);
+        });
+        agent.style.display = "block";
+        if (customers[0]) render(customers[0]);
+      }
+
+      document.getElementById("search-form").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const ref = document.querySelector("input[name=complaint]").value.trim();
+        showResults(ref || "NC10010449");
+      });
+      document.getElementById("clear").addEventListener("click", () => {
+        document.querySelector("input[name=complaint]").value = "";
+        agent.style.display = "none";
+      });
+
+      if (params.get("autoload") === "1") {
+        showResults("NC10010449");
+      }
+    </script>
+  </body>
+</html>

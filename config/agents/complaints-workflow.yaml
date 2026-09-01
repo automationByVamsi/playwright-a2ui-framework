@@ -1,0 +1,26 @@
+agent:
+  id: complaints-workflow
+  name: Complaints Workflow Agent
+  route: /agent/complaints_workflow
+
+entities:
+  - customer
+  - account
+  - contactNotes
+  - supportNeeds
+  - relatedParties
+
+validation:
+  deterministic: true
+  semanticValidation: optional
+  requiredCustomerSections:
+    - Personal details
+    - Accounts and products
+    - Contact notes
+    - Support needs
+    - Related parties
+
+normalization:
+  accountNumber: first-14-digits
+  date: iso-8601
+  money: minor-units-gbp

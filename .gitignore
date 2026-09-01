@@ -1,0 +1,12 @@
+node_modules/
+dist/
+reports/
+coverage/
+.DS_Store
+*.log
+.env
+.env.local
+test-results/
+playwright-report/
+blob-report/
+features-gen/

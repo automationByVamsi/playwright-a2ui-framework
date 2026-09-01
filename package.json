@@ -1,0 +1,32 @@
+{
+  "name": "a2ui-validation-framework",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Deterministic UI validation engine for ADK/A2-style agent-rendered UIs",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "tsx src/cli/validate.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:bdd": "cucumber-js --format progress",
+    "test:e2e": "playwright test",
+    "test:ui": "bddgen --config configs/ui.playwright.config.ts && playwright test -c configs/ui.playwright.config.ts",
+    "CW": "bddgen --tags @v3 --config configs/ui.playwright.config.ts && playwright test -c configs/ui.playwright.config.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "commander": "^14.0.0"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.0",
+    "dotenv": "^17.4.2",
+    "playwright-bdd": "^9.2.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ValidationResult",
+  "type": "object",
+  "required": ["schemaVersion", "agent", "scenario", "complaintRef", "overall", "gating", "layers", "diffs"],
+  "properties": {
+    "schemaVersion": { "const": "1.0" },
+    "agent": { "type": "string" },
+    "scenario": { "type": "string" },
+    "complaintRef": { "type": "string" },
+    "overall": { "enum": ["PASS", "FAIL", "SKIPPED", "UNCERTAIN"] },
+    "gating": { "enum": ["PASS", "FAIL", "SKIPPED", "UNCERTAIN"] },
+    "layers": { "type": "object" },
+    "diffs": { "type": "array" },
+    "missing": { "type": "array" },
+    "duplicates": { "type": "array" }
+  }
+}
