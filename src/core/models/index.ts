@@ -13,11 +13,5 @@ export type {
   NormalizedContractModel,
 } from "./normalized.js";
 export { EMPTY } from "./normalized.js";
-export type {
-  FieldDiff,
-  EntityResult,
-  LayerResult,
-  ValidationResult,
-} from "./validation-result.js";
-export { isFailure } from "./validation-result.js";
-export type { TestContext, ContractMutation } from "./context.js";
+export type { FieldDiff } from "./validation-result.js";
+export type { ContractMutation } from "./context.js";

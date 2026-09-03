@@ -14,15 +14,6 @@
     "rootDir": ".",
     "types": ["node"]
   },
-  "include": [
-    "src/**/*.ts",
-    "tests/**/*.ts",
-    "features/**/*.ts",
-    "step-definitions/**/*.ts",
-    "pages/**/*.ts",
-    "hooks/**/*.ts",
-    "configs/**/*.ts",
-    "factfind/src/**/*.ts"
-  ],
-  "exclude": ["node_modules", "dist", "reports", "stubs", "tests/e2e", "features-gen"]
+  "include": ["src/**/*.ts", "tests/**/*.ts"],
+  "exclude": ["node_modules", "dist", "reports", "stubs", "tests/e2e"]
 }

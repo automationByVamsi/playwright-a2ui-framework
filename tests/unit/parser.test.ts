@@ -4,7 +4,7 @@ import { describe, expect, it } from "vitest";
 import { parseAdkContract, findByType } from "../../src/core/parser/adk-contract-parser.js";
 
 describe("AdkContractParser", () => {
-  const capture = JSON.parse(readFileSync(path.resolve("adk_NC10010449.json"), "utf8")) as unknown;
+  const capture = JSON.parse(readFileSync(path.resolve("fixtures/adk_NC10010449.json"), "utf8")) as unknown;
 
   it("parses agentOutput JSON string into a component tree", () => {
     const parsed = parseAdkContract(capture);

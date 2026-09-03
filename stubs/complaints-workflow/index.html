@@ -11,8 +11,16 @@
       label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; color: #444; }
       input { padding: 8px 10px; min-width: 220px; }
       button { padding: 8px 14px; cursor: pointer; }
-      .muted { color: #666; font-size: 12px; }
+      .muted { color: #444; font-size: 14px; }
       #agent { display: none; background: #fff; padding: 16px; border: 1px solid #ddd; }
+      .a2ui-banner { padding: 10px 12px; border-radius: 4px; margin: 8px 0 12px; }
+      .a2ui-banner--success { background: #e7f6ed; color: #0d5c2e; border: 1px solid #0d5c2e; }
+      .a2ui-banner--warning { background: #fff4e5; color: #7a3e00; border: 1px solid #7a3e00; }
+      .a2ui-callout--support { padding: 8px; background: #f4f4f4; border-left: 4px solid #333; }
+      .a2ui-summarybox { padding: 10px 12px; border: 1px solid #555; margin: 8px 0; }
+      .a2ui-summarybox--ai_warning { background: #fff4e5; border-color: #7a3e00; }
+      .a2ui-summarybox--secondary { background: #eef3f8; }
+      #analysis-panel { display: none; }
       [role="tablist"] { display: flex; gap: 16px; border-bottom: 1px solid #ccc; margin: 12px 0; }
       [role="tab"] { background: none; border: 0; border-bottom: 2px solid transparent; padding: 8px 4px; font-size: 15px; }
       [role="tab"][aria-selected="true"] { font-weight: 700; border-bottom-color: #111; }
@@ -46,19 +54,69 @@
       <button type="submit">Search</button>
     </form>
 
+    <main id="main-content">
     <section id="agent" aria-label="Agent Response">
       <h2>Agent Response</h2>
       <p class="muted" id="session">Session ID: stub-local-session</p>
+      <div
+        id="groundedness-banner"
+        class="a2ui-banner a2ui-banner--success"
+        data-status="correct"
+        data-variant="success"
+      >
+        Passed groundedness check. All complaint information matches source system information.
+      </div>
       <div role="tablist" aria-label="Customers" id="tabs"></div>
       <div class="header-bar">
         <span>Complaint reference <strong id="ref-label">NC10010449</strong></span>
         <div class="modes">
-          <button type="button" aria-pressed="true">Fact Finder</button>
-          <button type="button" aria-pressed="false">Analysis</button>
+          <button type="button" id="mode-factfinder" aria-pressed="true">Fact Finder</button>
+          <button type="button" id="mode-analysis" aria-pressed="false">Analysis</button>
         </div>
       </div>
       <div id="panel"></div>
+      <div id="analysis-panel" role="region" aria-label="Analysis">
+        <details open>
+          <summary>Complaint Transactions Summary</summary>
+          <div class="body">
+            <article class="a2ui-summarybox a2ui-summarybox--ai_warning" data-variant="ai_warning">
+              <h3>Complaint Transactions - No Data</h3>
+              <p>We were unable to find any transactions that match the complaint.</p>
+            </article>
+          </div>
+        </details>
+        <details open>
+          <summary>Customer Baseline Summary</summary>
+          <div class="body">
+            <article class="a2ui-summarybox a2ui-summarybox--ai_warning" data-variant="ai_warning">
+              <h3>Customer Baseline Summary</h3>
+              <p>This summary card provides an insight into the customer's normal spending behaviour. Unfortunately we have not received any data to determine a customer baseline for the look back period between 01/01/2021 and 31/12/2021.</p>
+            </article>
+            <details>
+              <summary>Evidence</summary>
+              <div class="body">
+                <article class="a2ui-summarybox a2ui-summarybox--ai_warning" data-variant="ai_warning">
+                  <p>Mean transaction value:</p>
+                  <p>No data available.</p>
+                  <p>Typical spend range:</p>
+                  <p>No data available.</p>
+                </article>
+              </div>
+            </details>
+          </div>
+        </details>
+        <details open>
+          <summary>Analysis Agent Summary - No Data Received</summary>
+          <div class="body">
+            <article class="a2ui-summarybox a2ui-summarybox--ai_warning" data-variant="ai_warning">
+              <h3>Analysis Agent Summary - No Data Received</h3>
+              <p>This summary card provides a high level summary of the findings identified by the Analysis Agent. Unfortunately we have not been able to retrieve any complaint transaction data.</p>
+            </article>
+          </div>
+        </details>
+      </div>
     </section>
+    </main>
 
     <script>
       const ALL = [
@@ -169,7 +227,61 @@
 
       const params = new URLSearchParams(location.search);
       const drop = params.get("drop");
+      let lastSpec = null;
       let customers = ALL.filter((c) => c.partyId !== drop);
+
+      async function loadTrace() {
+        try {
+          const response = await fetch("/adk-trace");
+          const data = await response.json();
+          return typeof data.agentOutput === "string" ? JSON.parse(data.agentOutput) : data;
+        } catch {
+          return null;
+        }
+      }
+
+      function renderSummaryHtml(spec) {
+        const box = spec && spec.summaryBox;
+        if (!box || !Array.isArray(box.content)) {
+          return (
+            "<div class=\"summary a2ui-summarybox a2ui-summarybox--secondary\" data-variant=\"secondary\">" +
+            "<h3>Complaint summary</h3>" +
+            "<p>1. What is the customer unhappy about?</p>" +
+            "<p>- £604.80 payment to Wix taken on 18/12 despite a fraud block on 14/12.</p>" +
+            "</div>"
+          );
+        }
+        const variant = box.variation || box.variant || "secondary";
+        const lines = box.content
+          .map(function (n) {
+            if (n.type === "heading") return "<h3>" + n.text + "</h3>";
+            return "<p>" + n.text + "</p>";
+          })
+          .join("");
+        return (
+          "<div class=\"summary a2ui-summarybox a2ui-summarybox--" +
+          variant +
+          "\" data-variant=\"" +
+          variant +
+          "\">" +
+          "<h3>Complaint summary</h3>" +
+          lines +
+          "</div>"
+        );
+      }
+
+      function applyGroundedness(spec) {
+        const banner = document.getElementById("groundedness-banner");
+        const g = spec && spec.groundednessCheck;
+        if (!banner || !g) return;
+        const status = String(g.status || "").toLowerCase();
+        banner.setAttribute("data-status", status);
+        banner.className = "a2ui-banner " + (status === "correct" ? "a2ui-banner--success" : "a2ui-banner--warning");
+        banner.textContent = String(g.message || "")
+          .replace(/\*\*/g, "")
+          .replace(/✅/g, "")
+          .trim();
+      }
 
       const tabs = document.getElementById("tabs");
       const panel = document.getElementById("panel");
@@ -213,11 +325,7 @@
         const unrelated = c.accounts.unrelated.map(accountBlock).join("");
         panel.innerHTML =
           "<div role=\"tabpanel\"><article class=\"csl-griditem\" aria-label=\"" + c.name + "\">" +
-          "<div class=\"summary\">" +
-          "<h3>Complaint summary</h3>" +
-          "<p>1. What is the customer unhappy about?</p>" +
-          "<p>- £604.80 payment to Wix taken on 18/12 despite a fraud block on 14/12.</p>" +
-          "</div>" +
+          renderSummaryHtml(lastSpec) +
           "<details open><summary>Personal details</summary><div class=\"body\"><dl>" +
           field("Name", c.name) +
           field("Date of birth", c.dateOfBirth) +
@@ -237,7 +345,7 @@
           "<h3>Unrelated to the complaint</h3>" + unrelated +
           "</div></details>" +
           "<details open><summary>Contact notes</summary><div class=\"body\"><p>" + c.contactNotes + "</p></div></details>" +
-          "<details open><summary>Support needs</summary><div class=\"body\"><p>" + c.supportNeeds + "</p></div></details>" +
+          "<details open><summary>Support needs</summary><div class=\"body\"><p class=\"a2ui-callout a2ui-callout--support\">" + c.supportNeeds + "</p></div></details>" +
           "<details open><summary>Related parties</summary><div class=\"body\"><p>" + c.relatedParties + "</p></div></details>" +
           "</article></div>";
       }
@@ -248,7 +356,9 @@
         render(c);
       }
 
-      function showResults(ref) {
+      async function showResults(ref) {
+        lastSpec = await loadTrace();
+        applyGroundedness(lastSpec);
         document.getElementById("ref-label").textContent = ref;
         tabs.innerHTML = "";
         customers.forEach((c, i) => {
@@ -273,6 +383,20 @@
         document.querySelector("input[name=complaint]").value = "";
         agent.style.display = "none";
       });
+
+      function setMode(mode) {
+        const fact = document.getElementById("mode-factfinder");
+        const analysis = document.getElementById("mode-analysis");
+        const analysisPanel = document.getElementById("analysis-panel");
+        const factPanel = document.getElementById("panel");
+        const isAnalysis = mode === "analysis";
+        fact.setAttribute("aria-pressed", isAnalysis ? "false" : "true");
+        analysis.setAttribute("aria-pressed", isAnalysis ? "true" : "false");
+        analysisPanel.style.display = isAnalysis ? "block" : "none";
+        factPanel.style.display = isAnalysis ? "none" : "block";
+      }
+      document.getElementById("mode-factfinder").addEventListener("click", () => setMode("factfinder"));
+      document.getElementById("mode-analysis").addEventListener("click", () => setMode("analysis"));
 
       if (params.get("autoload") === "1") {
         showResults("NC10010449");

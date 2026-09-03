@@ -1,5 +1,0 @@
-# Future adapter — core engine is unchanged. Add mapper + YAML only.
-agent:
-  id: communications
-  name: Communications Agent
-  status: not-implemented
