@@ -1,0 +1,21 @@
+Copy this folder onto the ROOT of cce2ec-qe-playwright-e2e (same paths).
+
+1. Copy factfind/src/a2ui-engine/          — new folder. Do not overwrite payload-loader or agent-stub.
+2. Copy features/ui/factfind/complaints-workflow-a2ui.feature
+   If bddgen already picks up features/ui/factfind/*.feature, you are done.
+   Do not replace your existing complaints-workflow.feature unless you merge the two scenarios into it.
+3. Merge or replace step-definitions/ui/factfind/complaints-workflow.steps.ts
+   - If your steps file is only the Given/When/Then from the screenshot, replace with this file.
+   - If you have extra steps below the screenshot, copy only the new imports and the last three step defs (aggregated payload loaded / fact find should match / A2UI rendered UI).
+
+If TypeScript errors on factFindRoot, in the A2UI Then use:
+  const container = this.page.getByRole("main").or(this.page.locator("body"));
+
+Run:
+  npx bddgen --tags @factfind-contract --config configs/ui.playwright.config.ts
+  npx playwright test -c configs/ui.playwright.config.ts --grep @factfind-contract
+
+  npx bddgen --tags @a2ui --config configs/ui.playwright.config.ts
+  npx playwright test -c configs/ui.playwright.config.ts --grep @a2ui
+
+Do not tag @factfind-contract with @live.
