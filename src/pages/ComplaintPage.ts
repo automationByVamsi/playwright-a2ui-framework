@@ -1,6 +1,6 @@
 import type { Page } from "@playwright/test";
 
-/** Navigation only. Schema assertions live in A2UIVerifier, not in the POM. */
+/** Navigation only. Schema assertions live in verifyTraceOnPage, not in the POM. */
 export class ComplaintPage {
   constructor(private readonly page: Page) {}
 

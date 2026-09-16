@@ -1,42 +1,41 @@
 # A2UI validation
 
-The ADK `agentOutput` tree is the UI spec. Tests do not scrape raw APIs or use hashed CSS.
+The page is not a stable POM. The ADK `agentOutput` tree **is** the spec. Tests walk that tree and assert each node on screen.
 
 ```
-fixtures/NC10010449.json     source systems (ground truth)
-fixtures/adk_NC10010449.json  agentOutput schema
+fixtures/NC10010449.json     source systems
+fixtures/adk_NC10010449.json  what the agent said to render
 Hive / local stub            what the user sees
 ```
 
-## Three tiers
+## Two functions
 
-1. **In memory** (`src/validators/`) — party ids, related vs unrelated accounts, groundedness banner. No browser.
-2. **Trace → DOM** (`src/engine/`) — walk each accordion/grid/block and assert it is on screen.
-3. **A11y + pixels** — axe on `#main-content`, screenshots of the groundedness banner and support-need callout.
+| Call | When it fails, open |
+|---|---|
+| `assertComplaintsRules(aggregated, trace)` | The error message + the two JSON files |
+| `verifyTraceOnPage(page, trace, container)` | The Playwright error (label + ADK path) + `src/engine/adapters/<type>.ts` |
+
+```ts
+assertComplaintsRules(aggregatedPayload, agentOutputTrace);
+await verifyTraceOnPage(page, agentOutputTrace, this.complaintsWorkflowPage.factFindRoot);
+```
+
+`assertComplaintsRules` is Complaints-only (party ids, related ICA account, groundedness `correct`).  
+`verifyTraceOnPage` is shared — any agent that emits accordion/grid/text.
+
+## Scale
+
+| Change | What you edit |
+|---|---|
+| New A2UI `type` | `src/engine/adapters/<type>.ts` + `registerAdapter` |
+| New Complaints rule | One `assert.*` in `complaints-rules.ts` |
+| New agent | New `*-rules.ts` if it has different meaning; reuse `verifyTraceOnPage` |
 
 ## Commands
 
 ```bash
-npm install
-npx playwright install chromium
-npm test                 # Tier 1 + parser + adapters
-npm run test:e2e         # full 3-tier Playwright flow
+npm test          # parser, adapters, complaints rules
+npm run test:e2e  # stub UI + walker + axe
 ```
 
-Local UI: `npx tsx src/core/playwright/stub-server.ts` then http://127.0.0.1:4173
-
-## Add a new A2UI component type
-
-1. `src/engine/adapters/timeline.ts` implementing `ComponentAdapter`
-2. `registerAdapter(...)` in `src/engine/registry.ts`
-
-## Layout
-
-```
-src/engine/       walker + catalog adapters
-src/validators/   Tier 1 groundedness contract
-src/core/         parser, normalizer, ground-truth JSON
-src/pages/        navigation only
-fixtures/         NC10010449 payloads
-tests/e2e/        three-tier spec
-```
+Local UI: `npx tsx src/core/playwright/stub-server.ts` → http://127.0.0.1:4173

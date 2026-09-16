@@ -3,27 +3,18 @@ import path from "node:path";
 import { expect, test } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { ComplaintPage } from "../../src/pages/ComplaintPage.js";
-import { validateGroundednessContract, assertGroundednessContract } from "../../src/validators/groundedness-contract.validator.js";
-import { A2UIVerifier } from "../../src/engine/a2ui-verifier.js";
+import { assertComplaintsRules } from "../../src/agents/complaints-workflow/complaints-rules.js";
+import { verifyTraceOnPage } from "../../src/engine/verify-trace.js";
 import { mockAdkTrace, fetchMockedAdkTrace } from "../../src/engine/fixtures/adk-trace-route.js";
 
 const aggregated = JSON.parse(readFileSync(path.resolve("fixtures/NC10010449.json"), "utf8"));
 const trace = JSON.parse(readFileSync(path.resolve("fixtures/adk_NC10010449.json"), "utf8"));
 
-/**
- * Complete 3-tier flow for NC10010449.
- *
- * Adding a new A2UI catalog type (timeline, data-table, ...):
- *   src/engine/adapters/<type>.ts implementing ComponentAdapter
- *   then registerAdapter(...) in src/engine/registry.ts
- */
-test.describe("A2UI three-tier validation — NC10010449", () => {
-  test("Tier 1 then recursive DOM verify then a11y + scoped screenshots", async ({ page }) => {
+test.describe("Complaints Workflow — NC10010449", () => {
+  test("rules, then ADK tree on page, then a11y + screenshots", async ({ page }) => {
     await mockAdkTrace(page, trace);
 
-    const tier1 = validateGroundednessContract(aggregated, trace);
-    assertGroundednessContract(tier1);
-    expect(tier1.checks.every((c) => c.passed)).toBe(true);
+    assertComplaintsRules(aggregated, trace);
 
     const complaint = new ComplaintPage(page);
     await page.goto("/", { waitUntil: "domcontentloaded" });
@@ -36,8 +27,7 @@ test.describe("A2UI three-tier validation — NC10010449", () => {
 
     const main = page.locator("#main-content");
     await expect(main).toBeVisible();
-    const verifier = new A2UIVerifier(page);
-    await verifier.verify(trace, main);
+    await verifyTraceOnPage(page, trace, main);
 
     const axe = await new AxeBuilder({ page }).include("#main-content").withTags(["wcag2a", "wcag21aa"]).analyze();
     expect(axe.violations, JSON.stringify(axe.violations, null, 2)).toEqual([]);

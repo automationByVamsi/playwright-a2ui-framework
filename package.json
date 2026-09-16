@@ -2,7 +2,7 @@
   "name": "a2ui-validation-framework",
   "version": "0.2.0",
   "private": true,
-  "description": "3-tier A2UI validation: groundedness contract, trace-to-DOM walker, a11y + scoped screenshots",
+  "description": "Walk the ADK agentOutput tree and assert it on screen",
   "engines": {
     "node": ">=20"
   },
