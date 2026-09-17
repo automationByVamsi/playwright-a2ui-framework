@@ -12,15 +12,15 @@ Hive / local stub            what the user sees
 
 | Call | When it fails, open |
 |---|---|
-| `assertComplaintsRules(aggregated, trace)` | The error message + the two JSON files |
+| `compareFactFind(aggregated, adkFile)` | The error message + the two JSON files |
 | `verifyTraceOnPage(page, trace, container)` | The Playwright error (label + ADK path) + `src/engine/adapters/<type>.ts` |
 
 ```ts
-assertComplaintsRules(aggregatedPayload, agentOutputTrace);
+compareFactFind(aggregatedPayload, agentOutputTrace);
 await verifyTraceOnPage(page, agentOutputTrace, this.complaintsWorkflowPage.factFindRoot);
 ```
 
-`assertComplaintsRules` is Complaints-only (party ids, related ICA account, groundedness `correct`).  
+`compareFactFind` reads `final_agent_response.fact_find` (fallback `agentOutput`) and compares every Fact Find customer to aggregated.  
 `verifyTraceOnPage` is shared — any agent that emits accordion/grid/text.
 
 ## Scale
@@ -28,7 +28,7 @@ await verifyTraceOnPage(page, agentOutputTrace, this.complaintsWorkflowPage.fact
 | Change | What you edit |
 |---|---|
 | New A2UI `type` | `src/engine/adapters/<type>.ts` + `registerAdapter` |
-| New Complaints rule | One `assert.*` in `complaints-rules.ts` |
+| New Complaints rule | Add a field to `FactFindFacts` and both extract functions |
 | New agent | New `*-rules.ts` if it has different meaning; reuse `verifyTraceOnPage` |
 
 ## Commands

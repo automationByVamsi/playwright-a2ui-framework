@@ -1,21 +1,34 @@
 Copy this folder onto the ROOT of cce2ec-qe-playwright-e2e (same paths).
 
-1. Copy factfind/src/a2ui-engine/          — new folder. Do not overwrite payload-loader or agent-stub.
-2. Copy features/ui/factfind/complaints-workflow-a2ui.feature
-   If bddgen already picks up features/ui/factfind/*.feature, you are done.
-   Do not replace your existing complaints-workflow.feature unless you merge the two scenarios into it.
-3. Merge or replace step-definitions/ui/factfind/complaints-workflow.steps.ts
-   - If your steps file is only the Given/When/Then from the screenshot, replace with this file.
-   - If you have extra steps below the screenshot, copy only the new imports and the last three step defs (aggregated payload loaded / fact find should match / A2UI rendered UI).
+Step-1 (JSON only) — agentOutput.fact_find vs aggregated payload
+  Copy:
+    factfind/src/a2ui-engine/agents/complaints-workflow/complaints-rules.ts
+    factfind/src/a2ui-engine/agents/complaints-workflow/compare-factfind-files.ts
+    features/api/fact-find/agentoutput-vs-aggregated.feature
+    step-definitions/api/fact-find/agentoutput-vs-aggregated.steps.ts
 
-If TypeScript errors on factFindRoot, in the A2UI Then use:
-  const container = this.page.getByRole("main").or(this.page.locator("body"));
+  Do not paste into AdkComparisonValidator or parseRunResponse.
+  If api-fixtures import path differs, fix the one import in the steps file.
 
-Run:
-  npx bddgen --tags @factfind-contract --config configs/ui.playwright.config.ts
-  npx playwright test -c configs/ui.playwright.config.ts --grep @factfind-contract
+  Files the compare reads (your existing generate jobs already write these):
+    factfind/aggregated-payloads/${ref}.json
+    factfind/ai-evals/outputs/adk_${ref}.json
+      or factfind/aggregated-agent-response/${ref}.json
+  The ADK file is a Bruno /run array or your wrap with raw_events.
+  Compare reads final_agent_response first, then agentOutput.
 
-  npx bddgen --tags @a2ui --config configs/ui.playwright.config.ts
-  npx playwright test -c configs/ui.playwright.config.ts --grep @a2ui
+  Two functions (open the error + the two JSON files when it fails):
+    extractFromAggregated(payload)   -> customers keyed by partyId
+    extractFromAgentOutput(adkFile)  -> same shape from final_agent_response (fallback agentOutput)
+    compareFactFind(payload, adkFile)
 
-Do not tag @factfind-contract with @live.
+  Compares fact_find only (not summaryBox / analysis). Per customer: name, DOB, age,
+  marital, address, related/unrelated accounts, status/opened/role/parties,
+  support needs, related parties, contact notes.
+
+  To add a field later: add it to CustomerFacts, fill both extract functions, assert in compareFactFind.
+
+Step-2 (Hive, handful of scripts) — optional
+  Copy features/ui/factfind/complaints-workflow-a2ui.feature
+  Merge step-definitions/ui/factfind/complaints-workflow.steps.ts
+  Need HIVE_UI in .env.ui. See hooks/ui-hooks.BEFORE-SNIPPET.ts if @factfind-contract is run on the UI config.
