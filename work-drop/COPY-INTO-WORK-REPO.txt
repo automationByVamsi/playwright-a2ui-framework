@@ -1,7 +1,16 @@
 Copy this folder onto the ROOT of cce2ec-qe-playwright-e2e (same paths).
 
+IMPORTANT: do not overwrite the office complaints-rules.ts or
+compare-factfind-files.ts. Follow OFFICE-PORT.md instead.
+
 Step-1 (JSON only) — agentOutput.fact_find vs aggregated payload
-  Copy:
+  Copy these four files only (new modules):
+    factfind/src/a2ui-engine/agents/complaints-workflow/factfind-map.ts
+    factfind/src/a2ui-engine/agents/complaints-workflow/compare-map.ts
+    factfind/src/a2ui-engine/agents/complaints-workflow/comparison-report.ts
+    factfind/src/a2ui-engine/agents/complaints-workflow/json-get.ts
+  Then adapt the office facades using OFFICE-PORT.md.
+  Optional later (only if the office files are still the old throw-only versions):
     factfind/src/a2ui-engine/agents/complaints-workflow/complaints-rules.ts
     factfind/src/a2ui-engine/agents/complaints-workflow/compare-factfind-files.ts
     features/api/fact-find/agentoutput-vs-aggregated.feature
@@ -20,13 +29,23 @@ Step-1 (JSON only) — agentOutput.fact_find vs aggregated payload
   Two functions (open the error + the two JSON files when it fails):
     extractFromAggregated(payload)   -> customers keyed by partyId
     extractFromAgentOutput(adkFile)  -> same shape from final_agent_response (fallback agentOutput)
-    compareFactFind(payload, adkFile)
+    compareFactFind(payload, adkFile)         -> throws on the first defect
+    compareFactFindReport(payload, adkFile)   -> the same run as { passed, fieldsChecked,
+                                                 summary, findings[] } for a report or dashboard
+
+  report.passed is false on exactly the runs compareFactFind throws on. NOT ASSESSABLE
+  findings are reported but never fail a run: they are the rows one side is silent about.
 
   Compares fact_find only (not summaryBox / analysis). Per customer: name, DOB, age,
   marital, address, related/unrelated accounts, status/opened/role/parties,
-  support needs, related parties, contact notes.
+  support needs, related parties, contact notes. Both files must quote the same
+  complaintRef, and a customer's accordion being absent is reported separately from
+  it saying "none recorded".
 
-  To add a field later: add it to CustomerFacts, fill both extract functions, assert in compareFactFind.
+  To add a field later: add one row to factfind-map.ts (source paths, UI locator, match type).
+  json-get.ts reads the locators, compare-map.ts matches them. No other file changes.
+  To see what a row resolves to before you add it, use the POC's review dashboard
+  (npm run dashboard) — it is a local review tool and does not need copying over.
 
 Step-2 (Hive, handful of scripts) — optional
   Copy features/ui/factfind/complaints-workflow-a2ui.feature

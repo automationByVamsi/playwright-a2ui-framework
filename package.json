@@ -10,7 +10,9 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "report": "tsx src/agents/complaints-workflow/factfind-report.ts",
+    "dashboard": "streamlit run dashboard/app.py"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.13.0",

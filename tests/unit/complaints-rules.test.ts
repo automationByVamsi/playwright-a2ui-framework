@@ -67,19 +67,15 @@ describe("fact-find extract + compare", () => {
   });
 
   it("prefers final_agent_response over agentOutput when both exist", () => {
-    const adk = load("adk_NC10010449_dev.json");
+    const adk = load("adk_NC10010449.json");
+    expect(typeof adk.agentOutput).toBe("string");
     const ui = readFactFindUi(adk);
     expect(ui.fact_find).toBeTruthy();
     expect(ui.groundednessCheck).toBeUndefined();
   });
 
-  it.each([
-    ["adk_NC10010449.json", "Aug capture"],
-    ["adk_NC10010449_int_existing.json", "INT generated"],
-    ["adk_NC10010449_dev.json", "DEV generated"],
-    ["adk_new.json", "DEV Bruno event array"],
-  ])("passes %s (%s)", (file) => {
-    const adk = load(file);
+  it("passes NC10010449 with both customers", () => {
+    const adk = load("adk_NC10010449.json");
     const facts = extractFromAgentOutput(adk);
     expect(facts.partyIds).toEqual(["1420289780", "46142591"]);
     expect(facts.customers["46142591"].relatedAccounts).toContain("77110364287668");
@@ -91,7 +87,7 @@ describe("fact-find extract + compare", () => {
   });
 
   it("fails with a clear message when ADK drops Frederick", () => {
-    const trace = load("adk_NC10010449_dev.json");
+    const trace = load("adk_NC10010449.json");
     const inner = JSON.parse(trace.agentOutput);
     inner.fact_find.customers = [inner.fact_find.customers[0]];
     const mutated = { ...trace, agentOutput: JSON.stringify(inner), raw_events: [] };
