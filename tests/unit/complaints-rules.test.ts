@@ -24,6 +24,40 @@ describe("fact-find extract + compare", () => {
     expect(facts.customers["46142591"].relatedAccounts).toEqual(["77110364287668"]);
     expect(facts.customers["46142591"].unrelatedAccounts).toContain("77110364291360");
     expect(facts.customers["46142591"].supportNeeds).toEqual([]);
+    expect(facts.customers["46142591"].relatedParties).toEqual([]);
+    expect(facts.customers["46142591"].contactNotes).toEqual([]);
+  });
+
+  it("extracts structured support needs, related parties and contact notes", () => {
+    const facts = extractFromAggregated(load("NC10010556.json"));
+    const customer = facts.customers["68905187"];
+    expect(facts.partyIds).toEqual(["68905187"]);
+    expect(customer.relatedAccounts).toEqual(["77110361403060"]);
+    expect(customer.supportNeeds.map((need) => need.description)).toEqual([
+      "3P - 3rd Party Mandate",
+      "DO NOT USE - Need for Quiet",
+      "Adapt - Longer Appointment",
+      "Domestic/Financial Abuse",
+      "Life Event - Flexibility",
+    ]);
+    expect(customer.relatedParties).toEqual([
+      expect.objectContaining({
+        relatedPartyId: "158010138",
+        relationship: "Attorney / Receiver to",
+        relationshipCode: "007",
+        name: "Mr M Kerch",
+        partyType: "INDIVIDUAL",
+      }),
+    ]);
+    expect(customer.contactNotes).toHaveLength(5);
+    expect(customer.contactNotes[0]).toEqual(
+      expect.objectContaining({
+        classification: "Complaints and Disputes",
+        outcome: "From 3rd Party",
+        method: "In Person",
+        brand: "Lloyds Bank plc",
+      }),
+    );
   });
 
   it("takes the first 14 digits of an account number", () => {
@@ -50,6 +84,10 @@ describe("fact-find extract + compare", () => {
     expect(facts.partyIds).toEqual(["1420289780", "46142591"]);
     expect(facts.customers["46142591"].relatedAccounts).toContain("77110364287668");
     expect(() => compareFactFind(aggregated, adk)).not.toThrow();
+  });
+
+  it("passes NC10010556 structured fact find", () => {
+    expect(() => compareFactFind(load("NC10010556.json"), load("adk_NC10010556.json"))).not.toThrow();
   });
 
   it("fails with a clear message when ADK drops Frederick", () => {

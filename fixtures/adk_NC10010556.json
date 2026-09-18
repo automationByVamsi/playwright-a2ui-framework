@@ -1,0 +1,3079 @@
+{
+    "complaintRef": "NC10010556",
+    "sessionId": "e7840665-484d-42a8-a45f-d6a0dd74a08f",
+    "capturedAt": "2026-09-18T01:05:37.430Z",
+    "request_payload": {
+      "app_name": "complaints_workflow",
+      "user_id": "bdduser",
+      "session_id": "e7840665-484d-42a8-a45f-d6a0dd74a08f",
+      "new_message": {
+        "role": "user",
+        "parts": [
+          {
+            "text": "NC10010556"
+          }
+        ]
+      }
+    },
+    "agentOutput": "{\"summaryBox\": {\"complaintReference\": \"NC10010556\", \"mode\": \"complaint-summary\", \"variation\": \"secondary\", \"content\": [{\"type\": \"heading\", \"text\": \"1. What is the customer unhappy about?\", \"className\": \"ff-summary-line ff-summary-line--heading\"}, {\"type\": \"text\", \"text\": \"- \\u00a310 debit card payment from account on 02/01/2026 while account access was unavailable\", \"className\": \"ff-summary-line\"}, {\"type\": \"text\", \"text\": \"- Perception of fraud regarding the \\u00a310 deduction\", \"className\": \"ff-summary-line\"}, {\"type\": \"text\", \"text\": \"- Being threatened with eviction from the bank for stating the payment was fraud and not Sky Bet\", \"className\": \"ff-summary-line\"}, {\"type\": \"text\", \"text\": \"- Lack of access to benefits money since 30/12/2025\", \"className\": \"ff-summary-line\"}, {\"type\": \"heading\", \"text\": \"2. What is the impact on the customer?\", \"className\": \"ff-summary-line ff-summary-line--heading\"}, {\"type\": \"text\", \"text\": \"- Nearly an hour waiting for benefits money in the bank\", \"className\": \"ff-summary-line\"}, {\"type\": \"text\", \"text\": \"- Embarrassment from having to 'beg' for own benefits back\", \"className\": \"ff-summary-line\"}, {\"type\": \"heading\", \"text\": \"3. What does the customer want us to do to fix the issue?\", \"className\": \"ff-summary-line ff-summary-line--heading\"}, {\"type\": \"text\", \"text\": \"- Explanation for the \\u00a310 deduction\", \"className\": \"ff-summary-line\"}, {\"type\": \"heading\", \"text\": \"4. What actions has the organisation taken so far?\", \"className\": \"ff-summary-line ff-summary-line--heading\"}, {\"type\": \"text\", \"text\": \"- Declined application and withdrew all facilities\", \"className\": \"ff-summary-line\"}, {\"type\": \"text\", \"text\": \"- Instructed branch to remove blocks 646, 659, 623 for specific withdrawals/deposits and close account\", \"className\": \"ff-summary-line\"}, {\"type\": \"text\", \"text\": \"- Decided to close account based on information from credit and fraud agencies\", \"className\": \"ff-summary-line\"}, {\"type\": \"text\", \"text\": \"- Provided reference 180070485 for further questions\", \"className\": \"ff-summary-line\"}, {\"type\": \"heading\", \"text\": \"5. Additional relevant information:\", \"className\": \"ff-summary-line ff-summary-line--heading\"}, {\"type\": \"text\", \"text\": \"- \\u00a310 payment was from DWP benefits money\", \"className\": \"ff-summary-line\"}, {\"type\": \"text\", \"text\": \"- Internal classification of complaint: PCA - Fraud - Debit Card - Card Not Present (CNP), PCA - Fraud - Debit Card - Gambling\", \"className\": \"ff-summary-line\"}, {\"type\": \"text\", \"text\": \"- Account closure decision based on credit and fraud agency information\", \"className\": \"ff-summary-line\"}, {\"type\": \"heading\", \"text\": \"6. Timeline of events:\", \"className\": \"ff-summary-line ff-summary-line--heading\"}, {\"type\": \"text\", \"text\": \"- 30/12/2025: Customer unable to access money\", \"className\": \"ff-summary-line\"}, {\"type\": \"text\", \"text\": \"- 30/12/2025: DEB SKYBET CD 7312 10.00 transaction\", \"className\": \"ff-summary-line\"}, {\"type\": \"text\", \"text\": \"- 31/12/2025 at 04:10:52: App Fraud Team declined application and withdrew all facilities; branch instructed to remove blocks and close account\", \"className\": \"ff-summary-line\"}, {\"type\": \"text\", \"text\": \"- 02/01/2026: \\u00a310 debit card payment (PAY DEBITCARD PAYMENT -10.00)\", \"className\": \"ff-summary-line\"}, {\"type\": \"text\", \"text\": \"- 05/01/2026 at 14:25:27: Account closure decision added to Halifax account; customer advised to call 0345 835 8020 quoting Ref 180070485 for questions\", \"className\": \"ff-summary-line\"}]}, \"analysis\": {\"sections\": [{\"type\": \"accordion\", \"label\": \"Complaint Transactions Summary\", \"content\": [{\"type\": \"summarybox\", \"variant\": \"ai_warning\", \"title\": \"Complaint Transactions - No Data\", \"content\": \"We were unable to find any transactions that match the complaint.\"}], \"defaultOpen\": true}, {\"type\": \"accordion\", \"label\": \"Customer Baseline Summary\", \"content\": [{\"type\": \"summarybox\", \"variant\": \"ai_warning\", \"title\": \"Customer Baseline Summary\", \"content\": \"This card summarises the customer's typical spending behaviour. It analyses transactions from 19/04/2025 to 22/03/2026, covering a period of 11 months and 3 days before the complaint. A total of 37 transactions were analysed.\"}, {\"type\": \"table\", \"columns\": [\"Key\", \"Value\"], \"data\": [{\"Key\": \"Mean Transaction Value\", \"Value\": \"\\u00a3100.84\"}, {\"Key\": \"Typical Spend Range\", \"Value\": \"\\u00a39.1 - \\u00a3200\"}, {\"Key\": \"Top Beneficiary\", \"Value\": \"T PARROTT (15 transactions)\"}, {\"Key\": \"Top Beneficiary Category\", \"Value\": \"Data not available\"}, {\"Key\": \"Top Payment Method\", \"Value\": \"DEB (100%)\"}], \"title\": \"Customer baseline summary key facts\"}, {\"type\": \"accordion\", \"label\": \"Evidence\", \"content\": [{\"type\": \"summarybox\", \"variant\": \"ai_warning\", \"content\": \"Mean Transaction Value\\nThe customer's mean transaction value is \\u00a3100.84, calculated from 37 transactions totalling \\u00a33731.18 over 11 months and 3 days.\\nTypical Spend Range\\nThe customer typically spends between \\u00a39.10 and \\u00a3200.00, a range which covers 80% of the customer's transactions.\"}, {\"type\": \"heading\", \"text\": \"Top beneficiary by frequency\"}, {\"type\": \"table\", \"columns\": [\"Beneficiary\", \"Number of transactions\"], \"data\": [{\"Beneficiary\": \"T PARROTT\", \"Number of transactions\": \"15\"}, {\"Beneficiary\": \"APPLE.COM/BILL\", \"Number of transactions\": \"4\"}, {\"Beneficiary\": \"LOVABLE\", \"Number of transactions\": \"4\"}, {\"Beneficiary\": \"UBER * PENDING\", \"Number of transactions\": \"3\"}, {\"Beneficiary\": \"VALT* YOFOODIE.CO.UK\", \"Number of transactions\": \"3\"}]}, {\"type\": \"heading\", \"text\": \"Top beneficiary categories\"}, {\"type\": \"table\", \"columns\": [\"Beneficiary category\", \"Number of transactions\", \"% of Overall transactions\"], \"data\": [{\"Beneficiary category\": \"Data not available\", \"Number of transactions\": \"-\", \"% of Overall transactions\": \"-\"}]}, {\"type\": \"heading\", \"text\": \"Payment method distribution\"}, {\"type\": \"table\", \"columns\": [\"Payment method\", \"% of Overall transactions\"], \"data\": [{\"Payment method\": \"DEB\", \"% of Overall transactions\": \"100%\"}]}], \"defaultOpen\": false}], \"defaultOpen\": true}, {\"type\": \"accordion\", \"label\": \"Analysis Agent Summary - No Data Received\", \"content\": [{\"type\": \"summarybox\", \"variant\": \"ai_warning\", \"content\": \"The following is a high level overview of key findings from the Analysis Agent. Unfortunately we have not been able to retrieve any complaint transaction data.\"}], \"defaultOpen\": true}]}, \"fact_find\": {\"customers\": [{\"sections\": [{\"type\": \"accordion\", \"label\": \"Personal details\", \"content\": [{\"type\": \"grid\", \"name\": \"Mrs Monica Gabi Adaeze Geller\", \"date_of_birth\": \"19/08/1990\", \"age\": \"36\", \"marital_status\": \"SINGLE\"}, {\"type\": \"divider\"}, {\"type\": \"block\", \"label\": \"Residential address\", \"text\": \"13 Kirkhill,\\nBalmedie,\\nAberdeen,\\nAberdeenshire,\\nAB23 8HN\", \"tag\": \"Recent change of Address\"}, {\"type\": \"divider\"}, {\"type\": \"grid\", \"party_id\": \"68905187\", \"time_with_bank\": \"2 years, 7 months\"}]}, {\"type\": \"accordion\", \"label\": \"Accounts and products\", \"content\": [{\"type\": \"heading\", \"text\": \"Related to the complaint\"}, {\"type\": \"list\", \"items\": [[{\"type\": \"accordion\", \"label\": \"Classic (77110361403060)\", \"content\": [{\"type\": \"grid\", \"account_status\": \"OPEN\", \"account_opened\": \"03/10/2023\", \"customer_role_on_the_product\": \"HOLDER_OF_PRODUCT\", \"product_indicators\": \"None\", \"current_balance\": \"\\u00a3 0.0\", \"balance_after_pending_transactions\": \"\\u00a3 0.0\", \"overdraft_amount\": \"\\u00a3 0.0\", \"final_available_balance\": \"\\u00a3 0.0\", \"parties_on_the_account\": \"1\", \"party_ID_1\": \"68905187\"}]}]]}, {\"type\": \"divider\"}]}, {\"type\": \"accordion\", \"label\": \"Related parties\", \"content\": [{\"type\": \"heading\", \"text\": \"Other related parties\"}, {\"type\": \"list\", \"items\": [[{\"type\": \"grid\", \"relationship\": \"Attorney / Receiver to\", \"relationship_code\": \"007\", \"name\": \"Mr M Kerch\", \"related_party_id\": \"158010138\", \"party_type\": \"INDIVIDUAL\"}]]}]}, {\"type\": \"accordion\", \"label\": \"Support needs\", \"content\": [{\"type\": \"list\", \"items\": [[{\"type\": \"notification\", \"sentiment\": \"warning\", \"heading\": \"Support need: 3P - 3rd Party Mandate\", \"text\": \"Last changed: 13/03/2025 11:19:50\"}, {\"type\": \"grid\", \"date_recorded\": \"13/03/2025 11:19:50\", \"consent_status\": \"Explicit Consent gained by Group process\", \"next_review\": \"Ongoing (no date set)\", \"further_information\": \"dfbn\"}], [{\"type\": \"notification\", \"sentiment\": \"warning\", \"heading\": \"Support need: DO NOT USE - Need for Quiet\", \"text\": \"Last changed: 13/03/2025 11:19:50\"}, {\"type\": \"grid\", \"date_recorded\": \"13/03/2025 11:19:50\", \"consent_status\": \"Explicit Consent gained by Group process\", \"next_review\": \"Ongoing (no date set)\", \"further_information\": \"dfsbeb\"}], [{\"type\": \"notification\", \"sentiment\": \"warning\", \"heading\": \"Support need: Adapt - Longer Appointment\", \"text\": \"Last changed: 11/11/2025 14:20:39\"}, {\"type\": \"grid\", \"date_recorded\": \"11/11/2025 14:20:39\", \"consent_status\": \"Notified by 3rd Party - CARERS Drill\", \"next_review\": \"11/12/2025\", \"further_information\": \"added for expiry test\"}], [{\"type\": \"notification\", \"sentiment\": \"warning\", \"heading\": \"Support need: Domestic/Financial Abuse\", \"text\": \"Last changed: 23/04/2026 11:41:13\"}, {\"type\": \"grid\", \"date_recorded\": \"29/10/2025 10:48:26\", \"consent_status\": \"Explicit Consent gained by Group process\", \"next_review\": \"23/10/2026\", \"further_information\": \"code 40\"}], [{\"type\": \"notification\", \"sentiment\": \"warning\", \"heading\": \"Support need: Life Event - Flexibility\", \"text\": \"Last changed: 23/04/2026 11:41:10\"}, {\"type\": \"grid\", \"date_recorded\": \"23/04/2026 11:41:10\", \"consent_status\": \"Consent not possible - see DPM approval\", \"next_review\": \"23/07/2026\", \"further_information\": \"for notificaion order\"}]]}]}, {\"type\": \"accordion\", \"label\": \"Live chat history\", \"content\": [{\"type\": \"text\", \"text\": \"No live chat history was found for partyID 68905187 (cidPersId 810851686) between 2026-03-08 and 2026-04-07.\"}]}, {\"type\": \"accordion\", \"label\": \"Contact Notes\", \"content\": [{\"type\": \"list\", \"items\": [[{\"type\": \"block\", \"label\": \"Contact date\", \"text\": \"10/09/2026 12:49:00\"}, {\"type\": \"block\", \"label\": \"Contact details\", \"text\": \"Cash Withdrawal for \\u00a311,111.00 in Bolton Hotel Street (770201) . Profile confirmed as a match. Transaction reason: Savings & investments - other (stocks, bonds, pensions). Evidence given: Investment account statement, FCA registration confirmation. Customer happy to proceed: Yes. Verified by Customer Present, Signature Check & NI/EU/EEA driving licence. Colleague declaration: Confirmed. Completed by 7415887. Actions taken: \"}, {\"type\": \"grid\", \"classification\": \"Complaints and Disputes\", \"outcome\": \"From 3rd Party\", \"direction\": \"Internal In\", \"method\": \"In Person\", \"location\": \"LTSB Premises\", \"associated_case_id\": \"0\", \"brand\": \"Lloyds Bank plc\"}], [{\"type\": \"block\", \"label\": \"Contact date\", \"text\": \"10/09/2026 12:43:00\"}, {\"type\": \"block\", \"label\": \"Contact details\", \"text\": \"Cash Withdrawal for \\u00a311,111.00 in Bolton Hotel Street (770201) . Profile confirmed as a match. Transaction reason: Savings & investments - other (stocks, bonds, pensions). Evidence given: Investment account statement, FCA registration confirmation. Customer happy to proceed: Yes. Verified by Customer Present, Signature Check & NI/EU/EEA driving licence. Colleague declaration: Confirmed. Completed by 7415887. Actions taken: \"}, {\"type\": \"grid\", \"classification\": \"Complaints and Disputes\", \"outcome\": \"From 3rd Party\", \"direction\": \"Internal In\", \"method\": \"In Person\", \"location\": \"LTSB Premises\", \"associated_case_id\": \"0\", \"brand\": \"Lloyds Bank plc\"}], [{\"type\": \"block\", \"label\": \"Contact date\", \"text\": \"10/09/2026 06:01:00\"}, {\"type\": \"block\", \"label\": \"Contact details\", \"text\": \"Cash Withdrawal for \\u00a311,111.00 in Bolton Hotel Street (770201) . Profile confirmed as a match. Transaction reason: Invoice. Evidence given: Invoice, Correspondence with supplier. Customer happy to proceed: Yes. Verified by Customer Present, Signature Check, CVP & Blue Disabled Driver's Pass. Colleague declaration: Confirmed. Completed by 7415887. Actions taken: \"}, {\"type\": \"grid\", \"classification\": \"Complaints and Disputes\", \"outcome\": \"From 3rd Party\", \"direction\": \"Internal In\", \"method\": \"In Person\", \"location\": \"LTSB Premises\", \"associated_case_id\": \"0\", \"brand\": \"Lloyds Bank plc\"}], [{\"type\": \"block\", \"label\": \"Contact date\", \"text\": \"09/09/2026 13:57:00\"}, {\"type\": \"block\", \"label\": \"Contact details\", \"text\": \"Cash Withdrawal for \\u00a311,111.00 in Church Street Liverpool Branch. Profile confirmed as a match. Evidence given: No evidence given. Verified by Customer Present, Signature Check & NI/EU/EEA driving licence. Terminated due to browser closed. Actions taken: \"}, {\"type\": \"grid\", \"classification\": \"Complaints and Disputes\", \"outcome\": \"Internal In\", \"direction\": \"Internal In\", \"method\": \"In Person\", \"location\": \"LTSB Premises\", \"associated_case_id\": \"0\", \"brand\": \"Lloyds Bank plc\"}], [{\"type\": \"block\", \"label\": \"Contact date\", \"text\": \"09/09/2026 13:33:00\"}, {\"type\": \"block\", \"label\": \"Contact details\", \"text\": \"Cash Withdrawal for \\u00a311,111.00 in Church Street Liverpool Branch. Profile confirmed as a match. Transaction reason: Invoice. Evidence given: Contract, Correspondence with supplier. Customer happy to proceed: Yes. Verified by Customer Present, Signature Check & NI/EU/EEA driving licence. Colleague declaration: Confirmed. Completed by 7415887. Actions taken: \"}, {\"type\": \"grid\", \"classification\": \"Complaints and Disputes\", \"outcome\": \"From 3rd Party\", \"direction\": \"Internal In\", \"method\": \"In Person\", \"location\": \"LTSB Premises\", \"associated_case_id\": \"0\", \"brand\": \"Lloyds Bank plc\"}]]}]}, {\"type\": \"accordion\", \"label\": \"Card Freeze Audit Events\", \"content\": [{\"type\": \"text\", \"text\": \"No card freeze audit events for this customer.\"}]}]}]}}",
+    "raw_events": [
+      {
+        "invocationId": "e-122cb52b-add8-4b07-9929-cf669a46092d",
+        "author": "complaints_workflow",
+        "actions": {
+          "stateDelta": {
+            "invocation_id": "e-122cb52b-add8-4b07-9929-cf669a46092d",
+            "initialized": true,
+            "interaction_count": 1,
+            "successful_run": false,
+            "complaint_complexity": {
+              "complaint_verbatim_character_count": 0,
+              "complaint_verbatim_listen_character_count": 0,
+              "complaint_verbatim_understand_character_count": 0,
+              "complaint_verbatim_fix_character_count": 0,
+              "complaints_summariser_used": false,
+              "transcription_summariser_used": false,
+              "transcript_conversation_count": 0,
+              "transcript_message_count": 0,
+              "transcript_character_count": 0
+            }
+          },
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "id": "0d67d8c7-1198-4381-a498-dd70ab676322",
+        "timestamp": 1789693464.67192
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "functionCall": {
+                "id": "synthetic-ce4aa06a363249a5a54605852072078c",
+                "args": {
+                  "complaintReference": "NC10010556"
+                },
+                "name": "customer_summary_fetch_step"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "invocationId": "e-122cb52b-add8-4b07-9929-cf669a46092d",
+        "author": "customer_summary_fetch_step",
+        "actions": {
+          "stateDelta": {},
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "id": "c26608f6-5e6a-4232-b2ef-b5c39b528ada",
+        "timestamp": 1789693464.7343686
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "functionResponse": {
+                "id": "synthetic-ce4aa06a363249a5a54605852072078c",
+                "name": "customer_summary_fetch_step",
+                "response": {
+                  "status": "fetched",
+                  "args": {
+                    "complaintReference": "NC10010556"
+                  },
+                  "response": {
+                    "content": [],
+                    "structuredContent": {
+                      "result": {
+                        "value": {
+                          "complaint": {
+                            "item": {
+                              "accountNumber": 77110361403060,
+                              "listenText": "Complaints Undertaken\nThere had been a £10 payment via my debit card today 02.01.2026. I havent used or been able to access my money since 30.12.2025. I want to know how on earth you tbink its acceptable to take £10 out of my account while I have no access to it! This was my beneifts money from DWP. I owe nothing to you, so why has £10 been taken out? I was threatened to be evicted from the bank from saying this was fraud and not sky bet. I was waiting for nearly an hour for my OWN benefits money in the bank. Embarrassing having to beg for my own benefits back. I think this is fraud that £10 has been taken. In all my years of being an adult no bank has ever taken a random £10 out.",
+                              "understandText": "\"05/01/2026\n14:25:27\nStaff only - 646/659/623 added to *halifax* Acc  Acct to be closed, please advise as per the T&C's. We use information from credit & fraud agencies to help make our decision and the application has not been successful. If customer has further questions please call 0345 835 8020 quoting Ref 180070485\n31/12/2025\n04:10:52\n*App Fraud Team*  declined & all facilities withdrawn. Ref 179736026. Branch to remove blocks 646,659,623 for withdrawal of any BGCs, credit balances less than £100 or cash deposits under £2500 and CLOSE ACCOUNT. Please refer FPI, CHQ balances over £100 or cash deposit over £2500 forfurther review on 03458358020, Mon - Fri 8.30-5.30, Sat 9-12*\n\n30/12/2025\nDEB\nSKYBET CD 7312\n10.00\n02/01/2026\nPAY\nDEBITCARD PAYMENT\n-10.00\"",
+                              "fixText": "\"PCA - Fraud - Debit Card - Card Not Present (CNP)\nPCA - Fraud - Debit Card - Gambling\""
+                            },
+                            "dateComplaintWasRaised": "23/03/2026",
+                            "customers": [
+                              {
+                                "partyId": 68905187,
+                                "customerPrimaryIndicator": true
+                              }
+                            ]
+                          },
+                          "customerSummaries": [
+                            {
+                              "party": {
+                                "id": 68905187,
+                                "title": "Mrs",
+                                "foreName": "Monica Gabi Adaeze",
+                                "lastName": "Geller",
+                                "dateOfBirth": "19/08/1990",
+                                "age": 36,
+                                "gender": "FEMALE",
+                                "maritalStatus": "SINGLE",
+                                "partyIdCreatedDate": "01/02/2024",
+                                "supportNeeds": [
+                                  {
+                                    "code": 17,
+                                    "description": "3P - 3rd Party Mandate",
+                                    "display": "",
+                                    "dateForReview": "Ongoing (no date set)",
+                                    "dateEdited": "13/03/2025 11:19:50",
+                                    "dateRecorded": "13/03/2025 11:19:50",
+                                    "dateValidFrom": "13/03/2025",
+                                    "consentCode": "006",
+                                    "consentStatus": "Explicit Consent gained by Group process",
+                                    "furtherInformation": "dfbn"
+                                  },
+                                  {
+                                    "code": 26,
+                                    "description": "DO NOT USE - Need for Quiet",
+                                    "display": "",
+                                    "dateForReview": "Ongoing (no date set)",
+                                    "dateEdited": "13/03/2025 11:19:50",
+                                    "dateRecorded": "13/03/2025 11:19:50",
+                                    "dateValidFrom": "13/03/2025",
+                                    "consentCode": "006",
+                                    "consentStatus": "Explicit Consent gained by Group process",
+                                    "furtherInformation": "dfsbeb"
+                                  },
+                                  {
+                                    "code": 31,
+                                    "description": "Adapt - Longer Appointment",
+                                    "display": "",
+                                    "dateForReview": "11/12/2025",
+                                    "dateEdited": "11/11/2025 14:20:39",
+                                    "dateRecorded": "11/11/2025 14:20:39",
+                                    "dateValidFrom": "11/11/2025",
+                                    "consentCode": "009",
+                                    "consentStatus": "Notified by 3rd Party - CARERS Drill",
+                                    "furtherInformation": "added for expiry test"
+                                  },
+                                  {
+                                    "code": 40,
+                                    "description": "Domestic/Financial Abuse",
+                                    "display": "",
+                                    "dateForReview": "23/10/2026",
+                                    "dateEdited": "23/04/2026 11:41:13",
+                                    "dateRecorded": "29/10/2025 10:48:26",
+                                    "dateValidFrom": "29/10/2025",
+                                    "consentCode": "006",
+                                    "consentStatus": "Explicit Consent gained by Group process",
+                                    "furtherInformation": "code 40"
+                                  },
+                                  {
+                                    "code": 43,
+                                    "description": "Life Event - Flexibility",
+                                    "display": "",
+                                    "dateForReview": "23/07/2026",
+                                    "dateEdited": "23/04/2026 11:41:10",
+                                    "dateRecorded": "23/04/2026 11:41:10",
+                                    "dateValidFrom": "23/04/2026",
+                                    "consentCode": "008",
+                                    "consentStatus": "Consent not possible - see DPM approval",
+                                    "furtherInformation": "for notificaion order"
+                                  }
+                                ],
+                                "categorizedRelatedParties": {
+                                  "trustedRelationships": [],
+                                  "otherRelatedParties": [
+                                    {
+                                      "relatedPartyId": 158010138,
+                                      "relatedPartyType": "INDIVIDUAL",
+                                      "relationshipDescription": "Attorney / Receiver to",
+                                      "relatedPartyRelationshipCode": "007",
+                                      "notificationText": "Attorney / Receiver to Mr M Kerch"
+                                    }
+                                  ]
+                                },
+                                "address": {
+                                  "addressLines": [
+                                    "13 Kirkhill",
+                                    "Balmedie",
+                                    "Aberdeen",
+                                    "Aberdeenshire"
+                                  ],
+                                  "postcode": "AB23 8HN",
+                                  "addressType": "RESIDENTIAL"
+                                },
+                                "relationshipNotifications": [
+                                  {
+                                    "notificationText": "Attorney / Receiver to Mr M Kerch"
+                                  }
+                                ],
+                                "addressNotifications": [
+                                  {
+                                    "notificationText": "Recent change of Address"
+                                  }
+                                ]
+                              },
+                              "accounts": [
+                                {
+                                  "id": "1488479736",
+                                  "accountNumber": "77110361403060",
+                                  "validAccount": true,
+                                  "name": "Classic",
+                                  "marketSector": 0,
+                                  "productType": "CURRENT_ACCOUNT",
+                                  "accountCategory": "Cheque",
+                                  "status": "OPEN",
+                                  "openedDate": "03/10/2023",
+                                  "productID": "77110361403060",
+                                  "isPrimaryRole": true,
+                                  "productHeldRole": "HOLDER_OF_PRODUCT",
+                                  "balance": {
+                                    "currentBalance": 0,
+                                    "balanceAfterPendingTransactions": 0,
+                                    "finalAvailableBalance": 0,
+                                    "overdraftAmount": 0,
+                                    "overdraftCurrencyCode": "GBP",
+                                    "overdraftType": "Pre-Agreed"
+                                  },
+                                  "partyIdentifiers": [
+                                    {
+                                      "partyId": 68905187,
+                                      "cidPrsId": 810851686
+                                    }
+                                  ],
+                                  "partyList": [
+                                    {
+                                      "partyId": "68905187",
+                                      "isPrimaryRole": true,
+                                      "partyResourceType": "IndividualSummary",
+                                      "foreNames": [
+                                        "Monica",
+                                        "Gabi",
+                                        "Adaeze"
+                                      ],
+                                      "lastName": "Geller",
+                                      "initials": [
+                                        "M",
+                                        "G",
+                                        "A"
+                                      ],
+                                      "partyType": "INDIVIDUAL"
+                                    }
+                                  ]
+                                }
+                              ],
+                              "trustedParties": {
+                                "errors": [
+                                  {
+                                    "code": 404,
+                                    "reasonCode": "Not Found",
+                                    "message": "Trusted Party record with Id: 68905187 not found."
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        },
+                        "sources": [
+                          "NUCLEUS",
+                          "COUNTER",
+                          "OCIS"
+                        ]
+                      }
+                    },
+                    "isError": false
+                  }
+                }
+              }
+            }
+          ],
+          "role": "user"
+        },
+        "invocationId": "e-122cb52b-add8-4b07-9929-cf669a46092d",
+        "author": "customer_summary_fetch_step",
+        "actions": {
+          "stateDelta": {
+            "customer_summaries": {
+              "content": [],
+              "structuredContent": {
+                "result": {
+                  "value": {
+                    "complaint": {
+                      "item": {
+                        "accountNumber": 77110361403060,
+                        "listenText": "Complaints Undertaken\nThere had been a £10 payment via my debit card today 02.01.2026. I havent used or been able to access my money since 30.12.2025. I want to know how on earth you tbink its acceptable to take £10 out of my account while I have no access to it! This was my beneifts money from DWP. I owe nothing to you, so why has £10 been taken out? I was threatened to be evicted from the bank from saying this was fraud and not sky bet. I was waiting for nearly an hour for my OWN benefits money in the bank. Embarrassing having to beg for my own benefits back. I think this is fraud that £10 has been taken. In all my years of being an adult no bank has ever taken a random £10 out.",
+                        "understandText": "\"05/01/2026\n14:25:27\nStaff only - 646/659/623 added to *halifax* Acc  Acct to be closed, please advise as per the T&C's. We use information from credit & fraud agencies to help make our decision and the application has not been successful. If customer has further questions please call 0345 835 8020 quoting Ref 180070485\n31/12/2025\n04:10:52\n*App Fraud Team*  declined & all facilities withdrawn. Ref 179736026. Branch to remove blocks 646,659,623 for withdrawal of any BGCs, credit balances less than £100 or cash deposits under £2500 and CLOSE ACCOUNT. Please refer FPI, CHQ balances over £100 or cash deposit over £2500 forfurther review on 03458358020, Mon - Fri 8.30-5.30, Sat 9-12*\n\n30/12/2025\nDEB\nSKYBET CD 7312\n10.00\n02/01/2026\nPAY\nDEBITCARD PAYMENT\n-10.00\"",
+                        "fixText": "\"PCA - Fraud - Debit Card - Card Not Present (CNP)\nPCA - Fraud - Debit Card - Gambling\""
+                      },
+                      "dateComplaintWasRaised": "23/03/2026",
+                      "customers": [
+                        {
+                          "partyId": 68905187,
+                          "customerPrimaryIndicator": true
+                        }
+                      ]
+                    },
+                    "customerSummaries": [
+                      {
+                        "party": {
+                          "id": 68905187,
+                          "title": "Mrs",
+                          "foreName": "Monica Gabi Adaeze",
+                          "lastName": "Geller",
+                          "dateOfBirth": "19/08/1990",
+                          "age": 36,
+                          "gender": "FEMALE",
+                          "maritalStatus": "SINGLE",
+                          "partyIdCreatedDate": "01/02/2024",
+                          "supportNeeds": [
+                            {
+                              "code": 17,
+                              "description": "3P - 3rd Party Mandate",
+                              "display": "",
+                              "dateForReview": "Ongoing (no date set)",
+                              "dateEdited": "13/03/2025 11:19:50",
+                              "dateRecorded": "13/03/2025 11:19:50",
+                              "dateValidFrom": "13/03/2025",
+                              "consentCode": "006",
+                              "consentStatus": "Explicit Consent gained by Group process",
+                              "furtherInformation": "dfbn"
+                            },
+                            {
+                              "code": 26,
+                              "description": "DO NOT USE - Need for Quiet",
+                              "display": "",
+                              "dateForReview": "Ongoing (no date set)",
+                              "dateEdited": "13/03/2025 11:19:50",
+                              "dateRecorded": "13/03/2025 11:19:50",
+                              "dateValidFrom": "13/03/2025",
+                              "consentCode": "006",
+                              "consentStatus": "Explicit Consent gained by Group process",
+                              "furtherInformation": "dfsbeb"
+                            },
+                            {
+                              "code": 31,
+                              "description": "Adapt - Longer Appointment",
+                              "display": "",
+                              "dateForReview": "11/12/2025",
+                              "dateEdited": "11/11/2025 14:20:39",
+                              "dateRecorded": "11/11/2025 14:20:39",
+                              "dateValidFrom": "11/11/2025",
+                              "consentCode": "009",
+                              "consentStatus": "Notified by 3rd Party - CARERS Drill",
+                              "furtherInformation": "added for expiry test"
+                            },
+                            {
+                              "code": 40,
+                              "description": "Domestic/Financial Abuse",
+                              "display": "",
+                              "dateForReview": "23/10/2026",
+                              "dateEdited": "23/04/2026 11:41:13",
+                              "dateRecorded": "29/10/2025 10:48:26",
+                              "dateValidFrom": "29/10/2025",
+                              "consentCode": "006",
+                              "consentStatus": "Explicit Consent gained by Group process",
+                              "furtherInformation": "code 40"
+                            },
+                            {
+                              "code": 43,
+                              "description": "Life Event - Flexibility",
+                              "display": "",
+                              "dateForReview": "23/07/2026",
+                              "dateEdited": "23/04/2026 11:41:10",
+                              "dateRecorded": "23/04/2026 11:41:10",
+                              "dateValidFrom": "23/04/2026",
+                              "consentCode": "008",
+                              "consentStatus": "Consent not possible - see DPM approval",
+                              "furtherInformation": "for notificaion order"
+                            }
+                          ],
+                          "categorizedRelatedParties": {
+                            "trustedRelationships": [],
+                            "otherRelatedParties": [
+                              {
+                                "relatedPartyId": 158010138,
+                                "relatedPartyType": "INDIVIDUAL",
+                                "relationshipDescription": "Attorney / Receiver to",
+                                "relatedPartyRelationshipCode": "007",
+                                "notificationText": "Attorney / Receiver to Mr M Kerch"
+                              }
+                            ]
+                          },
+                          "address": {
+                            "addressLines": [
+                              "13 Kirkhill",
+                              "Balmedie",
+                              "Aberdeen",
+                              "Aberdeenshire"
+                            ],
+                            "postcode": "AB23 8HN",
+                            "addressType": "RESIDENTIAL"
+                          },
+                          "relationshipNotifications": [
+                            {
+                              "notificationText": "Attorney / Receiver to Mr M Kerch"
+                            }
+                          ],
+                          "addressNotifications": [
+                            {
+                              "notificationText": "Recent change of Address"
+                            }
+                          ]
+                        },
+                        "accounts": [
+                          {
+                            "id": "1488479736",
+                            "accountNumber": "77110361403060",
+                            "validAccount": true,
+                            "name": "Classic",
+                            "marketSector": 0,
+                            "productType": "CURRENT_ACCOUNT",
+                            "accountCategory": "Cheque",
+                            "status": "OPEN",
+                            "openedDate": "03/10/2023",
+                            "productID": "77110361403060",
+                            "isPrimaryRole": true,
+                            "productHeldRole": "HOLDER_OF_PRODUCT",
+                            "balance": {
+                              "currentBalance": 0,
+                              "balanceAfterPendingTransactions": 0,
+                              "finalAvailableBalance": 0,
+                              "overdraftAmount": 0,
+                              "overdraftCurrencyCode": "GBP",
+                              "overdraftType": "Pre-Agreed"
+                            },
+                            "partyIdentifiers": [
+                              {
+                                "partyId": 68905187,
+                                "cidPrsId": 810851686
+                              }
+                            ],
+                            "partyList": [
+                              {
+                                "partyId": "68905187",
+                                "isPrimaryRole": true,
+                                "partyResourceType": "IndividualSummary",
+                                "foreNames": [
+                                  "Monica",
+                                  "Gabi",
+                                  "Adaeze"
+                                ],
+                                "lastName": "Geller",
+                                "initials": [
+                                  "M",
+                                  "G",
+                                  "A"
+                                ],
+                                "partyType": "INDIVIDUAL"
+                              }
+                            ]
+                          }
+                        ],
+                        "trustedParties": {
+                          "errors": [
+                            {
+                              "code": 404,
+                              "reasonCode": "Not Found",
+                              "message": "Trusted Party record with Id: 68905187 not found."
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  "sources": [
+                    "NUCLEUS",
+                    "COUNTER",
+                    "OCIS"
+                  ]
+                }
+              },
+              "isError": false
+            }
+          },
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "id": "f2a55de4-ec1e-4153-82cf-5ce3aafd8b33",
+        "timestamp": 1789693466.8191082
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "functionCall": {
+                "id": "synthetic-e5d138f89d7d4f918bb220e8cf8159c5",
+                "args": {},
+                "name": "complaint_summariser_step"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "invocationId": "e-122cb52b-add8-4b07-9929-cf669a46092d",
+        "author": "complaint_summariser_step",
+        "actions": {
+          "stateDelta": {},
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "id": "db1273e9-9d5b-4d4a-91af-5f6f87c96d6b",
+        "timestamp": 1789693466.8903565
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "functionCall": {
+                "id": "synthetic-0ea0a37fec274084971cf8254098100b",
+                "args": {
+                  "partyId": "68905187"
+                },
+                "name": "card_freeze_audit_events_fetch_step"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "invocationId": "e-122cb52b-add8-4b07-9929-cf669a46092d",
+        "author": "card_freeze_audit_events_fetch_step",
+        "actions": {
+          "stateDelta": {},
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "id": "02cf4603-f887-4acf-8f17-90397cc8926e",
+        "timestamp": 1789693467.564135
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "functionCall": {
+                "id": "synthetic-77546e62861c49ef86560e14b41c2dde",
+                "args": {
+                  "cidPersId": "810851686",
+                  "startDate": "2026-03-08",
+                  "endDate": "2026-04-07"
+                },
+                "name": "transcript_fetch_step"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "invocationId": "e-122cb52b-add8-4b07-9929-cf669a46092d",
+        "author": "transcript_fetch_step",
+        "actions": {
+          "stateDelta": {},
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "id": "94644b07-778e-44fb-b725-9577da679b19",
+        "timestamp": 1789693467.592786
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "functionCall": {
+                "id": "synthetic-3e6907caa2324c6ea430dcde3a73196e",
+                "args": {
+                  "partyId": "68905187"
+                },
+                "name": "contact_notes_fetch_step"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "invocationId": "e-122cb52b-add8-4b07-9929-cf669a46092d",
+        "author": "contact_notes_fetch_step",
+        "actions": {
+          "stateDelta": {},
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "id": "4b67bc81-e4b6-4f97-9e65-1b334c394af8",
+        "timestamp": 1789693467.6812115
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "functionResponse": {
+                "id": "synthetic-0ea0a37fec274084971cf8254098100b",
+                "name": "card_freeze_audit_events_fetch_step",
+                "response": {
+                  "status": "fetched",
+                  "args": {
+                    "partyId": "68905187"
+                  },
+                  "response": {
+                    "68905187": {
+                      "lastAuditEvents": [],
+                      "totalAuditEvents": 0,
+                      "auditEventsType": "CARD_FREEZE"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "role": "user"
+        },
+        "invocationId": "e-122cb52b-add8-4b07-9929-cf669a46092d",
+        "author": "card_freeze_audit_events_fetch_step",
+        "actions": {
+          "stateDelta": {
+            "audit_events_by_party_id": {
+              "68905187": {
+                "lastAuditEvents": [],
+                "totalAuditEvents": 0,
+                "auditEventsType": "CARD_FREEZE"
+              }
+            }
+          },
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "id": "8d013c9d-b24c-4c90-b26d-c039f1ba2aa7",
+        "timestamp": 1789693467.9292433
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "functionResponse": {
+                "id": "synthetic-77546e62861c49ef86560e14b41c2dde",
+                "name": "transcript_fetch_step",
+                "response": {
+                  "status": "fetched",
+                  "args": {
+                    "cidPersId": "810851686",
+                    "startDate": "2026-03-08",
+                    "endDate": "2026-04-07"
+                  },
+                  "response": {
+                    "partyID": "68905187",
+                    "fetchArgs": {
+                      "cidPersId": "810851686",
+                      "startDate": "2026-03-08",
+                      "endDate": "2026-04-07"
+                    },
+                    "totalConversations": 0,
+                    "messageThreads": []
+                  }
+                }
+              }
+            }
+          ],
+          "role": "user"
+        },
+        "invocationId": "e-122cb52b-add8-4b07-9929-cf669a46092d",
+        "author": "transcript_fetch_step",
+        "actions": {
+          "stateDelta": {
+            "transcript_histories_by_party_id": {
+              "68905187": {
+                "partyID": "68905187",
+                "fetchArgs": {
+                  "cidPersId": "810851686",
+                  "startDate": "2026-03-08",
+                  "endDate": "2026-04-07"
+                },
+                "totalConversations": 0,
+                "messageThreads": []
+              }
+            }
+          },
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "id": "ecbfe2f9-7580-4572-865e-274981f2cde4",
+        "timestamp": 1789693469.7735646
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "functionCall": {
+                "id": "synthetic-56bf8a811d9841339bb3afac8b8ce06d",
+                "args": {
+                  "party_count": 1
+                },
+                "name": "transcript_summariser_step"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "invocationId": "e-122cb52b-add8-4b07-9929-cf669a46092d",
+        "author": "transcript_summariser_step",
+        "actions": {
+          "stateDelta": {},
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "id": "d3c38d53-9dff-4a4e-b831-167143290b01",
+        "timestamp": 1789693469.8484619
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "functionResponse": {
+                "id": "synthetic-56bf8a811d9841339bb3afac8b8ce06d",
+                "name": "transcript_summariser_step",
+                "response": {
+                  "args": {
+                    "party_ids": [
+                      "68905187"
+                    ]
+                  },
+                  "response": []
+                }
+              }
+            }
+          ],
+          "role": "user"
+        },
+        "invocationId": "e-122cb52b-add8-4b07-9929-cf669a46092d",
+        "author": "transcript_summariser_step",
+        "actions": {
+          "stateDelta": {
+            "transcript_summary_generated": false
+          },
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "id": "9c16cbc7-e655-4c94-951a-96a38700cefc",
+        "timestamp": 1789693469.916143
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "functionResponse": {
+                "id": "synthetic-3e6907caa2324c6ea430dcde3a73196e",
+                "name": "contact_notes_fetch_step",
+                "response": {
+                  "status": "fetched",
+                  "args": {
+                    "partyId": "68905187"
+                  },
+                  "response": {
+                    "68905187": [
+                      {
+                        "partyId": 68905187,
+                        "interactionId": 1111111111113430100,
+                        "contactDate": "10/09/2026",
+                        "contactTime": "12:49:00",
+                        "directionCode": "008",
+                        "directionCodeNarrative": "Internal In",
+                        "outcomeCode": "005",
+                        "outcomeCodeNarrative": "From 3rd Party",
+                        "contactMediumCode": "006",
+                        "contactMediumCodeNarrative": "In Person",
+                        "locationCode": "004",
+                        "locationCodeNarrative": "LTSB Premises",
+                        "classificationCode": "007",
+                        "classificationCodeNarrative": "Complaints and Disputes",
+                        "caseId": 0,
+                        "companyCode": "LTB",
+                        "companyCodeNarrative": "Lloyds Bank plc",
+                        "interactionText": "Cash Withdrawal for £11,111.00 in Bolton Hotel Street (770201) . Profile confirmed as a match. Transaction reason: Savings & investments - other (stocks, bonds, pensions). Evidence given: Investment account statement, FCA registration confirmation. Customer happy to proceed: Yes. Verified by Customer Present, Signature Check & NI/EU/EEA driving licence. Colleague declaration: Confirmed. Completed by 7415887. Actions taken: "
+                      },
+                      {
+                        "partyId": 68905187,
+                        "interactionId": 1111111111113430100,
+                        "contactDate": "10/09/2026",
+                        "contactTime": "12:43:00",
+                        "directionCode": "008",
+                        "directionCodeNarrative": "Internal In",
+                        "outcomeCode": "005",
+                        "outcomeCodeNarrative": "From 3rd Party",
+                        "contactMediumCode": "006",
+                        "contactMediumCodeNarrative": "In Person",
+                        "locationCode": "004",
+                        "locationCodeNarrative": "LTSB Premises",
+                        "classificationCode": "007",
+                        "classificationCodeNarrative": "Complaints and Disputes",
+                        "caseId": 0,
+                        "companyCode": "LTB",
+                        "companyCodeNarrative": "Lloyds Bank plc",
+                        "interactionText": "Cash Withdrawal for £11,111.00 in Bolton Hotel Street (770201) . Profile confirmed as a match. Transaction reason: Savings & investments - other (stocks, bonds, pensions). Evidence given: Investment account statement, FCA registration confirmation. Customer happy to proceed: Yes. Verified by Customer Present, Signature Check & NI/EU/EEA driving licence. Colleague declaration: Confirmed. Completed by 7415887. Actions taken: "
+                      },
+                      {
+                        "partyId": 68905187,
+                        "interactionId": 1111111111113429100,
+                        "contactDate": "10/09/2026",
+                        "contactTime": "06:01:00",
+                        "directionCode": "008",
+                        "directionCodeNarrative": "Internal In",
+                        "outcomeCode": "005",
+                        "outcomeCodeNarrative": "From 3rd Party",
+                        "contactMediumCode": "006",
+                        "contactMediumCodeNarrative": "In Person",
+                        "locationCode": "004",
+                        "locationCodeNarrative": "LTSB Premises",
+                        "classificationCode": "007",
+                        "classificationCodeNarrative": "Complaints and Disputes",
+                        "caseId": 0,
+                        "companyCode": "LTB",
+                        "companyCodeNarrative": "Lloyds Bank plc",
+                        "interactionText": "Cash Withdrawal for £11,111.00 in Bolton Hotel Street (770201) . Profile confirmed as a match. Transaction reason: Invoice. Evidence given: Invoice, Correspondence with supplier. Customer happy to proceed: Yes. Verified by Customer Present, Signature Check, CVP & Blue Disabled Driver's Pass. Colleague declaration: Confirmed. Completed by 7415887. Actions taken: "
+                      },
+                      {
+                        "partyId": 68905187,
+                        "interactionId": 1111111111113429000,
+                        "contactDate": "09/09/2026",
+                        "contactTime": "13:57:00",
+                        "directionCode": "008",
+                        "directionCodeNarrative": "Internal In",
+                        "outcomeCode": "008",
+                        "outcomeCodeNarrative": "Internal In",
+                        "contactMediumCode": "006",
+                        "contactMediumCodeNarrative": "In Person",
+                        "locationCode": "004",
+                        "locationCodeNarrative": "LTSB Premises",
+                        "classificationCode": "007",
+                        "classificationCodeNarrative": "Complaints and Disputes",
+                        "caseId": 0,
+                        "companyCode": "LTB",
+                        "companyCodeNarrative": "Lloyds Bank plc",
+                        "interactionText": "Cash Withdrawal for £11,111.00 in Church Street Liverpool Branch. Profile confirmed as a match. Evidence given: No evidence given. Verified by Customer Present, Signature Check & NI/EU/EEA driving licence. Terminated due to browser closed. Actions taken: "
+                      },
+                      {
+                        "partyId": 68905187,
+                        "interactionId": 1111111111113429000,
+                        "contactDate": "09/09/2026",
+                        "contactTime": "13:33:00",
+                        "directionCode": "008",
+                        "directionCodeNarrative": "Internal In",
+                        "outcomeCode": "005",
+                        "outcomeCodeNarrative": "From 3rd Party",
+                        "contactMediumCode": "006",
+                        "contactMediumCodeNarrative": "In Person",
+                        "locationCode": "004",
+                        "locationCodeNarrative": "LTSB Premises",
+                        "classificationCode": "007",
+                        "classificationCodeNarrative": "Complaints and Disputes",
+                        "caseId": 0,
+                        "companyCode": "LTB",
+                        "companyCodeNarrative": "Lloyds Bank plc",
+                        "interactionText": "Cash Withdrawal for £11,111.00 in Church Street Liverpool Branch. Profile confirmed as a match. Transaction reason: Invoice. Evidence given: Contract, Correspondence with supplier. Customer happy to proceed: Yes. Verified by Customer Present, Signature Check & NI/EU/EEA driving licence. Colleague declaration: Confirmed. Completed by 7415887. Actions taken: "
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          ],
+          "role": "user"
+        },
+        "invocationId": "e-122cb52b-add8-4b07-9929-cf669a46092d",
+        "author": "contact_notes_fetch_step",
+        "actions": {
+          "stateDelta": {
+            "contact_notes_by_party_id": {
+              "68905187": [
+                {
+                  "partyId": 68905187,
+                  "interactionId": 1111111111113430100,
+                  "contactDate": "10/09/2026",
+                  "contactTime": "12:49:00",
+                  "directionCode": "008",
+                  "directionCodeNarrative": "Internal In",
+                  "outcomeCode": "005",
+                  "outcomeCodeNarrative": "From 3rd Party",
+                  "contactMediumCode": "006",
+                  "contactMediumCodeNarrative": "In Person",
+                  "locationCode": "004",
+                  "locationCodeNarrative": "LTSB Premises",
+                  "classificationCode": "007",
+                  "classificationCodeNarrative": "Complaints and Disputes",
+                  "caseId": 0,
+                  "companyCode": "LTB",
+                  "companyCodeNarrative": "Lloyds Bank plc",
+                  "interactionText": "Cash Withdrawal for £11,111.00 in Bolton Hotel Street (770201) . Profile confirmed as a match. Transaction reason: Savings & investments - other (stocks, bonds, pensions). Evidence given: Investment account statement, FCA registration confirmation. Customer happy to proceed: Yes. Verified by Customer Present, Signature Check & NI/EU/EEA driving licence. Colleague declaration: Confirmed. Completed by 7415887. Actions taken: "
+                },
+                {
+                  "partyId": 68905187,
+                  "interactionId": 1111111111113430100,
+                  "contactDate": "10/09/2026",
+                  "contactTime": "12:43:00",
+                  "directionCode": "008",
+                  "directionCodeNarrative": "Internal In",
+                  "outcomeCode": "005",
+                  "outcomeCodeNarrative": "From 3rd Party",
+                  "contactMediumCode": "006",
+                  "contactMediumCodeNarrative": "In Person",
+                  "locationCode": "004",
+                  "locationCodeNarrative": "LTSB Premises",
+                  "classificationCode": "007",
+                  "classificationCodeNarrative": "Complaints and Disputes",
+                  "caseId": 0,
+                  "companyCode": "LTB",
+                  "companyCodeNarrative": "Lloyds Bank plc",
+                  "interactionText": "Cash Withdrawal for £11,111.00 in Bolton Hotel Street (770201) . Profile confirmed as a match. Transaction reason: Savings & investments - other (stocks, bonds, pensions). Evidence given: Investment account statement, FCA registration confirmation. Customer happy to proceed: Yes. Verified by Customer Present, Signature Check & NI/EU/EEA driving licence. Colleague declaration: Confirmed. Completed by 7415887. Actions taken: "
+                },
+                {
+                  "partyId": 68905187,
+                  "interactionId": 1111111111113429100,
+                  "contactDate": "10/09/2026",
+                  "contactTime": "06:01:00",
+                  "directionCode": "008",
+                  "directionCodeNarrative": "Internal In",
+                  "outcomeCode": "005",
+                  "outcomeCodeNarrative": "From 3rd Party",
+                  "contactMediumCode": "006",
+                  "contactMediumCodeNarrative": "In Person",
+                  "locationCode": "004",
+                  "locationCodeNarrative": "LTSB Premises",
+                  "classificationCode": "007",
+                  "classificationCodeNarrative": "Complaints and Disputes",
+                  "caseId": 0,
+                  "companyCode": "LTB",
+                  "companyCodeNarrative": "Lloyds Bank plc",
+                  "interactionText": "Cash Withdrawal for £11,111.00 in Bolton Hotel Street (770201) . Profile confirmed as a match. Transaction reason: Invoice. Evidence given: Invoice, Correspondence with supplier. Customer happy to proceed: Yes. Verified by Customer Present, Signature Check, CVP & Blue Disabled Driver's Pass. Colleague declaration: Confirmed. Completed by 7415887. Actions taken: "
+                },
+                {
+                  "partyId": 68905187,
+                  "interactionId": 1111111111113429000,
+                  "contactDate": "09/09/2026",
+                  "contactTime": "13:57:00",
+                  "directionCode": "008",
+                  "directionCodeNarrative": "Internal In",
+                  "outcomeCode": "008",
+                  "outcomeCodeNarrative": "Internal In",
+                  "contactMediumCode": "006",
+                  "contactMediumCodeNarrative": "In Person",
+                  "locationCode": "004",
+                  "locationCodeNarrative": "LTSB Premises",
+                  "classificationCode": "007",
+                  "classificationCodeNarrative": "Complaints and Disputes",
+                  "caseId": 0,
+                  "companyCode": "LTB",
+                  "companyCodeNarrative": "Lloyds Bank plc",
+                  "interactionText": "Cash Withdrawal for £11,111.00 in Church Street Liverpool Branch. Profile confirmed as a match. Evidence given: No evidence given. Verified by Customer Present, Signature Check & NI/EU/EEA driving licence. Terminated due to browser closed. Actions taken: "
+                },
+                {
+                  "partyId": 68905187,
+                  "interactionId": 1111111111113429000,
+                  "contactDate": "09/09/2026",
+                  "contactTime": "13:33:00",
+                  "directionCode": "008",
+                  "directionCodeNarrative": "Internal In",
+                  "outcomeCode": "005",
+                  "outcomeCodeNarrative": "From 3rd Party",
+                  "contactMediumCode": "006",
+                  "contactMediumCodeNarrative": "In Person",
+                  "locationCode": "004",
+                  "locationCodeNarrative": "LTSB Premises",
+                  "classificationCode": "007",
+                  "classificationCodeNarrative": "Complaints and Disputes",
+                  "caseId": 0,
+                  "companyCode": "LTB",
+                  "companyCodeNarrative": "Lloyds Bank plc",
+                  "interactionText": "Cash Withdrawal for £11,111.00 in Church Street Liverpool Branch. Profile confirmed as a match. Transaction reason: Invoice. Evidence given: Contract, Correspondence with supplier. Customer happy to proceed: Yes. Verified by Customer Present, Signature Check & NI/EU/EEA driving licence. Colleague declaration: Confirmed. Completed by 7415887. Actions taken: "
+                }
+              ]
+            }
+          },
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "id": "0297ff64-afe7-4134-92fb-cbf0f6565547",
+        "timestamp": 1789693469.9407735
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "functionResponse": {
+                "id": "synthetic-e5d138f89d7d4f918bb220e8cf8159c5",
+                "name": "complaint_summariser_step",
+                "response": {
+                  "status": "summarised",
+                  "args": {
+                    "content_text": "Listen: Complaints Undertaken\nThere had been a £10 payment via my debit card today 02.01.2026. I havent used or been able to access my money since 30.12.2025. I want to know how on earth you tbink its acceptable to take £10 out of my account while I have no access to it! This was my beneifts money from DWP. I owe nothing to you, so why has £10 been taken out? I was threatened to be evicted from the bank from saying this was fraud and not sky bet. I was waiting for nearly an hour for my OWN benefits money in the bank. Embarrassing having to beg for my own benefits back. I think this is fraud that £10 has been taken. In all my years of being an adult no bank has ever taken a random £10 out.\nUnderstand: \"05/01/2026\n14:25:27\nStaff only - 646/659/623 added to *halifax* Acc  Acct to be closed, please advise as per the T&C's. We use information from credit & fraud agencies to help make our decision and the application has not been successful. If customer has further questions please call 0345 835 8020 quoting Ref 180070485\n31/12/2025\n04:10:52\n*App Fraud Team*  declined & all facilities withdrawn. Ref 179736026. Branch to remove blocks 646,659,623 for withdrawal of any BGCs, credit balances less than £100 or cash deposits under £2500 and CLOSE ACCOUNT. Please refer FPI, CHQ balances over £100 or cash deposit over £2500 forfurther review on 03458358020, Mon - Fri 8.30-5.30, Sat 9-12*\n\n30/12/2025\nDEB\nSKYBET CD 7312\n10.00\n02/01/2026\nPAY\nDEBITCARD PAYMENT\n-10.00\"\nFix: \"PCA - Fraud - Debit Card - Card Not Present (CNP)\nPCA - Fraud - Debit Card - Gambling\""
+                  },
+                  "response": {
+                    "summary_text": "1. What is the customer unhappy about?\n    - £10 debit card payment from account on 02/01/2026 while account access was unavailable\n    - Perception of fraud regarding the £10 deduction\n    - Being threatened with eviction from the bank for stating the payment was fraud and not Sky Bet\n    - Lack of access to benefits money since 30/12/2025\n2. What is the impact on the customer?\n    - Nearly an hour waiting for benefits money in the bank\n    - Embarrassment from having to \"beg\" for own benefits back\n3. What does the customer want us to do to fix the issue?\n    - Explanation for the £10 deduction\n4. What actions has the organisation taken so far?\n    - Declined application and withdrew all facilities\n    - Instructed branch to remove blocks 646, 659, 623 for specific withdrawals/deposits and close account\n    - Decided to close account based on information from credit and fraud agencies\n    - Provided reference 180070485 for further questions\n5. Additional relevant information:\n    - £10 payment was from DWP benefits money\n    - Internal classification of complaint: PCA - Fraud - Debit Card - Card Not Present (CNP), PCA - Fraud - Debit Card - Gambling\n    - Account closure decision based on credit and fraud agency information\n6. Timeline of events:\n    - 30/12/2025: Customer unable to access money\n    - 30/12/2025: DEB SKYBET CD 7312 10.00 transaction\n    - 31/12/2025 at 04:10:52: App Fraud Team declined application and withdrew all facilities; branch instructed to remove blocks and close account\n    - 02/01/2026: £10 debit card payment (PAY DEBITCARD PAYMENT -10.00)\n    - 05/01/2026 at 14:25:27: Account closure decision added to Halifax account; customer advised to call 0345 835 8020 quoting Ref 180070485 for questions"
+                  }
+                }
+              }
+            }
+          ],
+          "role": "user"
+        },
+        "invocationId": "e-122cb52b-add8-4b07-9929-cf669a46092d",
+        "author": "complaint_summariser_step",
+        "actions": {
+          "stateDelta": {
+            "complaint_summary": "1. What is the customer unhappy about?\n    - £10 debit card payment from account on 02/01/2026 while account access was unavailable\n    - Perception of fraud regarding the £10 deduction\n    - Being threatened with eviction from the bank for stating the payment was fraud and not Sky Bet\n    - Lack of access to benefits money since 30/12/2025\n2. What is the impact on the customer?\n    - Nearly an hour waiting for benefits money in the bank\n    - Embarrassment from having to \"beg\" for own benefits back\n3. What does the customer want us to do to fix the issue?\n    - Explanation for the £10 deduction\n4. What actions has the organisation taken so far?\n    - Declined application and withdrew all facilities\n    - Instructed branch to remove blocks 646, 659, 623 for specific withdrawals/deposits and close account\n    - Decided to close account based on information from credit and fraud agencies\n    - Provided reference 180070485 for further questions\n5. Additional relevant information:\n    - £10 payment was from DWP benefits money\n    - Internal classification of complaint: PCA - Fraud - Debit Card - Card Not Present (CNP), PCA - Fraud - Debit Card - Gambling\n    - Account closure decision based on credit and fraud agency information\n6. Timeline of events:\n    - 30/12/2025: Customer unable to access money\n    - 30/12/2025: DEB SKYBET CD 7312 10.00 transaction\n    - 31/12/2025 at 04:10:52: App Fraud Team declined application and withdrew all facilities; branch instructed to remove blocks and close account\n    - 02/01/2026: £10 debit card payment (PAY DEBITCARD PAYMENT -10.00)\n    - 05/01/2026 at 14:25:27: Account closure decision added to Halifax account; customer advised to call 0345 835 8020 quoting Ref 180070485 for questions",
+            "complaint_summary_generated": true
+          },
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "id": "4f0db1c5-dd05-48cd-8d45-4c49ef1ffa9e",
+        "timestamp": 1789693477.3760343
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "functionCall": {
+                "id": "synthetic-a60f58b0b6884c10aff452c8cd8e9f91",
+                "args": {},
+                "name": "complaint_complexity_step"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "invocationId": "e-122cb52b-add8-4b07-9929-cf669a46092d",
+        "author": "complaint_complexity_step",
+        "actions": {
+          "stateDelta": {},
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "id": "2054ff59-86a6-4106-a753-7f234b9f768b",
+        "timestamp": 1789693477.4469678
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "functionResponse": {
+                "id": "synthetic-a60f58b0b6884c10aff452c8cd8e9f91",
+                "name": "complaint_complexity_step",
+                "response": {
+                  "status": "updated",
+                  "complaint_verbatim_character_count": 1541,
+                  "transcript_conversation_count": 0,
+                  "transcript_message_count": 0
+                }
+              }
+            }
+          ],
+          "role": "user"
+        },
+        "invocationId": "e-122cb52b-add8-4b07-9929-cf669a46092d",
+        "author": "complaint_complexity_step",
+        "actions": {
+          "stateDelta": {
+            "complaint_complexity": {
+              "complaint_verbatim_character_count": 1541,
+              "complaint_verbatim_listen_character_count": 689,
+              "complaint_verbatim_understand_character_count": 765,
+              "complaint_verbatim_fix_character_count": 87,
+              "complaints_summariser_used": true,
+              "transcription_summariser_used": false,
+              "transcript_conversation_count": 0,
+              "transcript_message_count": 0,
+              "transcript_character_count": 0
+            }
+          },
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "id": "1f5a9dff-4310-4d16-8347-cfe1bf74693b",
+        "timestamp": 1789693477.5098662
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "functionCall": {
+                "id": "synthetic-ecde2ef919534b6894be6cdc886cfaec",
+                "args": {},
+                "name": "analysis_workflow"
+              }
+            }
+          ],
+          "role": "model"
+        },
+        "invocationId": "e-122cb52b-add8-4b07-9929-cf669a46092d",
+        "author": "sequential_workflow_tool_call_wrapper",
+        "actions": {
+          "stateDelta": {},
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "id": "2c027e07-64e9-4015-81a2-d3083b1245b5",
+        "timestamp": 1789693477.5753794
+      },
+      {
+        "invocationId": "e-122cb52b-add8-4b07-9929-cf669a46092d",
+        "author": "sequential_workflow",
+        "actions": {
+          "stateDelta": {
+            "fact_find_output": {
+              "analysis_input": {
+                "complaint_verbatim": "Complaints Undertaken\nThere had been a £10 payment via my debit card today 02.01.2026. I havent used or been able to access my money since 30.12.2025. I want to know how on earth you tbink its acceptable to take £10 out of my account while I have no access to it! This was my beneifts money from DWP. I owe nothing to you, so why has £10 been taken out? I was threatened to be evicted from the bank from saying this was fraud and not sky bet. I was waiting for nearly an hour for my OWN benefits money in the bank. Embarrassing having to beg for my own benefits back. I think this is fraud that £10 has been taken. In all my years of being an adult no bank has ever taken a random £10 out.",
+                "account_number": "77110361403060",
+                "date_complaint_was_raised": "23/03/2026"
+              }
+            }
+          },
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "id": "e6978934-095f-432e-a2ce-8ffd27975b43",
+        "timestamp": 1789693477.637214
+      },
+      {
+        "invocationId": "e-122cb52b-add8-4b07-9929-cf669a46092d",
+        "author": "input_normaliser",
+        "actions": {
+          "stateDelta": {
+            "pii_redaction_result": {
+              "redacted": false,
+              "labels": []
+            },
+            "prompt_injection_result": {
+              "sanitised": false,
+              "matches": []
+            },
+            "input_normaliser_passthrough": {
+              "complaint_verbatim": "Complaints Undertaken\nThere had been a £10 payment via my debit card today 02.01.2026. I havent used or been able to access my money since 30.12.2025. I want to know how on earth you tbink its acceptable to take £10 out of my account while I have no access to it! This was my beneifts money from DWP. I owe nothing to you, so why has £10 been taken out? I was threatened to be evicted from the bank from saying this was fraud and not sky bet. I was waiting for nearly an hour for my OWN benefits money in the bank. Embarrassing having to beg for my own benefits back. I think this is fraud that £10 has been taken. In all my years of being an adult no bank has ever taken a random £10 out.",
+              "accountid": [
+                "fdcd343ed6ed5beb9410228f2530e1f0d73309cb4bb3d11df92c88cb0cb0901f0fc88dac55264f66c895a3a0ea7c37cbba9beb6900519c8346e1b5adb33e7323"
+              ],
+              "date_complaint_was_raised": "20260323",
+              "customer_details": {}
+            }
+          },
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "id": "2b94204a-9fa7-4bd4-8731-3647bcdeddc0",
+        "timestamp": 1789693477.7205455
+      },
+      {
+        "invocationId": "e-122cb52b-add8-4b07-9929-cf669a46092d",
+        "author": "input_normaliser",
+        "actions": {
+          "stateDelta": {
+            "normalised_complaint": {
+              "complaint_verbatim": "Complaints Undertaken\nThere had been a £10 payment via my debit card today 02.01.2026. I havent used or been able to access my money since 30.12.2025. I want to know how on earth you tbink its acceptable to take £10 out of my account while I have no access to it! This was my beneifts money from DWP. I owe nothing to you, so why has £10 been taken out? I was threatened to be evicted from the bank from saying this was fraud and not sky bet. I was waiting for nearly an hour for my OWN benefits money in the bank. Embarrassing having to beg for my own benefits back. I think this is fraud that £10 has been taken. In all my years of being an adult no bank has ever taken a random £10 out.",
+              "accountid": [
+                "fdcd343ed6ed5beb9410228f2530e1f0d73309cb4bb3d11df92c88cb0cb0901f0fc88dac55264f66c895a3a0ea7c37cbba9beb6900519c8346e1b5adb33e7323"
+              ],
+              "date_complaint_was_raised": "20260323",
+              "customer_details": {},
+              "customer_claims": [
+                "There had been a £10 payment via my debit card today 02.01.2026.",
+                "I havent used or been able to access my money since 30.12.2025.",
+                "I want to know how on earth you tbink its acceptable to take £10 out of my account while I have no access to it!",
+                "This was my beneifts money from DWP.",
+                "I owe nothing to you",
+                "why has £10 been taken out?",
+                "I was threatened to be evicted from the bank from saying this was fraud and not sky bet.",
+                "I was waiting for nearly an hour for my OWN benefits money in the bank.",
+                "Embarrassing having to beg for my own benefits back.",
+                "I think this is fraud that £10 has been taken.",
+                "In all my years of being an adult no bank has ever taken a random £10 out."
+              ],
+              "complaint_related_transactions": [
+                {
+                  "date_of_transaction": {
+                    "value": "today 02.01.2026",
+                    "range_start": "2026-01-02",
+                    "range_end": "2026-01-02",
+                    "confidence": "High"
+                  },
+                  "time_of_transaction": null,
+                  "amount_of_transaction": {
+                    "value": "£10",
+                    "range_start": 10,
+                    "range_end": 10,
+                    "confidence": "High"
+                  },
+                  "name_of_beneficiary": null
+                }
+              ]
+            }
+          },
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "id": "bb21c78e-ea69-44f7-b973-0241336f7d13",
+        "timestamp": 1789693492.9866903
+      },
+      {
+        "invocationId": "e-122cb52b-add8-4b07-9929-cf669a46092d",
+        "author": "value",
+        "actions": {
+          "stateDelta": {
+            "unusually_high_single_value_validation_result": {
+              "guardrail_result": {
+                "guardrail_status": "SKIPPED",
+                "guardrail_reason": "Validation skipped: No narrative or ledger to validate - skipped"
+              },
+              "full_result": null
+            },
+            "strictly_increasing_value_validation_result": {
+              "guardrail_result": {
+                "guardrail_status": "SKIPPED",
+                "guardrail_reason": "Validation skipped: No narrative or ledger to validate - skipped"
+              },
+              "full_result": null
+            },
+            "unusually_high_single_value_card": {
+              "capability": "Unusually High Single Value",
+              "sub_agent": "Value",
+              "triggered": false,
+              "layer_1_insight_card": {
+                "pattern_detected": "Unusually High Transaction Value",
+                "why_unusual": "No complaint transactions were identified as unusually high.",
+                "applies_to": {
+                  "description": "No complaint transactions triggered this insight",
+                  "columns": [],
+                  "rows": []
+                }
+              },
+              "layer_2_evidence": {
+                "explanation": "The tool output for unusually_high_single_value was empty, indicating no findings.",
+                "tables": [
+                  {
+                    "title": "Complaint transactions ranked by value (up to top 50)",
+                    "note": "If more than 50, display '50+'",
+                    "columns": [
+                      "Rank",
+                      "Transaction ID",
+                      "Date",
+                      "Amount",
+                      "Beneficiary",
+                      "Last 4 Digits of PAN",
+                      "Payment Method",
+                      "Complaint-related?"
+                    ],
+                    "rows": []
+                  }
+                ]
+              },
+              "layer_3_method": {
+                "rationale": "This check ranks the customer's highest-value transactions over the lookback window and highlights whether any complaint-period transactions appear among them.",
+                "rules": [
+                  "We rank all transactions by value and show the top 10, highlighting any that are complaint-related",
+                  "Any remaining complaint-related transactions are also ranked by value, up to the 50th position. Transactions ranked beyond 50 are shown as '50+'"
+                ],
+                "thresholds": "Not applicable"
+              },
+              "layer_4_raw_data": "TODO",
+              "guardrail_result": {
+                "guardrail_status": "SKIPPED",
+                "guardrail_reason": "Validation skipped: No narrative or ledger to validate - skipped"
+              }
+            },
+            "strictly_increasing_value_card": {
+              "capability": "Strictly Increasing Value",
+              "sub_agent": "Value",
+              "triggered": false,
+              "layer_1_insight_card": {
+                "pattern_detected": "Strictly Increasing Value",
+                "why_unusual": "No groups of strictly increasing payments were identified.",
+                "applies_to": {
+                  "description": "No complaint transactions triggered this insight",
+                  "columns": [],
+                  "rows": []
+                }
+              },
+              "layer_2_evidence": {
+                "explanation": "The tool output for strictly_increasing_value was empty, indicating that no sequence of 3 or more consecutively increasing complaint payments was found.",
+                "tables": []
+              },
+              "layer_3_method": {
+                "rationale": "This check identifies whether complaint transactions show a pattern of consistently rising values — either to the same beneficiary or across different beneficiaries.",
+                "rules": [
+                  "Complaint transactions are sorted by date and checked for rising value patterns",
+                  "Same beneficiary: payments to the same beneficiary are compared in date order — if each is higher than the last, they form a rising cluster",
+                  "Across beneficiaries: all complaint transactions are considered in date order — transactions that don't fit the rising pattern are skipped, and the remaining rising sequence is reported (e.g. £10, £20, £10, £40, £50 → cluster of 4: £10, £20, £40, £50)",
+                  "Each qualifying cluster is reported separately"
+                ],
+                "thresholds": {
+                  "minimum_sequence_length": "3 consecutive increasing payments"
+                }
+              },
+              "layer_4_raw_data": "TODO",
+              "guardrail_result": {
+                "guardrail_status": "SKIPPED",
+                "guardrail_reason": "Validation skipped: No narrative or ledger to validate - skipped"
+              }
+            }
+          },
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "branch": "analysis_workflow.value",
+        "id": "4a54e0d1-409b-4a13-908c-35c7da34fa06",
+        "timestamp": 1789693523.6647067
+      },
+      {
+        "invocationId": "e-122cb52b-add8-4b07-9929-cf669a46092d",
+        "author": "payment_characteristics",
+        "actions": {
+          "stateDelta": {
+            "double_payment_validation_result": {
+              "guardrail_result": {
+                "guardrail_status": "SKIPPED",
+                "guardrail_reason": "Validation skipped: No narrative or ledger to validate - skipped"
+              },
+              "full_result": null
+            },
+            "unusual_payment_validation_result": {
+              "guardrail_result": {
+                "guardrail_status": "SKIPPED",
+                "guardrail_reason": "Validation skipped: No narrative or ledger to validate - skipped"
+              },
+              "full_result": null
+            },
+            "double_payments_card": {
+              "capability": "Double Payments",
+              "sub_agent": "Characteristics",
+              "triggered": false,
+              "layer_1_insight_card": {
+                "pattern_detected": "No duplicate payments identified",
+                "why_unusual": "The double_payments result was unavailable.",
+                "applies_to": {
+                  "description": "Complaint transactions that triggered the insight",
+                  "columns": [
+                    "Duplicate Pair No.",
+                    "Transaction ID",
+                    "Date",
+                    "Time",
+                    "Amount",
+                    "Beneficiary"
+                  ],
+                  "rows": []
+                }
+              },
+              "layer_2_evidence": {
+                "explanation": "The double_payments result was unavailable.",
+                "tables": [],
+                "summary_metrics": {
+                  "complaint_transactions_flagged": 0,
+                  "potential_duplicate_transaction_pairs": 0,
+                  "total_duplicate_amount": "Not applicable"
+                },
+                "baseline_comparison": "N/A"
+              },
+              "layer_3_method": {
+                "rationale": "This check identifies potential duplicate payments.",
+                "rules": [
+                  "Each complaint transaction is compared against eligible baseline or extended-window transactions within a ±1 day window to find possible duplicates",
+                  "Transactions are compared on amount, beneficiary, payment method, and how close together they occurred",
+                  "If two transactions are sufficiently similar across these attributes, they are flagged as a potential duplicate pair",
+                  "Each flagged pair is reported with full details and a similarity score"
+                ],
+                "thresholds": {
+                  "time_window": "±1 day",
+                  "similarity_attributes": "Amount, beneficiary, payment method, and timing proximity",
+                  "similarity_score_threshold": "0.90"
+                }
+              },
+              "layer_4_raw_data": "TODO",
+              "guardrail_result": {
+                "guardrail_status": "SKIPPED",
+                "guardrail_reason": "Validation skipped: No narrative or ledger to validate - skipped"
+              }
+            },
+            "unusual_payment_method_card": {
+              "capability": "Unusual payment method",
+              "sub_agent": "Characteristics",
+              "triggered": false,
+              "layer_1_insight_card": {
+                "pattern_detected": "",
+                "why_unusual": "The unusual_payment_method result was unavailable.",
+                "applies_to": {
+                  "description": "0 complaint transactions use a unusual payment method",
+                  "columns": [
+                    "Transaction ID",
+                    "Date",
+                    "Amount",
+                    "Beneficiary",
+                    "Payment method",
+                    "Last four digits of PAN"
+                  ],
+                  "rows": []
+                }
+              },
+              "layer_2_evidence": {
+                "explanation": "The unusual_payment_method result was unavailable.",
+                "tables": [
+                  {
+                    "title": "Payment method usage across complaint transactions",
+                    "columns": [
+                      "Payment method",
+                      "Complaint related",
+                      "Historical uses (lookback)",
+                      "Unusual?"
+                    ],
+                    "rows": []
+                  }
+                ],
+                "summary_metrics": {
+                  "complaint_transactions_flagged": 0,
+                  "complaint_payment_methods_checked": 0,
+                  "unusual_payment_methods": 0
+                }
+              },
+              "layer_3_method": {
+                "rationale": "This check identifies whether any complaint transactions used a payment method the customer has not used before.",
+                "rules": [
+                  "Each complaint transaction's payment method is compared against the customer's transaction history over the lookback period",
+                  "If a method has never been used in that period, it is flagged as unusual",
+                  "If a method has been used before, we show when it was first and last used, how often, and the total value sent via that method"
+                ],
+                "thresholds": {
+                  "unusual": "A payment method is unusual if it has zero uses during the lookback window"
+                }
+              },
+              "layer_4_raw_data": "TODO",
+              "guardrail_result": {
+                "guardrail_status": "SKIPPED",
+                "guardrail_reason": "Validation skipped: No narrative or ledger to validate - skipped"
+              }
+            }
+          },
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "branch": "analysis_workflow.payment_characteristics",
+        "id": "033f6b34-ef98-46ae-8963-3b2d32b33a3c",
+        "timestamp": 1789693524.313547
+      },
+      {
+        "invocationId": "e-122cb52b-add8-4b07-9929-cf669a46092d",
+        "author": "timing",
+        "actions": {
+          "stateDelta": {
+            "quick_succession_validation_result": {
+              "guardrail_result": {
+                "guardrail_status": "SKIPPED",
+                "guardrail_reason": "Validation skipped: No narrative or ledger to validate - skipped"
+              },
+              "full_result": null
+            },
+            "unusual_timing_validation_result": {
+              "guardrail_result": {
+                "guardrail_status": "SKIPPED",
+                "guardrail_reason": "Validation skipped: No narrative or ledger to validate - skipped"
+              },
+              "full_result": null
+            },
+            "quick_succession_card": {
+              "capability": "Quick Succession Payments",
+              "sub_agent": "Timing",
+              "triggered": false,
+              "layer_1_insight_card": {
+                "pattern_detected": "Quick succession payments",
+                "why_unusual": "The quick succession tool result was unavailable, so no quick succession groups could be identified.",
+                "applies_to": {
+                  "description": "No complaint transactions triggered this insight",
+                  "columns": [],
+                  "rows": []
+                }
+              },
+              "layer_2_evidence": {
+                "explanation": "The quick succession tool result was unavailable, therefore no assessment of quick succession patterns could be made.",
+                "tables": [
+                  {
+                    "title": "Complaint transactions assessed for quick succession",
+                    "columns": [
+                      "Order",
+                      "Transaction ID",
+                      "Date",
+                      "Time",
+                      "Amount",
+                      "Time gap",
+                      "Beneficiary",
+                      "Cluster Formed?"
+                    ],
+                    "rows": []
+                  }
+                ]
+              },
+              "layer_3_method": {
+                "rationale": "This check identifies whether complaint transactions were made in quick succession — a pattern that can indicate fraud or coercion. Transactions are assessed against two timeframes: hourly and weekly.",
+                "rules": [
+                  "We look at all complaint transactions in chronological order and group them based on how close together they are",
+                  "Hourly clusters: 3 or more payments where each payment is within 1 hour of the previous one",
+                  "Weekly clusters: 4 or more payments where each payment is within 7 days of the previous one",
+                  "A transaction can appear in both an hourly and a weekly cluster, as the two checks run independently"
+                ],
+                "thresholds": {
+                  "hourly": "At least 3 payments within 1 hour; if more follow, each must be no more than 1 hour after the last",
+                  "weekly": "At least 4 payments within 7 days; if more follow, each must be no more than 7 days after the last"
+                }
+              },
+              "layer_4_raw_data": "TODO",
+              "guardrail_result": {
+                "guardrail_status": "SKIPPED",
+                "guardrail_reason": "Validation skipped: No narrative or ledger to validate - skipped"
+              }
+            },
+            "unusual_timing_card": {
+              "capability": "Unusual timing of payment(s)",
+              "sub_agent": "Timing",
+              "triggered": false,
+              "layer_1_insight_card": {
+                "pattern_detected": "Unusual timing of payment(s)",
+                "why_unusual": "The unusual timing tool result was unavailable, so no transactions were flagged for unusual timing.",
+                "applies_to": {
+                  "description": "No complaint transactions triggered this insight",
+                  "columns": [],
+                  "rows": []
+                }
+              },
+              "layer_2_evidence": {
+                "explanation": "The unusual timing tool result was unavailable, therefore no assessment of unusual timing could be made.",
+                "tables": [
+                  {
+                    "title": "Complaint transactions — timing assessment",
+                    "columns": [
+                      "Transaction ID",
+                      "Date",
+                      "Time",
+                      "Value",
+                      "Beneficiary",
+                      "Last four digits of PAN",
+                      "Payment method",
+                      "Hour Bucket",
+                      "Historical Activity",
+                      "Unusual?"
+                    ],
+                    "rows": []
+                  }
+                ],
+                "summary_metrics": {
+                  "complaint_transactions": 0,
+                  "flagged_as_unusual": 0,
+                  "typical_active_hours": "N/A"
+                }
+              },
+              "layer_3_method": {
+                "rationale": "This check identifies whether the complaint transaction was made a time of day when the customer rarely or never makes payments. We look at the transaction history with the lookback window to understand when this customer typically transacts, then show any complaint transaction that falls outside their normal active hours.",
+                "rules": [
+                  "We analyse all of the customer's transactions over the past 13 months to build a picture of when they normally make payments throughout the day",
+                  "We smooth this picture so that nearby times of day are treated similarly. For example, if a customer is active at 10:00, they are also considered active at 10:15",
+                  "Activity around midnight is treated as continuous, so a customer active at 23:30 is also considered active at 00:15",
+                  "Each complaint transaction is checked against this profile - if it was made during a time of day where the customer has very little or no history of transacting, it is shown as unusual"
+                ],
+                "thresholds": {
+                  "time_resolution": "Activity is assessed in 30-minute windows",
+                  "unusual": "A transaction is flagged if it falls in a time period that accounts for less than ~1% of the customer's historical activity",
+                  "note": "Exact threshold is subject to calibration during testing"
+                }
+              },
+              "layer_4_raw_data": "TODO",
+              "guardrail_result": {
+                "guardrail_status": "SKIPPED",
+                "guardrail_reason": "Validation skipped: No narrative or ledger to validate - skipped"
+              }
+            }
+          },
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "branch": "analysis_workflow.timing",
+        "id": "7e7a1bac-9223-44f3-87ee-ca9f1e284c39",
+        "timestamp": 1789693524.8071952
+      },
+      {
+        "invocationId": "e-122cb52b-add8-4b07-9929-cf669a46092d",
+        "author": "beneficiary",
+        "actions": {
+          "stateDelta": {
+            "unusual_beneficiary_category_validation_result": {
+              "guardrail_result": {
+                "guardrail_status": "SKIPPED",
+                "guardrail_reason": "Validation skipped: No AI narrative generated or No tool triggered"
+              },
+              "full_result": null
+            },
+            "unusual_beneficiary_category_card": {
+              "capability": "Unusual Beneficiary Category",
+              "sub_agent": "Beneficiary",
+              "triggered": false,
+              "layer_1_insight_card": {
+                "pattern_detected": "Unusual beneficiary category",
+                "why_unusual": "The unusual beneficiary category analysis result was unavailable.",
+                "applies_to": {
+                  "description": "No complaint transactions triggered this insight",
+                  "columns": [],
+                  "rows": []
+                }
+              },
+              "layer_2_evidence": {
+                "explanation": "The tool output for unusual beneficiary category analysis was not provided.",
+                "tables": [
+                  {
+                    "title": "Recipient category usage across complaint transactions",
+                    "columns": [
+                      "Beneficiary Category",
+                      "Historical Uses (Lookback)",
+                      "Unusual?"
+                    ],
+                    "rows": []
+                  }
+                ]
+              },
+              "layer_3_method": {
+                "rationale": "This check identifies whether any complaint transactions were sent to a beneficiary category the customer has not used before.",
+                "rules": [
+                  "Each complaint transaction's beneficiary category is compared against the customer's transaction history over the lookback period",
+                  "If a category has never been used in that period, it is flagged as unusual",
+                  "If a category has been used before, we show how often it was used, along with total and average value"
+                ],
+                "thresholds": {
+                  "unusual": "A category is unusual if it has zero uses during the lookback period"
+                }
+              },
+              "layer_4_raw_data": "TODO",
+              "guardrail_result": {
+                "guardrail_status": "SKIPPED",
+                "guardrail_reason": "Validation skipped: No AI narrative generated or No tool triggered"
+              }
+            },
+            "unusually_high_cumulative_value_validation_result": {
+              "guardrail_result": {
+                "guardrail_status": "SKIPPED",
+                "guardrail_reason": "Validation skipped: No AI narrative generated or No tool triggered"
+              },
+              "full_result": null
+            },
+            "unusually_high_cumulative_value_card": {
+              "capability": "Unusually High Cumulative Value by Beneficiary",
+              "sub_agent": "Beneficiary",
+              "triggered": false,
+              "layer_1_insight_card": {
+                "pattern_detected": "Unusually high cumulative value by beneficiary",
+                "why_unusual": "The unusually high cumulative value analysis result was unavailable.",
+                "applies_to": {
+                  "description": "No complaint transactions triggered this insight",
+                  "columns": [],
+                  "rows": []
+                }
+              },
+              "layer_2_evidence": {
+                "explanation": "The tool output for unusually high cumulative value analysis was not provided.",
+                "tables": [
+                  {
+                    "title": "Beneficiary assessment against HEC thresholds",
+                    "columns": [
+                      "Beneficiary",
+                      "No. of Transactions",
+                      "Total Amount",
+                      "Duration (Days)",
+                      "Failed HEC?"
+                    ],
+                    "rows": []
+                  }
+                ]
+              },
+              "layer_3_method": {
+                "rationale": "This check assesses whether the total amount sent to a single recipient during the complaint period meets the criteria for an unusually high cumulative value, as defined by the HEC.",
+                "rules": [
+                  "Complaint-period transactions are grouped by recipient",
+                  "For each recipient, we assess three factors: the number of payments, the total value sent, and how many days the payments span",
+                  "If all three factors meet or exceed the thresholds, that recipient cluster has failed the HEC"
+                ],
+                "thresholds": {
+                  "payment_count": "20 or more",
+                  "total_value": "£12,000 or more",
+                  "duration": "90 days or more between the first and last payment"
+                }
+              },
+              "layer_4_raw_data": "TODO",
+              "guardrail_result": {
+                "guardrail_status": "SKIPPED",
+                "guardrail_reason": "Validation skipped: No AI narrative generated or No tool triggered"
+              }
+            },
+            "multiple_attempts_to_same_beneficiary_validation_result": {
+              "guardrail_result": {
+                "guardrail_status": "SKIPPED",
+                "guardrail_reason": "Validation skipped: No AI narrative generated or No tool triggered"
+              },
+              "full_result": null
+            },
+            "multiple_attempts_to_same_beneficiary_card": {
+              "capability": "Multiple Attempts (Success/Fail) to Same Beneficiary",
+              "sub_agent": "Beneficiary",
+              "triggered": false,
+              "layer_1_insight_card": {
+                "pattern_detected": "Multiple payment attempts to the same beneficiary",
+                "why_unusual": "The multiple attempts to same beneficiary analysis result was unavailable.",
+                "applies_to": {
+                  "description": "No complaint transactions triggered this insight",
+                  "columns": [],
+                  "rows": []
+                }
+              },
+              "layer_2_evidence": {
+                "explanation": "The tool output for multiple attempts to same beneficiary analysis was not provided.",
+                "tables": [
+                  {
+                    "title": "Complaint transactions assessed for repeat attempts",
+                    "columns": [
+                      "Date",
+                      "Transaction ID",
+                      "Beneficiary",
+                      "Amount",
+                      "Outcome",
+                      "Cluster Formed?"
+                    ],
+                    "rows": []
+                  }
+                ]
+              },
+              "layer_3_method": {
+                "rationale": "This check surfaces cases where multiple payment attempts — both successful and failed — were made to the same beneficiary in a short time window.",
+                "rules": [
+                  "Complaint transactions are grouped by beneficiary and sorted by time",
+                  "Payments to the same beneficiary that occur within 12 hours of each other are grouped together",
+                  "If there is a gap of more than 12 hours between payments to the same beneficiary, a new group begins",
+                  "Each group shows the full sequence of attempts, including whether each succeeded or failed"
+                ],
+                "thresholds": {
+                  "minimum_cluster_size": "At least 2 payments in a group to qualify as a repeat-attempt cluster",
+                  "maximum_gap_within_group": "12 hours between consecutive payments to the same beneficiary"
+                }
+              },
+              "layer_4_raw_data": "TODO",
+              "guardrail_result": {
+                "guardrail_status": "SKIPPED",
+                "guardrail_reason": "Validation skipped: No AI narrative generated or No tool triggered"
+              }
+            }
+          },
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "branch": "analysis_workflow.beneficiary",
+        "id": "797adf7a-cd05-4b7f-9e9d-a14a9c0f0526",
+        "timestamp": 1789693528.7897139
+      },
+      {
+        "invocationId": "e-122cb52b-add8-4b07-9929-cf669a46092d",
+        "author": "sequential_workflow_tool_call_wrapper",
+        "actions": {
+          "stateDelta": {
+            "all_cards": [
+              {
+                "capability": "Complaint Transactions Summary",
+                "sub_agent": "Complaint",
+                "triggered": "summary",
+                "layer_1_insight_card": {
+                  "pattern_detected": "Complaint Transactions - No Data",
+                  "why_unusual": "We were unable to find any transactions that match the complaint.",
+                  "note": null,
+                  "applies_to": {
+                    "description": null,
+                    "columns": [],
+                    "rows": []
+                  }
+                },
+                "layer_2_evidence": {},
+                "layer_3_method": {},
+                "layer_4_raw_data": "TODO",
+                "guardrail_result": {
+                  "guardrail_status": "SKIPPED",
+                  "guardrail_reason": "Validation skipped: No complaint transactions matched — skipping validation"
+                }
+              },
+              {
+                "capability": "Customer Baseline Summary",
+                "sub_agent": "Baseline",
+                "triggered": "summary",
+                "layer_1_insight_card": {
+                  "pattern_detected": "Customer Baseline Summary",
+                  "why_unusual": "This card summarises the customer's typical spending behaviour. It analyses transactions from 19/04/2025 to 22/03/2026, covering a period of 11 months and 3 days before the complaint. A total of 37 transactions were analysed.",
+                  "applies_to": {
+                    "description": "Customer baseline summary key facts",
+                    "columns": [
+                      "Key",
+                      "Value"
+                    ],
+                    "rows": [
+                      {
+                        "Key": "Mean Transaction Value",
+                        "Value": "£100.84"
+                      },
+                      {
+                        "Key": "Typical Spend Range",
+                        "Value": "£9.1 - £200"
+                      },
+                      {
+                        "Key": "Top Beneficiary",
+                        "Value": "T PARROTT (15 transactions)"
+                      },
+                      {
+                        "Key": "Top Beneficiary Category",
+                        "Value": "Data not available"
+                      },
+                      {
+                        "Key": "Top Payment Method",
+                        "Value": "DEB (100%)"
+                      }
+                    ]
+                  }
+                },
+                "layer_2_evidence": {
+                  "explanation": [
+                    "Mean Transaction Value\nThe customer's mean transaction value is £100.84, calculated from 37 transactions totalling £3731.18 over 11 months and 3 days.",
+                    "Typical Spend Range\nThe customer typically spends between £9.10 and £200.00, a range which covers 80% of the customer's transactions."
+                  ],
+                  "tables": [
+                    {
+                      "title": "Top beneficiary by frequency",
+                      "columns": [
+                        "Beneficiary",
+                        "Number of transactions"
+                      ],
+                      "rows": [
+                        {
+                          "Beneficiary": "T PARROTT",
+                          "Number of Transactions": 15
+                        },
+                        {
+                          "Beneficiary": "APPLE.COM/BILL",
+                          "Number of Transactions": 4
+                        },
+                        {
+                          "Beneficiary": "LOVABLE",
+                          "Number of Transactions": 4
+                        },
+                        {
+                          "Beneficiary": "UBER * PENDING",
+                          "Number of Transactions": 3
+                        },
+                        {
+                          "Beneficiary": "VALT* YOFOODIE.CO.UK",
+                          "Number of Transactions": 3
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Top beneficiary categories",
+                      "columns": [
+                        "Beneficiary category",
+                        "Number of transactions",
+                        "% of Overall transactions"
+                      ],
+                      "rows": [
+                        {
+                          "Beneficiary Category": "Data not available",
+                          "Number of Transactions": "-",
+                          "% of Overall Transactions": "-"
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Payment method distribution",
+                      "columns": [
+                        "Payment method",
+                        "% of Overall transactions"
+                      ],
+                      "rows": [
+                        {
+                          "Payment Method": "DEB",
+                          "% of Overall Transactions": "100%"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "layer_3_method": {},
+                "baseline_metadata": {
+                  "sufficiency_state": "partial_data",
+                  "baseline_range": {
+                    "from": "19/04/2025",
+                    "to": "22/03/2026"
+                  },
+                  "baseline_range_days": 337,
+                  "baseline_range_window": "11 months and 3 days",
+                  "available_key_points": 4,
+                  "unavailable_key_points": 1,
+                  "customer_name": "Data not available"
+                },
+                "guardrail_result": {
+                  "guardrail_status": "NEEDS_REVIEW",
+                  "guardrail_reason": "source_reference_grounding: All cited tool IDs are grounded in executed tool calls.; facts_ledger: Facts Ledger validation found 2 failure(s) and 0 contradiction(s): claim='£3731.18': AMOUNT '£3731.18 ' (value=3731.18) not found in Facts Ledger.; claim='80%': PERCENTAGE '80%' (value=80.0) not found in Facts Ledger.; llm_as_a_judge_groundedness: All claims made in the narrative are fully grounded in the provided agent summaries. No hallucinations or inconsistencies regarding detected/not-detected labels were found."
+                }
+              },
+              {
+                "capability": "Unusual Beneficiary Category",
+                "sub_agent": "Beneficiary",
+                "triggered": false,
+                "layer_1_insight_card": {
+                  "pattern_detected": "Unusual beneficiary category",
+                  "why_unusual": "The unusual beneficiary category analysis result was unavailable.",
+                  "applies_to": {
+                    "description": "No complaint transactions triggered this insight",
+                    "columns": [],
+                    "rows": []
+                  }
+                },
+                "layer_2_evidence": {
+                  "explanation": "The tool output for unusual beneficiary category analysis was not provided.",
+                  "tables": [
+                    {
+                      "title": "Recipient category usage across complaint transactions",
+                      "columns": [
+                        "Beneficiary Category",
+                        "Historical Uses (Lookback)",
+                        "Unusual?"
+                      ],
+                      "rows": []
+                    }
+                  ]
+                },
+                "layer_3_method": {
+                  "rationale": "This check identifies whether any complaint transactions were sent to a beneficiary category the customer has not used before.",
+                  "rules": [
+                    "Each complaint transaction's beneficiary category is compared against the customer's transaction history over the lookback period",
+                    "If a category has never been used in that period, it is flagged as unusual",
+                    "If a category has been used before, we show how often it was used, along with total and average value"
+                  ],
+                  "thresholds": {
+                    "unusual": "A category is unusual if it has zero uses during the lookback period"
+                  }
+                },
+                "layer_4_raw_data": "TODO",
+                "guardrail_result": {
+                  "guardrail_status": "SKIPPED",
+                  "guardrail_reason": "Validation skipped: No AI narrative generated or No tool triggered"
+                }
+              },
+              {
+                "capability": "Unusually High Cumulative Value by Beneficiary",
+                "sub_agent": "Beneficiary",
+                "triggered": false,
+                "layer_1_insight_card": {
+                  "pattern_detected": "Unusually high cumulative value by beneficiary",
+                  "why_unusual": "The unusually high cumulative value analysis result was unavailable.",
+                  "applies_to": {
+                    "description": "No complaint transactions triggered this insight",
+                    "columns": [],
+                    "rows": []
+                  }
+                },
+                "layer_2_evidence": {
+                  "explanation": "The tool output for unusually high cumulative value analysis was not provided.",
+                  "tables": [
+                    {
+                      "title": "Beneficiary assessment against HEC thresholds",
+                      "columns": [
+                        "Beneficiary",
+                        "No. of Transactions",
+                        "Total Amount",
+                        "Duration (Days)",
+                        "Failed HEC?"
+                      ],
+                      "rows": []
+                    }
+                  ]
+                },
+                "layer_3_method": {
+                  "rationale": "This check assesses whether the total amount sent to a single recipient during the complaint period meets the criteria for an unusually high cumulative value, as defined by the HEC.",
+                  "rules": [
+                    "Complaint-period transactions are grouped by recipient",
+                    "For each recipient, we assess three factors: the number of payments, the total value sent, and how many days the payments span",
+                    "If all three factors meet or exceed the thresholds, that recipient cluster has failed the HEC"
+                  ],
+                  "thresholds": {
+                    "payment_count": "20 or more",
+                    "total_value": "£12,000 or more",
+                    "duration": "90 days or more between the first and last payment"
+                  }
+                },
+                "layer_4_raw_data": "TODO",
+                "guardrail_result": {
+                  "guardrail_status": "SKIPPED",
+                  "guardrail_reason": "Validation skipped: No AI narrative generated or No tool triggered"
+                }
+              },
+              {
+                "capability": "Multiple Attempts (Success/Fail) to Same Beneficiary",
+                "sub_agent": "Beneficiary",
+                "triggered": false,
+                "layer_1_insight_card": {
+                  "pattern_detected": "Multiple payment attempts to the same beneficiary",
+                  "why_unusual": "The multiple attempts to same beneficiary analysis result was unavailable.",
+                  "applies_to": {
+                    "description": "No complaint transactions triggered this insight",
+                    "columns": [],
+                    "rows": []
+                  }
+                },
+                "layer_2_evidence": {
+                  "explanation": "The tool output for multiple attempts to same beneficiary analysis was not provided.",
+                  "tables": [
+                    {
+                      "title": "Complaint transactions assessed for repeat attempts",
+                      "columns": [
+                        "Date",
+                        "Transaction ID",
+                        "Beneficiary",
+                        "Amount",
+                        "Outcome",
+                        "Cluster Formed?"
+                      ],
+                      "rows": []
+                    }
+                  ]
+                },
+                "layer_3_method": {
+                  "rationale": "This check surfaces cases where multiple payment attempts — both successful and failed — were made to the same beneficiary in a short time window.",
+                  "rules": [
+                    "Complaint transactions are grouped by beneficiary and sorted by time",
+                    "Payments to the same beneficiary that occur within 12 hours of each other are grouped together",
+                    "If there is a gap of more than 12 hours between payments to the same beneficiary, a new group begins",
+                    "Each group shows the full sequence of attempts, including whether each succeeded or failed"
+                  ],
+                  "thresholds": {
+                    "minimum_cluster_size": "At least 2 payments in a group to qualify as a repeat-attempt cluster",
+                    "maximum_gap_within_group": "12 hours between consecutive payments to the same beneficiary"
+                  }
+                },
+                "layer_4_raw_data": "TODO",
+                "guardrail_result": {
+                  "guardrail_status": "SKIPPED",
+                  "guardrail_reason": "Validation skipped: No AI narrative generated or No tool triggered"
+                }
+              },
+              {
+                "capability": "Double Payments",
+                "sub_agent": "Characteristics",
+                "triggered": false,
+                "layer_1_insight_card": {
+                  "pattern_detected": "No duplicate payments identified",
+                  "why_unusual": "The double_payments result was unavailable.",
+                  "applies_to": {
+                    "description": "Complaint transactions that triggered the insight",
+                    "columns": [
+                      "Duplicate Pair No.",
+                      "Transaction ID",
+                      "Date",
+                      "Time",
+                      "Amount",
+                      "Beneficiary"
+                    ],
+                    "rows": []
+                  }
+                },
+                "layer_2_evidence": {
+                  "explanation": "The double_payments result was unavailable.",
+                  "tables": [],
+                  "summary_metrics": {
+                    "complaint_transactions_flagged": 0,
+                    "potential_duplicate_transaction_pairs": 0,
+                    "total_duplicate_amount": "Not applicable"
+                  },
+                  "baseline_comparison": "N/A"
+                },
+                "layer_3_method": {
+                  "rationale": "This check identifies potential duplicate payments.",
+                  "rules": [
+                    "Each complaint transaction is compared against eligible baseline or extended-window transactions within a ±1 day window to find possible duplicates",
+                    "Transactions are compared on amount, beneficiary, payment method, and how close together they occurred",
+                    "If two transactions are sufficiently similar across these attributes, they are flagged as a potential duplicate pair",
+                    "Each flagged pair is reported with full details and a similarity score"
+                  ],
+                  "thresholds": {
+                    "time_window": "±1 day",
+                    "similarity_attributes": "Amount, beneficiary, payment method, and timing proximity",
+                    "similarity_score_threshold": "0.90"
+                  }
+                },
+                "layer_4_raw_data": "TODO",
+                "guardrail_result": {
+                  "guardrail_status": "SKIPPED",
+                  "guardrail_reason": "Validation skipped: No narrative or ledger to validate - skipped"
+                }
+              },
+              {
+                "capability": "Unusual payment method",
+                "sub_agent": "Characteristics",
+                "triggered": false,
+                "layer_1_insight_card": {
+                  "pattern_detected": "",
+                  "why_unusual": "The unusual_payment_method result was unavailable.",
+                  "applies_to": {
+                    "description": "0 complaint transactions use a unusual payment method",
+                    "columns": [
+                      "Transaction ID",
+                      "Date",
+                      "Amount",
+                      "Beneficiary",
+                      "Payment method",
+                      "Last four digits of PAN"
+                    ],
+                    "rows": []
+                  }
+                },
+                "layer_2_evidence": {
+                  "explanation": "The unusual_payment_method result was unavailable.",
+                  "tables": [
+                    {
+                      "title": "Payment method usage across complaint transactions",
+                      "columns": [
+                        "Payment method",
+                        "Complaint related",
+                        "Historical uses (lookback)",
+                        "Unusual?"
+                      ],
+                      "rows": []
+                    }
+                  ],
+                  "summary_metrics": {
+                    "complaint_transactions_flagged": 0,
+                    "complaint_payment_methods_checked": 0,
+                    "unusual_payment_methods": 0
+                  }
+                },
+                "layer_3_method": {
+                  "rationale": "This check identifies whether any complaint transactions used a payment method the customer has not used before.",
+                  "rules": [
+                    "Each complaint transaction's payment method is compared against the customer's transaction history over the lookback period",
+                    "If a method has never been used in that period, it is flagged as unusual",
+                    "If a method has been used before, we show when it was first and last used, how often, and the total value sent via that method"
+                  ],
+                  "thresholds": {
+                    "unusual": "A payment method is unusual if it has zero uses during the lookback window"
+                  }
+                },
+                "layer_4_raw_data": "TODO",
+                "guardrail_result": {
+                  "guardrail_status": "SKIPPED",
+                  "guardrail_reason": "Validation skipped: No narrative or ledger to validate - skipped"
+                }
+              },
+              {
+                "capability": "Quick Succession Payments",
+                "sub_agent": "Timing",
+                "triggered": false,
+                "layer_1_insight_card": {
+                  "pattern_detected": "Quick succession payments",
+                  "why_unusual": "The quick succession tool result was unavailable, so no quick succession groups could be identified.",
+                  "applies_to": {
+                    "description": "No complaint transactions triggered this insight",
+                    "columns": [],
+                    "rows": []
+                  }
+                },
+                "layer_2_evidence": {
+                  "explanation": "The quick succession tool result was unavailable, therefore no assessment of quick succession patterns could be made.",
+                  "tables": [
+                    {
+                      "title": "Complaint transactions assessed for quick succession",
+                      "columns": [
+                        "Order",
+                        "Transaction ID",
+                        "Date",
+                        "Time",
+                        "Amount",
+                        "Time gap",
+                        "Beneficiary",
+                        "Cluster Formed?"
+                      ],
+                      "rows": []
+                    }
+                  ]
+                },
+                "layer_3_method": {
+                  "rationale": "This check identifies whether complaint transactions were made in quick succession — a pattern that can indicate fraud or coercion. Transactions are assessed against two timeframes: hourly and weekly.",
+                  "rules": [
+                    "We look at all complaint transactions in chronological order and group them based on how close together they are",
+                    "Hourly clusters: 3 or more payments where each payment is within 1 hour of the previous one",
+                    "Weekly clusters: 4 or more payments where each payment is within 7 days of the previous one",
+                    "A transaction can appear in both an hourly and a weekly cluster, as the two checks run independently"
+                  ],
+                  "thresholds": {
+                    "hourly": "At least 3 payments within 1 hour; if more follow, each must be no more than 1 hour after the last",
+                    "weekly": "At least 4 payments within 7 days; if more follow, each must be no more than 7 days after the last"
+                  }
+                },
+                "layer_4_raw_data": "TODO",
+                "guardrail_result": {
+                  "guardrail_status": "SKIPPED",
+                  "guardrail_reason": "Validation skipped: No narrative or ledger to validate - skipped"
+                }
+              },
+              {
+                "capability": "Unusual timing of payment(s)",
+                "sub_agent": "Timing",
+                "triggered": false,
+                "layer_1_insight_card": {
+                  "pattern_detected": "Unusual timing of payment(s)",
+                  "why_unusual": "The unusual timing tool result was unavailable, so no transactions were flagged for unusual timing.",
+                  "applies_to": {
+                    "description": "No complaint transactions triggered this insight",
+                    "columns": [],
+                    "rows": []
+                  }
+                },
+                "layer_2_evidence": {
+                  "explanation": "The unusual timing tool result was unavailable, therefore no assessment of unusual timing could be made.",
+                  "tables": [
+                    {
+                      "title": "Complaint transactions — timing assessment",
+                      "columns": [
+                        "Transaction ID",
+                        "Date",
+                        "Time",
+                        "Value",
+                        "Beneficiary",
+                        "Last four digits of PAN",
+                        "Payment method",
+                        "Hour Bucket",
+                        "Historical Activity",
+                        "Unusual?"
+                      ],
+                      "rows": []
+                    }
+                  ],
+                  "summary_metrics": {
+                    "complaint_transactions": 0,
+                    "flagged_as_unusual": 0,
+                    "typical_active_hours": "N/A"
+                  }
+                },
+                "layer_3_method": {
+                  "rationale": "This check identifies whether the complaint transaction was made a time of day when the customer rarely or never makes payments. We look at the transaction history with the lookback window to understand when this customer typically transacts, then show any complaint transaction that falls outside their normal active hours.",
+                  "rules": [
+                    "We analyse all of the customer's transactions over the past 13 months to build a picture of when they normally make payments throughout the day",
+                    "We smooth this picture so that nearby times of day are treated similarly. For example, if a customer is active at 10:00, they are also considered active at 10:15",
+                    "Activity around midnight is treated as continuous, so a customer active at 23:30 is also considered active at 00:15",
+                    "Each complaint transaction is checked against this profile - if it was made during a time of day where the customer has very little or no history of transacting, it is shown as unusual"
+                  ],
+                  "thresholds": {
+                    "time_resolution": "Activity is assessed in 30-minute windows",
+                    "unusual": "A transaction is flagged if it falls in a time period that accounts for less than ~1% of the customer's historical activity",
+                    "note": "Exact threshold is subject to calibration during testing"
+                  }
+                },
+                "layer_4_raw_data": "TODO",
+                "guardrail_result": {
+                  "guardrail_status": "SKIPPED",
+                  "guardrail_reason": "Validation skipped: No narrative or ledger to validate - skipped"
+                }
+              },
+              {
+                "capability": "Unusually High Single Value",
+                "sub_agent": "Value",
+                "triggered": false,
+                "layer_1_insight_card": {
+                  "pattern_detected": "Unusually High Transaction Value",
+                  "why_unusual": "No complaint transactions were identified as unusually high.",
+                  "applies_to": {
+                    "description": "No complaint transactions triggered this insight",
+                    "columns": [],
+                    "rows": []
+                  }
+                },
+                "layer_2_evidence": {
+                  "explanation": "The tool output for unusually_high_single_value was empty, indicating no findings.",
+                  "tables": [
+                    {
+                      "title": "Complaint transactions ranked by value (up to top 50)",
+                      "note": "If more than 50, display '50+'",
+                      "columns": [
+                        "Rank",
+                        "Transaction ID",
+                        "Date",
+                        "Amount",
+                        "Beneficiary",
+                        "Last 4 Digits of PAN",
+                        "Payment Method",
+                        "Complaint-related?"
+                      ],
+                      "rows": []
+                    }
+                  ]
+                },
+                "layer_3_method": {
+                  "rationale": "This check ranks the customer's highest-value transactions over the lookback window and highlights whether any complaint-period transactions appear among them.",
+                  "rules": [
+                    "We rank all transactions by value and show the top 10, highlighting any that are complaint-related",
+                    "Any remaining complaint-related transactions are also ranked by value, up to the 50th position. Transactions ranked beyond 50 are shown as '50+'"
+                  ],
+                  "thresholds": "Not applicable"
+                },
+                "layer_4_raw_data": "TODO",
+                "guardrail_result": {
+                  "guardrail_status": "SKIPPED",
+                  "guardrail_reason": "Validation skipped: No narrative or ledger to validate - skipped"
+                }
+              },
+              {
+                "capability": "Strictly Increasing Value",
+                "sub_agent": "Value",
+                "triggered": false,
+                "layer_1_insight_card": {
+                  "pattern_detected": "Strictly Increasing Value",
+                  "why_unusual": "No groups of strictly increasing payments were identified.",
+                  "applies_to": {
+                    "description": "No complaint transactions triggered this insight",
+                    "columns": [],
+                    "rows": []
+                  }
+                },
+                "layer_2_evidence": {
+                  "explanation": "The tool output for strictly_increasing_value was empty, indicating that no sequence of 3 or more consecutively increasing complaint payments was found.",
+                  "tables": []
+                },
+                "layer_3_method": {
+                  "rationale": "This check identifies whether complaint transactions show a pattern of consistently rising values — either to the same beneficiary or across different beneficiaries.",
+                  "rules": [
+                    "Complaint transactions are sorted by date and checked for rising value patterns",
+                    "Same beneficiary: payments to the same beneficiary are compared in date order — if each is higher than the last, they form a rising cluster",
+                    "Across beneficiaries: all complaint transactions are considered in date order — transactions that don't fit the rising pattern are skipped, and the remaining rising sequence is reported (e.g. £10, £20, £10, £40, £50 → cluster of 4: £10, £20, £40, £50)",
+                    "Each qualifying cluster is reported separately"
+                  ],
+                  "thresholds": {
+                    "minimum_sequence_length": "3 consecutive increasing payments"
+                  }
+                },
+                "layer_4_raw_data": "TODO",
+                "guardrail_result": {
+                  "guardrail_status": "SKIPPED",
+                  "guardrail_reason": "Validation skipped: No narrative or ledger to validate - skipped"
+                }
+              },
+              {
+                "capability": "Analysis Agent Summary - No Data Received",
+                "sub_agent": "Analysis",
+                "triggered": "summary",
+                "layer_1_insight_card": {
+                  "why_unusual": "The following is a high level overview of key findings from the Analysis Agent. Unfortunately we have not been able to retrieve any complaint transaction data.",
+                  "note": "Lookback Window: 13 Months | Source System: ATIES",
+                  "applies_to": {
+                    "description": "The tool categories that have been triggered",
+                    "columns": [
+                      "Bucket",
+                      "Description",
+                      "Triggered Tools"
+                    ],
+                    "rows": []
+                  }
+                },
+                "layer_2_evidence": {},
+                "layer_3_method": {},
+                "layer_4_raw_data": "TODO",
+                "guardrail_result": {
+                  "guardrail_status": "SKIPPED",
+                  "guardrail_reason": "Validation skipped: No complaint transaction data received — guardrail not applicable"
+                }
+              }
+            ]
+          },
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "id": "c023db17-7a58-4a38-b51b-960cf4cf062a",
+        "timestamp": 1789693536.7858667
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "functionResponse": {
+                "id": "synthetic-ecde2ef919534b6894be6cdc886cfaec",
+                "name": "analysis_workflow",
+                "response": {
+                  "status": "completed"
+                }
+              }
+            }
+          ],
+          "role": "user"
+        },
+        "invocationId": "e-122cb52b-add8-4b07-9929-cf669a46092d",
+        "author": "sequential_workflow_tool_call_wrapper",
+        "actions": {
+          "stateDelta": {},
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "id": "95b5c614-65d6-454c-b540-f43b2d142a63",
+        "timestamp": 1789693536.8725495
+      },
+      {
+        "content": {
+          "parts": [
+            {
+              "text": "{\"summaryBox\": {\"complaintReference\": \"NC10010556\", \"mode\": \"complaint-summary\", \"variation\": \"secondary\", \"content\": [{\"type\": \"heading\", \"text\": \"1. What is the customer unhappy about?\", \"className\": \"ff-summary-line ff-summary-line--heading\"}, {\"type\": \"text\", \"text\": \"- \\u00a310 debit card payment from account on 02/01/2026 while account access was unavailable\", \"className\": \"ff-summary-line\"}, {\"type\": \"text\", \"text\": \"- Perception of fraud regarding the \\u00a310 deduction\", \"className\": \"ff-summary-line\"}, {\"type\": \"text\", \"text\": \"- Being threatened with eviction from the bank for stating the payment was fraud and not Sky Bet\", \"className\": \"ff-summary-line\"}, {\"type\": \"text\", \"text\": \"- Lack of access to benefits money since 30/12/2025\", \"className\": \"ff-summary-line\"}, {\"type\": \"heading\", \"text\": \"2. What is the impact on the customer?\", \"className\": \"ff-summary-line ff-summary-line--heading\"}, {\"type\": \"text\", \"text\": \"- Nearly an hour waiting for benefits money in the bank\", \"className\": \"ff-summary-line\"}, {\"type\": \"text\", \"text\": \"- Embarrassment from having to 'beg' for own benefits back\", \"className\": \"ff-summary-line\"}, {\"type\": \"heading\", \"text\": \"3. What does the customer want us to do to fix the issue?\", \"className\": \"ff-summary-line ff-summary-line--heading\"}, {\"type\": \"text\", \"text\": \"- Explanation for the \\u00a310 deduction\", \"className\": \"ff-summary-line\"}, {\"type\": \"heading\", \"text\": \"4. What actions has the organisation taken so far?\", \"className\": \"ff-summary-line ff-summary-line--heading\"}, {\"type\": \"text\", \"text\": \"- Declined application and withdrew all facilities\", \"className\": \"ff-summary-line\"}, {\"type\": \"text\", \"text\": \"- Instructed branch to remove blocks 646, 659, 623 for specific withdrawals/deposits and close account\", \"className\": \"ff-summary-line\"}, {\"type\": \"text\", \"text\": \"- Decided to close account based on information from credit and fraud agencies\", \"className\": \"ff-summary-line\"}, {\"type\": \"text\", \"text\": \"- Provided reference 180070485 for further questions\", \"className\": \"ff-summary-line\"}, {\"type\": \"heading\", \"text\": \"5. Additional relevant information:\", \"className\": \"ff-summary-line ff-summary-line--heading\"}, {\"type\": \"text\", \"text\": \"- \\u00a310 payment was from DWP benefits money\", \"className\": \"ff-summary-line\"}, {\"type\": \"text\", \"text\": \"- Internal classification of complaint: PCA - Fraud - Debit Card - Card Not Present (CNP), PCA - Fraud - Debit Card - Gambling\", \"className\": \"ff-summary-line\"}, {\"type\": \"text\", \"text\": \"- Account closure decision based on credit and fraud agency information\", \"className\": \"ff-summary-line\"}, {\"type\": \"heading\", \"text\": \"6. Timeline of events:\", \"className\": \"ff-summary-line ff-summary-line--heading\"}, {\"type\": \"text\", \"text\": \"- 30/12/2025: Customer unable to access money\", \"className\": \"ff-summary-line\"}, {\"type\": \"text\", \"text\": \"- 30/12/2025: DEB SKYBET CD 7312 10.00 transaction\", \"className\": \"ff-summary-line\"}, {\"type\": \"text\", \"text\": \"- 31/12/2025 at 04:10:52: App Fraud Team declined application and withdrew all facilities; branch instructed to remove blocks and close account\", \"className\": \"ff-summary-line\"}, {\"type\": \"text\", \"text\": \"- 02/01/2026: \\u00a310 debit card payment (PAY DEBITCARD PAYMENT -10.00)\", \"className\": \"ff-summary-line\"}, {\"type\": \"text\", \"text\": \"- 05/01/2026 at 14:25:27: Account closure decision added to Halifax account; customer advised to call 0345 835 8020 quoting Ref 180070485 for questions\", \"className\": \"ff-summary-line\"}]}, \"analysis\": {\"sections\": [{\"type\": \"accordion\", \"label\": \"Complaint Transactions Summary\", \"content\": [{\"type\": \"summarybox\", \"variant\": \"ai_warning\", \"title\": \"Complaint Transactions - No Data\", \"content\": \"We were unable to find any transactions that match the complaint.\"}], \"defaultOpen\": true}, {\"type\": \"accordion\", \"label\": \"Customer Baseline Summary\", \"content\": [{\"type\": \"summarybox\", \"variant\": \"ai_warning\", \"title\": \"Customer Baseline Summary\", \"content\": \"This card summarises the customer's typical spending behaviour. It analyses transactions from 19/04/2025 to 22/03/2026, covering a period of 11 months and 3 days before the complaint. A total of 37 transactions were analysed.\"}, {\"type\": \"table\", \"columns\": [\"Key\", \"Value\"], \"data\": [{\"Key\": \"Mean Transaction Value\", \"Value\": \"\\u00a3100.84\"}, {\"Key\": \"Typical Spend Range\", \"Value\": \"\\u00a39.1 - \\u00a3200\"}, {\"Key\": \"Top Beneficiary\", \"Value\": \"T PARROTT (15 transactions)\"}, {\"Key\": \"Top Beneficiary Category\", \"Value\": \"Data not available\"}, {\"Key\": \"Top Payment Method\", \"Value\": \"DEB (100%)\"}], \"title\": \"Customer baseline summary key facts\"}, {\"type\": \"accordion\", \"label\": \"Evidence\", \"content\": [{\"type\": \"summarybox\", \"variant\": \"ai_warning\", \"content\": \"Mean Transaction Value\\nThe customer's mean transaction value is \\u00a3100.84, calculated from 37 transactions totalling \\u00a33731.18 over 11 months and 3 days.\\nTypical Spend Range\\nThe customer typically spends between \\u00a39.10 and \\u00a3200.00, a range which covers 80% of the customer's transactions.\"}, {\"type\": \"heading\", \"text\": \"Top beneficiary by frequency\"}, {\"type\": \"table\", \"columns\": [\"Beneficiary\", \"Number of transactions\"], \"data\": [{\"Beneficiary\": \"T PARROTT\", \"Number of transactions\": \"15\"}, {\"Beneficiary\": \"APPLE.COM/BILL\", \"Number of transactions\": \"4\"}, {\"Beneficiary\": \"LOVABLE\", \"Number of transactions\": \"4\"}, {\"Beneficiary\": \"UBER * PENDING\", \"Number of transactions\": \"3\"}, {\"Beneficiary\": \"VALT* YOFOODIE.CO.UK\", \"Number of transactions\": \"3\"}]}, {\"type\": \"heading\", \"text\": \"Top beneficiary categories\"}, {\"type\": \"table\", \"columns\": [\"Beneficiary category\", \"Number of transactions\", \"% of Overall transactions\"], \"data\": [{\"Beneficiary category\": \"Data not available\", \"Number of transactions\": \"-\", \"% of Overall transactions\": \"-\"}]}, {\"type\": \"heading\", \"text\": \"Payment method distribution\"}, {\"type\": \"table\", \"columns\": [\"Payment method\", \"% of Overall transactions\"], \"data\": [{\"Payment method\": \"DEB\", \"% of Overall transactions\": \"100%\"}]}], \"defaultOpen\": false}], \"defaultOpen\": true}, {\"type\": \"accordion\", \"label\": \"Analysis Agent Summary - No Data Received\", \"content\": [{\"type\": \"summarybox\", \"variant\": \"ai_warning\", \"content\": \"The following is a high level overview of key findings from the Analysis Agent. Unfortunately we have not been able to retrieve any complaint transaction data.\"}], \"defaultOpen\": true}]}, \"fact_find\": {\"customers\": [{\"sections\": [{\"type\": \"accordion\", \"label\": \"Personal details\", \"content\": [{\"type\": \"grid\", \"name\": \"Mrs Monica Gabi Adaeze Geller\", \"date_of_birth\": \"19/08/1990\", \"age\": \"36\", \"marital_status\": \"SINGLE\"}, {\"type\": \"divider\"}, {\"type\": \"block\", \"label\": \"Residential address\", \"text\": \"13 Kirkhill,\\nBalmedie,\\nAberdeen,\\nAberdeenshire,\\nAB23 8HN\", \"tag\": \"Recent change of Address\"}, {\"type\": \"divider\"}, {\"type\": \"grid\", \"party_id\": \"68905187\", \"time_with_bank\": \"2 years, 7 months\"}]}, {\"type\": \"accordion\", \"label\": \"Accounts and products\", \"content\": [{\"type\": \"heading\", \"text\": \"Related to the complaint\"}, {\"type\": \"list\", \"items\": [[{\"type\": \"accordion\", \"label\": \"Classic (77110361403060)\", \"content\": [{\"type\": \"grid\", \"account_status\": \"OPEN\", \"account_opened\": \"03/10/2023\", \"customer_role_on_the_product\": \"HOLDER_OF_PRODUCT\", \"product_indicators\": \"None\", \"current_balance\": \"\\u00a3 0.0\", \"balance_after_pending_transactions\": \"\\u00a3 0.0\", \"overdraft_amount\": \"\\u00a3 0.0\", \"final_available_balance\": \"\\u00a3 0.0\", \"parties_on_the_account\": \"1\", \"party_ID_1\": \"68905187\"}]}]]}, {\"type\": \"divider\"}]}, {\"type\": \"accordion\", \"label\": \"Related parties\", \"content\": [{\"type\": \"heading\", \"text\": \"Other related parties\"}, {\"type\": \"list\", \"items\": [[{\"type\": \"grid\", \"relationship\": \"Attorney / Receiver to\", \"relationship_code\": \"007\", \"name\": \"Mr M Kerch\", \"related_party_id\": \"158010138\", \"party_type\": \"INDIVIDUAL\"}]]}]}, {\"type\": \"accordion\", \"label\": \"Support needs\", \"content\": [{\"type\": \"list\", \"items\": [[{\"type\": \"notification\", \"sentiment\": \"warning\", \"heading\": \"Support need: 3P - 3rd Party Mandate\", \"text\": \"Last changed: 13/03/2025 11:19:50\"}, {\"type\": \"grid\", \"date_recorded\": \"13/03/2025 11:19:50\", \"consent_status\": \"Explicit Consent gained by Group process\", \"next_review\": \"Ongoing (no date set)\", \"further_information\": \"dfbn\"}], [{\"type\": \"notification\", \"sentiment\": \"warning\", \"heading\": \"Support need: DO NOT USE - Need for Quiet\", \"text\": \"Last changed: 13/03/2025 11:19:50\"}, {\"type\": \"grid\", \"date_recorded\": \"13/03/2025 11:19:50\", \"consent_status\": \"Explicit Consent gained by Group process\", \"next_review\": \"Ongoing (no date set)\", \"further_information\": \"dfsbeb\"}], [{\"type\": \"notification\", \"sentiment\": \"warning\", \"heading\": \"Support need: Adapt - Longer Appointment\", \"text\": \"Last changed: 11/11/2025 14:20:39\"}, {\"type\": \"grid\", \"date_recorded\": \"11/11/2025 14:20:39\", \"consent_status\": \"Notified by 3rd Party - CARERS Drill\", \"next_review\": \"11/12/2025\", \"further_information\": \"added for expiry test\"}], [{\"type\": \"notification\", \"sentiment\": \"warning\", \"heading\": \"Support need: Domestic/Financial Abuse\", \"text\": \"Last changed: 23/04/2026 11:41:13\"}, {\"type\": \"grid\", \"date_recorded\": \"29/10/2025 10:48:26\", \"consent_status\": \"Explicit Consent gained by Group process\", \"next_review\": \"23/10/2026\", \"further_information\": \"code 40\"}], [{\"type\": \"notification\", \"sentiment\": \"warning\", \"heading\": \"Support need: Life Event - Flexibility\", \"text\": \"Last changed: 23/04/2026 11:41:10\"}, {\"type\": \"grid\", \"date_recorded\": \"23/04/2026 11:41:10\", \"consent_status\": \"Consent not possible - see DPM approval\", \"next_review\": \"23/07/2026\", \"further_information\": \"for notificaion order\"}]]}]}, {\"type\": \"accordion\", \"label\": \"Live chat history\", \"content\": [{\"type\": \"text\", \"text\": \"No live chat history was found for partyID 68905187 (cidPersId 810851686) between 2026-03-08 and 2026-04-07.\"}]}, {\"type\": \"accordion\", \"label\": \"Contact Notes\", \"content\": [{\"type\": \"list\", \"items\": [[{\"type\": \"block\", \"label\": \"Contact date\", \"text\": \"10/09/2026 12:49:00\"}, {\"type\": \"block\", \"label\": \"Contact details\", \"text\": \"Cash Withdrawal for \\u00a311,111.00 in Bolton Hotel Street (770201) . Profile confirmed as a match. Transaction reason: Savings & investments - other (stocks, bonds, pensions). Evidence given: Investment account statement, FCA registration confirmation. Customer happy to proceed: Yes. Verified by Customer Present, Signature Check & NI/EU/EEA driving licence. Colleague declaration: Confirmed. Completed by 7415887. Actions taken: \"}, {\"type\": \"grid\", \"classification\": \"Complaints and Disputes\", \"outcome\": \"From 3rd Party\", \"direction\": \"Internal In\", \"method\": \"In Person\", \"location\": \"LTSB Premises\", \"associated_case_id\": \"0\", \"brand\": \"Lloyds Bank plc\"}], [{\"type\": \"block\", \"label\": \"Contact date\", \"text\": \"10/09/2026 12:43:00\"}, {\"type\": \"block\", \"label\": \"Contact details\", \"text\": \"Cash Withdrawal for \\u00a311,111.00 in Bolton Hotel Street (770201) . Profile confirmed as a match. Transaction reason: Savings & investments - other (stocks, bonds, pensions). Evidence given: Investment account statement, FCA registration confirmation. Customer happy to proceed: Yes. Verified by Customer Present, Signature Check & NI/EU/EEA driving licence. Colleague declaration: Confirmed. Completed by 7415887. Actions taken: \"}, {\"type\": \"grid\", \"classification\": \"Complaints and Disputes\", \"outcome\": \"From 3rd Party\", \"direction\": \"Internal In\", \"method\": \"In Person\", \"location\": \"LTSB Premises\", \"associated_case_id\": \"0\", \"brand\": \"Lloyds Bank plc\"}], [{\"type\": \"block\", \"label\": \"Contact date\", \"text\": \"10/09/2026 06:01:00\"}, {\"type\": \"block\", \"label\": \"Contact details\", \"text\": \"Cash Withdrawal for \\u00a311,111.00 in Bolton Hotel Street (770201) . Profile confirmed as a match. Transaction reason: Invoice. Evidence given: Invoice, Correspondence with supplier. Customer happy to proceed: Yes. Verified by Customer Present, Signature Check, CVP & Blue Disabled Driver's Pass. Colleague declaration: Confirmed. Completed by 7415887. Actions taken: \"}, {\"type\": \"grid\", \"classification\": \"Complaints and Disputes\", \"outcome\": \"From 3rd Party\", \"direction\": \"Internal In\", \"method\": \"In Person\", \"location\": \"LTSB Premises\", \"associated_case_id\": \"0\", \"brand\": \"Lloyds Bank plc\"}], [{\"type\": \"block\", \"label\": \"Contact date\", \"text\": \"09/09/2026 13:57:00\"}, {\"type\": \"block\", \"label\": \"Contact details\", \"text\": \"Cash Withdrawal for \\u00a311,111.00 in Church Street Liverpool Branch. Profile confirmed as a match. Evidence given: No evidence given. Verified by Customer Present, Signature Check & NI/EU/EEA driving licence. Terminated due to browser closed. Actions taken: \"}, {\"type\": \"grid\", \"classification\": \"Complaints and Disputes\", \"outcome\": \"Internal In\", \"direction\": \"Internal In\", \"method\": \"In Person\", \"location\": \"LTSB Premises\", \"associated_case_id\": \"0\", \"brand\": \"Lloyds Bank plc\"}], [{\"type\": \"block\", \"label\": \"Contact date\", \"text\": \"09/09/2026 13:33:00\"}, {\"type\": \"block\", \"label\": \"Contact details\", \"text\": \"Cash Withdrawal for \\u00a311,111.00 in Church Street Liverpool Branch. Profile confirmed as a match. Transaction reason: Invoice. Evidence given: Contract, Correspondence with supplier. Customer happy to proceed: Yes. Verified by Customer Present, Signature Check & NI/EU/EEA driving licence. Colleague declaration: Confirmed. Completed by 7415887. Actions taken: \"}, {\"type\": \"grid\", \"classification\": \"Complaints and Disputes\", \"outcome\": \"From 3rd Party\", \"direction\": \"Internal In\", \"method\": \"In Person\", \"location\": \"LTSB Premises\", \"associated_case_id\": \"0\", \"brand\": \"Lloyds Bank plc\"}]]}]}, {\"type\": \"accordion\", \"label\": \"Card Freeze Audit Events\", \"content\": [{\"type\": \"text\", \"text\": \"No card freeze audit events for this customer.\"}]}]}]}}"
+            }
+          ],
+          "role": "model"
+        },
+        "invocationId": "",
+        "author": "complaints_ui_agent",
+        "actions": {
+          "stateDelta": {},
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "id": "72fc7c53-e585-49c2-bcc5-5e7461ef78df",
+        "timestamp": 1789693536.9406028
+      },
+      {
+        "invocationId": "",
+        "author": "complaints_ui_agent",
+        "actions": {
+          "stateDelta": {
+            "final_agent_response": {
+              "summaryBox": {
+                "complaintReference": "NC10010556",
+                "mode": "complaint-summary",
+                "variation": "secondary",
+                "content": [
+                  {
+                    "type": "heading",
+                    "text": "1. What is the customer unhappy about?",
+                    "className": "ff-summary-line ff-summary-line--heading"
+                  },
+                  {
+                    "type": "text",
+                    "text": "- £10 debit card payment from account on 02/01/2026 while account access was unavailable",
+                    "className": "ff-summary-line"
+                  },
+                  {
+                    "type": "text",
+                    "text": "- Perception of fraud regarding the £10 deduction",
+                    "className": "ff-summary-line"
+                  },
+                  {
+                    "type": "text",
+                    "text": "- Being threatened with eviction from the bank for stating the payment was fraud and not Sky Bet",
+                    "className": "ff-summary-line"
+                  },
+                  {
+                    "type": "text",
+                    "text": "- Lack of access to benefits money since 30/12/2025",
+                    "className": "ff-summary-line"
+                  },
+                  {
+                    "type": "heading",
+                    "text": "2. What is the impact on the customer?",
+                    "className": "ff-summary-line ff-summary-line--heading"
+                  },
+                  {
+                    "type": "text",
+                    "text": "- Nearly an hour waiting for benefits money in the bank",
+                    "className": "ff-summary-line"
+                  },
+                  {
+                    "type": "text",
+                    "text": "- Embarrassment from having to 'beg' for own benefits back",
+                    "className": "ff-summary-line"
+                  },
+                  {
+                    "type": "heading",
+                    "text": "3. What does the customer want us to do to fix the issue?",
+                    "className": "ff-summary-line ff-summary-line--heading"
+                  },
+                  {
+                    "type": "text",
+                    "text": "- Explanation for the £10 deduction",
+                    "className": "ff-summary-line"
+                  },
+                  {
+                    "type": "heading",
+                    "text": "4. What actions has the organisation taken so far?",
+                    "className": "ff-summary-line ff-summary-line--heading"
+                  },
+                  {
+                    "type": "text",
+                    "text": "- Declined application and withdrew all facilities",
+                    "className": "ff-summary-line"
+                  },
+                  {
+                    "type": "text",
+                    "text": "- Instructed branch to remove blocks 646, 659, 623 for specific withdrawals/deposits and close account",
+                    "className": "ff-summary-line"
+                  },
+                  {
+                    "type": "text",
+                    "text": "- Decided to close account based on information from credit and fraud agencies",
+                    "className": "ff-summary-line"
+                  },
+                  {
+                    "type": "text",
+                    "text": "- Provided reference 180070485 for further questions",
+                    "className": "ff-summary-line"
+                  },
+                  {
+                    "type": "heading",
+                    "text": "5. Additional relevant information:",
+                    "className": "ff-summary-line ff-summary-line--heading"
+                  },
+                  {
+                    "type": "text",
+                    "text": "- £10 payment was from DWP benefits money",
+                    "className": "ff-summary-line"
+                  },
+                  {
+                    "type": "text",
+                    "text": "- Internal classification of complaint: PCA - Fraud - Debit Card - Card Not Present (CNP), PCA - Fraud - Debit Card - Gambling",
+                    "className": "ff-summary-line"
+                  },
+                  {
+                    "type": "text",
+                    "text": "- Account closure decision based on credit and fraud agency information",
+                    "className": "ff-summary-line"
+                  },
+                  {
+                    "type": "heading",
+                    "text": "6. Timeline of events:",
+                    "className": "ff-summary-line ff-summary-line--heading"
+                  },
+                  {
+                    "type": "text",
+                    "text": "- 30/12/2025: Customer unable to access money",
+                    "className": "ff-summary-line"
+                  },
+                  {
+                    "type": "text",
+                    "text": "- 30/12/2025: DEB SKYBET CD 7312 10.00 transaction",
+                    "className": "ff-summary-line"
+                  },
+                  {
+                    "type": "text",
+                    "text": "- 31/12/2025 at 04:10:52: App Fraud Team declined application and withdrew all facilities; branch instructed to remove blocks and close account",
+                    "className": "ff-summary-line"
+                  },
+                  {
+                    "type": "text",
+                    "text": "- 02/01/2026: £10 debit card payment (PAY DEBITCARD PAYMENT -10.00)",
+                    "className": "ff-summary-line"
+                  },
+                  {
+                    "type": "text",
+                    "text": "- 05/01/2026 at 14:25:27: Account closure decision added to Halifax account; customer advised to call 0345 835 8020 quoting Ref 180070485 for questions",
+                    "className": "ff-summary-line"
+                  }
+                ]
+              },
+              "analysis": {
+                "sections": [
+                  {
+                    "type": "accordion",
+                    "label": "Complaint Transactions Summary",
+                    "content": [
+                      {
+                        "type": "summarybox",
+                        "variant": "ai_warning",
+                        "title": "Complaint Transactions - No Data",
+                        "content": "We were unable to find any transactions that match the complaint."
+                      }
+                    ],
+                    "defaultOpen": true
+                  },
+                  {
+                    "type": "accordion",
+                    "label": "Customer Baseline Summary",
+                    "content": [
+                      {
+                        "type": "summarybox",
+                        "variant": "ai_warning",
+                        "title": "Customer Baseline Summary",
+                        "content": "This card summarises the customer's typical spending behaviour. It analyses transactions from 19/04/2025 to 22/03/2026, covering a period of 11 months and 3 days before the complaint. A total of 37 transactions were analysed."
+                      },
+                      {
+                        "type": "table",
+                        "columns": [
+                          "Key",
+                          "Value"
+                        ],
+                        "data": [
+                          {
+                            "Key": "Mean Transaction Value",
+                            "Value": "£100.84"
+                          },
+                          {
+                            "Key": "Typical Spend Range",
+                            "Value": "£9.1 - £200"
+                          },
+                          {
+                            "Key": "Top Beneficiary",
+                            "Value": "T PARROTT (15 transactions)"
+                          },
+                          {
+                            "Key": "Top Beneficiary Category",
+                            "Value": "Data not available"
+                          },
+                          {
+                            "Key": "Top Payment Method",
+                            "Value": "DEB (100%)"
+                          }
+                        ],
+                        "title": "Customer baseline summary key facts"
+                      },
+                      {
+                        "type": "accordion",
+                        "label": "Evidence",
+                        "content": [
+                          {
+                            "type": "summarybox",
+                            "variant": "ai_warning",
+                            "content": "Mean Transaction Value\nThe customer's mean transaction value is £100.84, calculated from 37 transactions totalling £3731.18 over 11 months and 3 days.\nTypical Spend Range\nThe customer typically spends between £9.10 and £200.00, a range which covers 80% of the customer's transactions."
+                          },
+                          {
+                            "type": "heading",
+                            "text": "Top beneficiary by frequency"
+                          },
+                          {
+                            "type": "table",
+                            "columns": [
+                              "Beneficiary",
+                              "Number of transactions"
+                            ],
+                            "data": [
+                              {
+                                "Beneficiary": "T PARROTT",
+                                "Number of transactions": "15"
+                              },
+                              {
+                                "Beneficiary": "APPLE.COM/BILL",
+                                "Number of transactions": "4"
+                              },
+                              {
+                                "Beneficiary": "LOVABLE",
+                                "Number of transactions": "4"
+                              },
+                              {
+                                "Beneficiary": "UBER * PENDING",
+                                "Number of transactions": "3"
+                              },
+                              {
+                                "Beneficiary": "VALT* YOFOODIE.CO.UK",
+                                "Number of transactions": "3"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "heading",
+                            "text": "Top beneficiary categories"
+                          },
+                          {
+                            "type": "table",
+                            "columns": [
+                              "Beneficiary category",
+                              "Number of transactions",
+                              "% of Overall transactions"
+                            ],
+                            "data": [
+                              {
+                                "Beneficiary category": "Data not available",
+                                "Number of transactions": "-",
+                                "% of Overall transactions": "-"
+                              }
+                            ]
+                          },
+                          {
+                            "type": "heading",
+                            "text": "Payment method distribution"
+                          },
+                          {
+                            "type": "table",
+                            "columns": [
+                              "Payment method",
+                              "% of Overall transactions"
+                            ],
+                            "data": [
+                              {
+                                "Payment method": "DEB",
+                                "% of Overall transactions": "100%"
+                              }
+                            ]
+                          }
+                        ],
+                        "defaultOpen": false
+                      }
+                    ],
+                    "defaultOpen": true
+                  },
+                  {
+                    "type": "accordion",
+                    "label": "Analysis Agent Summary - No Data Received",
+                    "content": [
+                      {
+                        "type": "summarybox",
+                        "variant": "ai_warning",
+                        "content": "The following is a high level overview of key findings from the Analysis Agent. Unfortunately we have not been able to retrieve any complaint transaction data."
+                      }
+                    ],
+                    "defaultOpen": true
+                  }
+                ]
+              },
+              "fact_find": {
+                "customers": [
+                  {
+                    "sections": [
+                      {
+                        "type": "accordion",
+                        "label": "Personal details",
+                        "content": [
+                          {
+                            "type": "grid",
+                            "name": "Mrs Monica Gabi Adaeze Geller",
+                            "date_of_birth": "19/08/1990",
+                            "age": "36",
+                            "marital_status": "SINGLE"
+                          },
+                          {
+                            "type": "divider"
+                          },
+                          {
+                            "type": "block",
+                            "label": "Residential address",
+                            "text": "13 Kirkhill,\nBalmedie,\nAberdeen,\nAberdeenshire,\nAB23 8HN",
+                            "tag": "Recent change of Address"
+                          },
+                          {
+                            "type": "divider"
+                          },
+                          {
+                            "type": "grid",
+                            "party_id": "68905187",
+                            "time_with_bank": "2 years, 7 months"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "accordion",
+                        "label": "Accounts and products",
+                        "content": [
+                          {
+                            "type": "heading",
+                            "text": "Related to the complaint"
+                          },
+                          {
+                            "type": "list",
+                            "items": [
+                              [
+                                {
+                                  "type": "accordion",
+                                  "label": "Classic (77110361403060)",
+                                  "content": [
+                                    {
+                                      "type": "grid",
+                                      "account_status": "OPEN",
+                                      "account_opened": "03/10/2023",
+                                      "customer_role_on_the_product": "HOLDER_OF_PRODUCT",
+                                      "product_indicators": "None",
+                                      "current_balance": "£ 0.0",
+                                      "balance_after_pending_transactions": "£ 0.0",
+                                      "overdraft_amount": "£ 0.0",
+                                      "final_available_balance": "£ 0.0",
+                                      "parties_on_the_account": "1",
+                                      "party_ID_1": "68905187"
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          },
+                          {
+                            "type": "divider"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "accordion",
+                        "label": "Related parties",
+                        "content": [
+                          {
+                            "type": "heading",
+                            "text": "Other related parties"
+                          },
+                          {
+                            "type": "list",
+                            "items": [
+                              [
+                                {
+                                  "type": "grid",
+                                  "relationship": "Attorney / Receiver to",
+                                  "relationship_code": "007",
+                                  "name": "Mr M Kerch",
+                                  "related_party_id": "158010138",
+                                  "party_type": "INDIVIDUAL"
+                                }
+                              ]
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "accordion",
+                        "label": "Support needs",
+                        "content": [
+                          {
+                            "type": "list",
+                            "items": [
+                              [
+                                {
+                                  "type": "notification",
+                                  "sentiment": "warning",
+                                  "heading": "Support need: 3P - 3rd Party Mandate",
+                                  "text": "Last changed: 13/03/2025 11:19:50"
+                                },
+                                {
+                                  "type": "grid",
+                                  "date_recorded": "13/03/2025 11:19:50",
+                                  "consent_status": "Explicit Consent gained by Group process",
+                                  "next_review": "Ongoing (no date set)",
+                                  "further_information": "dfbn"
+                                }
+                              ],
+                              [
+                                {
+                                  "type": "notification",
+                                  "sentiment": "warning",
+                                  "heading": "Support need: DO NOT USE - Need for Quiet",
+                                  "text": "Last changed: 13/03/2025 11:19:50"
+                                },
+                                {
+                                  "type": "grid",
+                                  "date_recorded": "13/03/2025 11:19:50",
+                                  "consent_status": "Explicit Consent gained by Group process",
+                                  "next_review": "Ongoing (no date set)",
+                                  "further_information": "dfsbeb"
+                                }
+                              ],
+                              [
+                                {
+                                  "type": "notification",
+                                  "sentiment": "warning",
+                                  "heading": "Support need: Adapt - Longer Appointment",
+                                  "text": "Last changed: 11/11/2025 14:20:39"
+                                },
+                                {
+                                  "type": "grid",
+                                  "date_recorded": "11/11/2025 14:20:39",
+                                  "consent_status": "Notified by 3rd Party - CARERS Drill",
+                                  "next_review": "11/12/2025",
+                                  "further_information": "added for expiry test"
+                                }
+                              ],
+                              [
+                                {
+                                  "type": "notification",
+                                  "sentiment": "warning",
+                                  "heading": "Support need: Domestic/Financial Abuse",
+                                  "text": "Last changed: 23/04/2026 11:41:13"
+                                },
+                                {
+                                  "type": "grid",
+                                  "date_recorded": "29/10/2025 10:48:26",
+                                  "consent_status": "Explicit Consent gained by Group process",
+                                  "next_review": "23/10/2026",
+                                  "further_information": "code 40"
+                                }
+                              ],
+                              [
+                                {
+                                  "type": "notification",
+                                  "sentiment": "warning",
+                                  "heading": "Support need: Life Event - Flexibility",
+                                  "text": "Last changed: 23/04/2026 11:41:10"
+                                },
+                                {
+                                  "type": "grid",
+                                  "date_recorded": "23/04/2026 11:41:10",
+                                  "consent_status": "Consent not possible - see DPM approval",
+                                  "next_review": "23/07/2026",
+                                  "further_information": "for notificaion order"
+                                }
+                              ]
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "accordion",
+                        "label": "Live chat history",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "No live chat history was found for partyID 68905187 (cidPersId 810851686) between 2026-03-08 and 2026-04-07."
+                          }
+                        ]
+                      },
+                      {
+                        "type": "accordion",
+                        "label": "Contact Notes",
+                        "content": [
+                          {
+                            "type": "list",
+                            "items": [
+                              [
+                                {
+                                  "type": "block",
+                                  "label": "Contact date",
+                                  "text": "10/09/2026 12:49:00"
+                                },
+                                {
+                                  "type": "block",
+                                  "label": "Contact details",
+                                  "text": "Cash Withdrawal for £11,111.00 in Bolton Hotel Street (770201) . Profile confirmed as a match. Transaction reason: Savings & investments - other (stocks, bonds, pensions). Evidence given: Investment account statement, FCA registration confirmation. Customer happy to proceed: Yes. Verified by Customer Present, Signature Check & NI/EU/EEA driving licence. Colleague declaration: Confirmed. Completed by 7415887. Actions taken: "
+                                },
+                                {
+                                  "type": "grid",
+                                  "classification": "Complaints and Disputes",
+                                  "outcome": "From 3rd Party",
+                                  "direction": "Internal In",
+                                  "method": "In Person",
+                                  "location": "LTSB Premises",
+                                  "associated_case_id": "0",
+                                  "brand": "Lloyds Bank plc"
+                                }
+                              ],
+                              [
+                                {
+                                  "type": "block",
+                                  "label": "Contact date",
+                                  "text": "10/09/2026 12:43:00"
+                                },
+                                {
+                                  "type": "block",
+                                  "label": "Contact details",
+                                  "text": "Cash Withdrawal for £11,111.00 in Bolton Hotel Street (770201) . Profile confirmed as a match. Transaction reason: Savings & investments - other (stocks, bonds, pensions). Evidence given: Investment account statement, FCA registration confirmation. Customer happy to proceed: Yes. Verified by Customer Present, Signature Check & NI/EU/EEA driving licence. Colleague declaration: Confirmed. Completed by 7415887. Actions taken: "
+                                },
+                                {
+                                  "type": "grid",
+                                  "classification": "Complaints and Disputes",
+                                  "outcome": "From 3rd Party",
+                                  "direction": "Internal In",
+                                  "method": "In Person",
+                                  "location": "LTSB Premises",
+                                  "associated_case_id": "0",
+                                  "brand": "Lloyds Bank plc"
+                                }
+                              ],
+                              [
+                                {
+                                  "type": "block",
+                                  "label": "Contact date",
+                                  "text": "10/09/2026 06:01:00"
+                                },
+                                {
+                                  "type": "block",
+                                  "label": "Contact details",
+                                  "text": "Cash Withdrawal for £11,111.00 in Bolton Hotel Street (770201) . Profile confirmed as a match. Transaction reason: Invoice. Evidence given: Invoice, Correspondence with supplier. Customer happy to proceed: Yes. Verified by Customer Present, Signature Check, CVP & Blue Disabled Driver's Pass. Colleague declaration: Confirmed. Completed by 7415887. Actions taken: "
+                                },
+                                {
+                                  "type": "grid",
+                                  "classification": "Complaints and Disputes",
+                                  "outcome": "From 3rd Party",
+                                  "direction": "Internal In",
+                                  "method": "In Person",
+                                  "location": "LTSB Premises",
+                                  "associated_case_id": "0",
+                                  "brand": "Lloyds Bank plc"
+                                }
+                              ],
+                              [
+                                {
+                                  "type": "block",
+                                  "label": "Contact date",
+                                  "text": "09/09/2026 13:57:00"
+                                },
+                                {
+                                  "type": "block",
+                                  "label": "Contact details",
+                                  "text": "Cash Withdrawal for £11,111.00 in Church Street Liverpool Branch. Profile confirmed as a match. Evidence given: No evidence given. Verified by Customer Present, Signature Check & NI/EU/EEA driving licence. Terminated due to browser closed. Actions taken: "
+                                },
+                                {
+                                  "type": "grid",
+                                  "classification": "Complaints and Disputes",
+                                  "outcome": "Internal In",
+                                  "direction": "Internal In",
+                                  "method": "In Person",
+                                  "location": "LTSB Premises",
+                                  "associated_case_id": "0",
+                                  "brand": "Lloyds Bank plc"
+                                }
+                              ],
+                              [
+                                {
+                                  "type": "block",
+                                  "label": "Contact date",
+                                  "text": "09/09/2026 13:33:00"
+                                },
+                                {
+                                  "type": "block",
+                                  "label": "Contact details",
+                                  "text": "Cash Withdrawal for £11,111.00 in Church Street Liverpool Branch. Profile confirmed as a match. Transaction reason: Invoice. Evidence given: Contract, Correspondence with supplier. Customer happy to proceed: Yes. Verified by Customer Present, Signature Check & NI/EU/EEA driving licence. Colleague declaration: Confirmed. Completed by 7415887. Actions taken: "
+                                },
+                                {
+                                  "type": "grid",
+                                  "classification": "Complaints and Disputes",
+                                  "outcome": "From 3rd Party",
+                                  "direction": "Internal In",
+                                  "method": "In Person",
+                                  "location": "LTSB Premises",
+                                  "associated_case_id": "0",
+                                  "brand": "Lloyds Bank plc"
+                                }
+                              ]
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "type": "accordion",
+                        "label": "Card Freeze Audit Events",
+                        "content": [
+                          {
+                            "type": "text",
+                            "text": "No card freeze audit events for this customer."
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "artifactDelta": {},
+          "requestedAuthConfigs": {},
+          "requestedToolConfirmations": {}
+        },
+        "id": "397992cc-9f77-4dd6-b3bf-0e55b793db4b",
+        "timestamp": 1789693537.0069876
+      }
+    ]
+  }
